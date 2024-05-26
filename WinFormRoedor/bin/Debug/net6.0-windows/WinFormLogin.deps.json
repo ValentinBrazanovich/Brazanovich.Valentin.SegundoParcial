@@ -1,0 +1,63 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WinFormLogin/1.0.0": {
+        "dependencies": {
+          "VeterinariaExoticos": "1.0.0"
+        },
+        "runtime": {
+          "WinFormLogin.dll": {}
+        }
+      },
+      "Roedores/1.0.0": {
+        "runtime": {
+          "Roedores.dll": {}
+        }
+      },
+      "VeterinariaExoticos/1.0.0": {
+        "dependencies": {
+          "Roedores": "1.0.0",
+          "WinFormR": "1.0.0"
+        },
+        "runtime": {
+          "VeterinariaExoticos.dll": {}
+        }
+      },
+      "WinFormR/1.0.0": {
+        "dependencies": {
+          "Roedores": "1.0.0"
+        },
+        "runtime": {
+          "WinFormR.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WinFormLogin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roedores/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "VeterinariaExoticos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WinFormR/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "GNJ4r/4RTuHbJHC+IU9ZmE0wwkqx/2RBHuJ+Yor0me+UGOAEI/DKuiPsGShvW+2+fRkvwQsrR0X/hj874zueSQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\VeterinariaExoticos.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Joshua\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\Joshua\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\Joshua\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\Joshua\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.29\\microsoft.netcore.app.host.win-x64.6.0.29.nupkg.sha512"
+  ],
+  "logs": []
+}

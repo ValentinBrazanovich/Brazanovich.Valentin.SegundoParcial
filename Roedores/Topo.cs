@@ -16,25 +16,25 @@ namespace Roedores
         public bool esAlbino;
 
 
-        public Topo(string nombre, double peso, double profundidadExcavada, bool garrasAfiladas)
-            : base(nombre, peso, ETipoAlimentacion.Insectivoro)
+        public Topo(string nombre, double peso, ETipoAlimentacion tipoAlimetacion, double profundidadExcavada, bool garrasAfiladas)
+            : base(nombre, peso, tipoAlimetacion)
         {
             this.profundidadExcavada = profundidadExcavada;
             this.garrasAfiladas = garrasAfiladas;
         }
 
-        public Topo(string nombre, double profundidadExcavada, bool garrasAfiladas)
-            : base(nombre, ETipoAlimentacion.Insectivoro)
+        public Topo(string nombre, ETipoAlimentacion tipoAlimetacion, double profundidadExcavada, bool garrasAfiladas)
+            : base(nombre, tipoAlimetacion)
         {
             this.profundidadExcavada = profundidadExcavada;
             this.garrasAfiladas = garrasAfiladas;
         }
 
-        public Topo(string nombre, double profundidadExcavada)
-            : base(nombre, ETipoAlimentacion.Insectivoro)
+        public Topo(string nombre, bool garrasAfiladas)
+            : base(nombre)
         {
-            this.profundidadExcavada = profundidadExcavada;
-            this.garrasAfiladas = true;
+            this.profundidadExcavada = 5.0;
+            this.garrasAfiladas = garrasAfiladas;
         }
 
 

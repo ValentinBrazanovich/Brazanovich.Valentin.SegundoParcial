@@ -1,0 +1,12 @@
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\bin\Debug\net6.0\Roedores.deps.json
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\bin\Debug\net6.0\Roedores.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\bin\Debug\net6.0\Roedores.pdb
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\Roedores.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\Roedores.AssemblyInfoInputs.cache
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\Roedores.AssemblyInfo.cs
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\Roedores.csproj.CoreCompileInputs.cache
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\Roedores.sourcelink.json
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\Roedores.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\refint\Roedores.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\Roedores.pdb
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\ref\Roedores.dll

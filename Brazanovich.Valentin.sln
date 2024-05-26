@@ -3,7 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roedores", "Roedores\Roedores.csproj", "{C9F62556-821C-4193-BDA0-346579D9D7C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roedores", "Roedores\Roedores.csproj", "{C9F62556-821C-4193-BDA0-346579D9D7C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VeterinariaExoticos", "VeterinariaExoticos\VeterinariaExoticos.csproj", "{86278CB9-7E70-4D96-A51B-34DD0E166571}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormLogin", "WinFormRoedor\WinFormLogin.csproj", "{C292DE3C-D839-493B-9C6C-0EC86BCDCFAB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormR", "WinFormR\WinFormR.csproj", "{8D63BA35-AADE-468C-A5CA-770A65EBCFD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{197730E1-0F5C-44F6-AE4C-AC81D216B38B}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +26,18 @@ Global
 		{C9F62556-821C-4193-BDA0-346579D9D7C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9F62556-821C-4193-BDA0-346579D9D7C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9F62556-821C-4193-BDA0-346579D9D7C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86278CB9-7E70-4D96-A51B-34DD0E166571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86278CB9-7E70-4D96-A51B-34DD0E166571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86278CB9-7E70-4D96-A51B-34DD0E166571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86278CB9-7E70-4D96-A51B-34DD0E166571}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C292DE3C-D839-493B-9C6C-0EC86BCDCFAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C292DE3C-D839-493B-9C6C-0EC86BCDCFAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C292DE3C-D839-493B-9C6C-0EC86BCDCFAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C292DE3C-D839-493B-9C6C-0EC86BCDCFAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D63BA35-AADE-468C-A5CA-770A65EBCFD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D63BA35-AADE-468C-A5CA-770A65EBCFD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D63BA35-AADE-468C-A5CA-770A65EBCFD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D63BA35-AADE-468C-A5CA-770A65EBCFD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

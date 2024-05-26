@@ -8,29 +8,29 @@ namespace Roedores
 {
     public class Hamster : Roedor
     {
-        public string raza;
+        public double longitud;
         public bool esNocturno;
 
 
-        public Hamster(string nombre, double peso, string raza, bool esNocturno)
-            : base(nombre, peso, ETipoAlimentacion.Omnivoro)
+        public Hamster(string nombre, double peso, ETipoAlimentacion tipoAlimentacion, double longitud, bool esNocturno)
+            : base(nombre, peso, tipoAlimentacion)
         {
-            this.raza = raza;
+            this.longitud = longitud;
             this.esNocturno = esNocturno;
         }
 
-        public Hamster(string nombre, string raza, bool esNocturno)
-            : base(nombre, ETipoAlimentacion.Omnivoro)
+        public Hamster(string nombre, ETipoAlimentacion tipoAlimentacion, double longitud, bool esNocturno)
+            : base(nombre, tipoAlimentacion)
         {
-            this.raza = raza;
+            this.longitud = longitud;
             this.esNocturno = esNocturno;
         }
 
-        public Hamster(string nombre, string raza)
+        public Hamster(string nombre, bool esNocturno)
             : base(nombre)
         {
-            this.raza = raza;
-            this.esNocturno = true;
+            this.longitud = 8.0;
+            this.esNocturno = esNocturno;
         }
 
 
@@ -44,7 +44,7 @@ namespace Roedores
         {
             StringBuilder sb = new StringBuilder();
             sb.Append(base.ToString()).Append(" - ");
-            sb.Append($"Raza: {this.raza}.raza - ");
+            sb.Append($"Longitud: {this.longitud} - ");
             sb.Append($"Nocturno: {this.esNocturno}");
 
             return sb.ToString();
@@ -64,15 +64,15 @@ namespace Roedores
 
         public override int GetHashCode()
         {
-            return (base.GetHashCode(), raza, esNocturno).GetHashCode();
+            return (base.GetHashCode(), longitud, esNocturno).GetHashCode();
         }
 
 
         public override string PesoIdeal()
         {
             string rta;
-            if (((this.peso >= 0.045 && this.peso <= 0.065) && (this.raza == "ruso")) ||
-               ((this.peso >= 0.085 && this.peso <= 0.150) && (this.raza == "sirio")))
+            if (((this.peso >= 0.045 && this.peso <= 0.065) && (this.longitud >= 6.0 && this.longitud <= 10.0)) ||
+               ((this.peso >= 0.085 && this.peso <= 0.150) && (this.longitud >= 10.0 && this.longitud <= 18.0)))
             {
                 rta = " ";
 
@@ -82,7 +82,7 @@ namespace Roedores
                 rta = " no ";
             }
 
-            return $"El hámster {this.raza}{rta}está en su peso ideal (45g - 65g ruso, 85g - 150g sirio)";
+            return $"El hámster{rta}está en su peso ideal\n\t(45g - 65g ruso, 85g - 150g sirio)";
         }
     }
 }
