@@ -12,6 +12,19 @@
           "bin/placeholder/Roedores.dll": {}
         }
       },
+      "WinFormLogin/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/WinFormLogin.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WinFormLogin.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
       "WinFormR/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -36,6 +49,11 @@
       "path": "../Roedores/Roedores.csproj",
       "msbuildProject": "../Roedores/Roedores.csproj"
     },
+    "WinFormLogin/1.0.0": {
+      "type": "project",
+      "path": "../WinFormRoedor/WinFormLogin.csproj",
+      "msbuildProject": "../WinFormRoedor/WinFormLogin.csproj"
+    },
     "WinFormR/1.0.0": {
       "type": "project",
       "path": "../WinFormR/WinFormR.csproj",
@@ -45,6 +63,7 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "Roedores >= 1.0.0",
+      "WinFormLogin >= 1.0.0",
       "WinFormR >= 1.0.0"
     ]
   },
@@ -77,6 +96,9 @@
           "projectReferences": {
             "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Roedores.csproj": {
               "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Roedores.csproj"
+            },
+            "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormRoedor\\WinFormLogin.csproj": {
+              "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormRoedor\\WinFormLogin.csproj"
             },
             "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormR\\WinFormR.csproj": {
               "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormR\\WinFormR.csproj"

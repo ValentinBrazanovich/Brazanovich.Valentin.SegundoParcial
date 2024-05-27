@@ -49,7 +49,7 @@ namespace Roedores
         {
             StringBuilder sb = new StringBuilder();
             sb.Append(base.ToString()).Append(" - ");
-            sb.Append($"Largo de cola: {this.largoCola} - ");
+            sb.Append($"Largo de cola: {this.largoCola}cm - ");
             sb.Append($"Albino: {this.esAlbino}");
 
             return sb.ToString();

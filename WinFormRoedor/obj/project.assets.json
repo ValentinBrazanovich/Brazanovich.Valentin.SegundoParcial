@@ -1,73 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {
-      "Roedores/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Roedores.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Roedores.dll": {}
-        }
-      },
-      "VeterinariaExoticos/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Roedores": "1.0.0",
-          "WinFormR": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/VeterinariaExoticos.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/VeterinariaExoticos.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WindowsForms"
-        ]
-      },
-      "WinFormR/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Roedores": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/WinFormR.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/WinFormR.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WindowsForms"
-        ]
-      }
-    }
+    "net6.0-windows7.0": {}
   },
-  "libraries": {
-    "Roedores/1.0.0": {
-      "type": "project",
-      "path": "../Roedores/Roedores.csproj",
-      "msbuildProject": "../Roedores/Roedores.csproj"
-    },
-    "VeterinariaExoticos/1.0.0": {
-      "type": "project",
-      "path": "../VeterinariaExoticos/VeterinariaExoticos.csproj",
-      "msbuildProject": "../VeterinariaExoticos/VeterinariaExoticos.csproj"
-    },
-    "WinFormR/1.0.0": {
-      "type": "project",
-      "path": "../WinFormR/WinFormR.csproj",
-      "msbuildProject": "../WinFormR/WinFormR.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": [
-      "VeterinariaExoticos >= 1.0.0"
-    ]
+    "net6.0-windows7.0": []
   },
   "packageFolders": {
     "C:\\Users\\Joshua\\.nuget\\packages\\": {}
@@ -95,11 +33,7 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {
-            "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\VeterinariaExoticos.csproj": {
-              "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\VeterinariaExoticos.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

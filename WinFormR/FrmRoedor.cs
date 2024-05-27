@@ -113,7 +113,7 @@ namespace WinFormR
             double peso;
             double atributoDouble;
             bool pesoValido = double.TryParse(txtPeso.Text, out peso);
-            bool atributoValido = (double.TryParse(txtAtributo.Text, out atributoDouble) && atributoDouble >= 4.0 && atributoDouble <= 18.0);
+            bool atributoValido = ((double.TryParse(txtAtributo.Text, out atributoDouble)) && (atributoDouble >= 4.0 && atributoDouble <= 18.0));
 
             if (CamposValidos())
             {
@@ -144,11 +144,11 @@ namespace WinFormR
         private Hamster CrearHamster(string nombre, double peso, bool pesoValido, ETipoAlimentacion tipoAlimentacion,
                                         double atributoDouble, bool atributoValido, bool esNocturno)
         {
-            if (peso >= 0.020 && peso <= 0.180 && atributoValido)
+            if (pesoValido && peso >= 0.020 && peso <= 0.180 && atributoValido)
             {
                 hamster = new Hamster(nombre, peso, tipoAlimentacion, atributoDouble, esNocturno);
             }
-            else if (!atributoValido)
+            else if (atributoValido)
             {
                 hamster = new Hamster(nombre, tipoAlimentacion, atributoDouble, esNocturno);
             }
@@ -167,7 +167,7 @@ namespace WinFormR
             {
                 raton = new Raton(nombre, peso, tipoAlimentacion, atributoDouble, esAlbino);
             }
-            else if (!atributoValido)
+            else if (atributoValido)
             {
                 raton = new Raton(nombre, tipoAlimentacion, atributoDouble, esAlbino);
             }
@@ -186,7 +186,7 @@ namespace WinFormR
             {
                 topo = new Topo(nombre, peso, tipoAlimentacion, atributoDouble, garrasAfiladas);
             }
-            else if (!atributoValido)
+            else if (atributoValido)
             {
                 topo = new Topo(nombre, tipoAlimentacion, atributoDouble, garrasAfiladas);
             }

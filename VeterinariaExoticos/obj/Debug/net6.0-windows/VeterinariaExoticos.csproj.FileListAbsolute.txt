@@ -24,3 +24,8 @@ C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\obj\Debug\
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\obj\Debug\net6.0-windows\VeterinariaExoticos.genruntimeconfig.cache
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\obj\Debug\net6.0-windows\ref\VeterinariaExoticos.dll
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\obj\Debug\net6.0-windows\VeterinariaExoticos.VeterinariaCRUD.resources
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormLogin.deps.json
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormLogin.runtimeconfig.json
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormLogin.exe
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormLogin.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormLogin.pdb

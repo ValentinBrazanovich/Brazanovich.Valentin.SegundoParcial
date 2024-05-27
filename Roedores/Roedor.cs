@@ -44,7 +44,7 @@ namespace Roedores
         {
             StringBuilder sb = new StringBuilder();
             sb.Append($"Nombre: {this.nombre} - ");
-            sb.Append($"Peso: {this.peso} - ");
+            sb.Append($"Peso: {this.peso}g - ");
             sb.Append($"Alimentación: {this.tipoAlimentacion}");
 
             return sb.ToString();

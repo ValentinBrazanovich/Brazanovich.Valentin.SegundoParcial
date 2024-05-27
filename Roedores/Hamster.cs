@@ -29,7 +29,7 @@ namespace Roedores
         public Hamster(string nombre, bool esNocturno)
             : base(nombre)
         {
-            this.longitud = 8.0;
+            this.longitud = 8;
             this.esNocturno = esNocturno;
         }
 
@@ -44,7 +44,7 @@ namespace Roedores
         {
             StringBuilder sb = new StringBuilder();
             sb.Append(base.ToString()).Append(" - ");
-            sb.Append($"Longitud: {this.longitud} - ");
+            sb.Append($"Longitud: {this.longitud}cm - ");
             sb.Append($"Nocturno: {this.esNocturno}");
 
             return sb.ToString();

@@ -1,4 +1,4 @@
-using VeterinariaExoticos;
+using System.Text.Json;
 
 namespace WinFormRoedor
 {
@@ -17,11 +17,13 @@ namespace WinFormRoedor
         {
             try
             {
-                usuarios = Usuario.VerificarUsuarios("./usuarios.json");
+                string json = File.ReadAllText("./usuarios.json");
+                usuarios = JsonSerializer.Deserialize<List<Usuario>>(json);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ocurrio un error al leer el archivo de usuarios: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Ocurrio un error al leer el archivo de usuarios: {ex.Message}",
+                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Exit();
             }
         }
@@ -31,21 +33,23 @@ namespace WinFormRoedor
             string correo = txtCorreo.Text;
             string contraseña = txtContraseña.Text;
 
-            bool existe = usuarios.Exists(u => u.correo == correo && u.contraseña == contraseña);
+            bool existe = usuarios.Exists(u => u.Correo == correo && u.Contraseña == contraseña);
 
             if (existe)
             {
-                VeterinariaCRUD veterinaria = new VeterinariaCRUD();
-                veterinaria.Show();
-
-                veterinaria.FormClosed += (s, args) => this.Close();
-                ////
-                this.Hide();
+                DialogResult = DialogResult.OK;
+                Close();
             }
             else
             {
                 MessageBox.Show("Correo o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        public class Usuario
+        {
+            public string Correo { get; set; }
+            public string Contraseña { get; set; }
         }
 
     }

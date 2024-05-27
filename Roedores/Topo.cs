@@ -48,7 +48,7 @@ namespace Roedores
         {
             StringBuilder sb = new StringBuilder();
             sb.Append(base.ToString()).Append(" - ");
-            sb.Append($"Profundidad excavada: {this.profundidadExcavada} - ");
+            sb.Append($"Profundidad excavada: {this.profundidadExcavada}cm - ");
             sb.Append($"Garras afiladas: {this.garrasAfiladas}");
 
             return sb.ToString();
