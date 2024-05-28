@@ -4,7 +4,8 @@ namespace WinFormRoedor
 {
     public partial class LoginRoedor : Form
     {
-        private List<Usuario> usuarios;
+        private List<Usuario>? usuarios;
+        public string NombreOperadorConectado { get; set; }
 
         public LoginRoedor()
         {
@@ -12,17 +13,16 @@ namespace WinFormRoedor
             CargarUsuarios();
         }
 
-
         private void CargarUsuarios()
         {
             try
             {
-                string json = File.ReadAllText("./usuarios.json");
+                string json = File.ReadAllText("./MOCK_DATA.json");
                 usuarios = JsonSerializer.Deserialize<List<Usuario>>(json);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ocurrio un error al leer el archivo de usuarios: {ex.Message}",
+                MessageBox.Show($"Ocurrió un error al leer el archivo de usuarios: {ex.Message}",
                                 "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Exit();
             }
@@ -31,13 +31,14 @@ namespace WinFormRoedor
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             string correo = txtCorreo.Text;
-            string contraseña = txtContraseña.Text;
+            string clave = txtClave.Text;
 
-            bool existe = usuarios.Exists(u => u.Correo == correo && u.Contraseña == contraseña);
+            Usuario? usuarioConectado = usuarios.FirstOrDefault(u => u.correo == correo && u.clave == clave);
 
-            if (existe)
-            {
+            if (usuarioConectado != null)
+            {  
                 DialogResult = DialogResult.OK;
+                Tag = usuarioConectado.nombre;
                 Close();
             }
             else
@@ -48,9 +49,12 @@ namespace WinFormRoedor
 
         public class Usuario
         {
-            public string Correo { get; set; }
-            public string Contraseña { get; set; }
+            public string apellido { get; set; }
+            public string nombre { get; set; }
+            public int legajo { get; set; }
+            public string correo { get; set; }
+            public string clave { get; set; }
+            public string perfil { get; set; }
         }
-
     }
 }

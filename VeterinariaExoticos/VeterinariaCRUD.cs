@@ -9,11 +9,21 @@ namespace VeterinariaExoticos
     public partial class VeterinariaCRUD : Form
     {
         private Terrario terrario;
+        private string nombreOperador;
 
-        public VeterinariaCRUD()
+        public VeterinariaCRUD(string nombreOperador)
         {
             InitializeComponent();
             terrario = new Terrario();
+            this.nombreOperador = nombreOperador;
+        }
+
+        private void VeterinariaCRUD_Load(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Operador: " + nombreOperador;
+
+            string fechaActual = DateTime.Now.ToString("dd/MM/yyyy");
+            toolStripStatusLabel2.Text = "Fecha: " + fechaActual;
         }
 
 
@@ -132,8 +142,13 @@ namespace VeterinariaExoticos
                 {
                     Converters = { new RoedorConverter() }
                 };
-                terrario.Roedores = JsonSerializer.Deserialize<List<Roedor>>(json, options);
-                ActualizarVisor();
+
+                List<Roedor>? roedoresDeserializados = JsonSerializer.Deserialize<List<Roedor>>(json, options);
+                if (roedoresDeserializados != null)
+                {
+                    terrario.Roedores = roedoresDeserializados;
+                    ActualizarVisor();
+                }
             }
             else
             {
@@ -166,8 +181,11 @@ namespace VeterinariaExoticos
                 XmlSerializer serializer = new XmlSerializer(typeof(List<Roedor>));
                 using (FileStream fs = new FileStream("./roedores.xml", FileMode.Open))
                 {
-                    terrario.Roedores = (List<Roedor>)serializer.Deserialize(fs);
-                    ActualizarVisor();
+                    if (serializer.Deserialize(fs) is List<Roedor> roedoresDeserializados)
+                    {
+                        terrario.Roedores = roedoresDeserializados;
+                        ActualizarVisor();
+                    }
                 }
             }
             else
@@ -253,6 +271,11 @@ namespace VeterinariaExoticos
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             ActualizarVisor();
+        }
+
+        private void VeterinariaCRUD_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
         }
     }
 }

@@ -8,8 +8,8 @@ namespace Roedores
 {
     public class Hamster : Roedor
     {
-        public double longitud { get; set; }
-        public bool esNocturno { get; set; }
+        private double longitud;
+        private bool esNocturno;
 
         public string TypeDiscriminator => "Hamster";
 
@@ -34,7 +34,22 @@ namespace Roedores
             this.esNocturno = esNocturno;
         }
 
-        public Hamster() { }
+        public Hamster() {
+            this.longitud = 0;
+            this.esNocturno = false;
+        }
+
+        public double Longitud
+        {
+            get { return longitud; }
+            set { longitud = value; }
+        }
+
+        public bool EsNocturno
+        {
+            get { return esNocturno; }
+            set { esNocturno = value;}
+        }
 
         public override string obtenerSonido()
         {
@@ -46,8 +61,8 @@ namespace Roedores
         {
             StringBuilder sb = new StringBuilder();
             sb.Append(base.ToString()).Append(" - ");
-            sb.Append($"Longitud: {this.longitud}cm - ");
-            sb.Append($"Nocturno: {this.esNocturno}");
+            sb.Append($"Longitud: {this.Longitud}cm - ");
+            sb.Append($"Nocturno: {this.EsNocturno}");
             sb.Append($" /// Es: Hámster");
 
             return sb.ToString();
@@ -67,15 +82,15 @@ namespace Roedores
 
         public override int GetHashCode()
         {
-            return (base.GetHashCode(), longitud, esNocturno).GetHashCode();
+            return (base.GetHashCode(), Longitud, EsNocturno).GetHashCode();
         }
 
 
         public override string PesoIdeal()
         {
             string rta;
-            if (((this.peso >= 45 && this.peso <= 65) && (this.longitud >= 6.0 && this.longitud <= 10.0)) ||
-               ((this.peso >= 85 && this.peso <= 150) && (this.longitud >= 10.0 && this.longitud <= 18.0)))
+            if (((this.Peso >= 45 && this.Peso <= 65) && (this.Longitud >= 6.0 && this.Longitud <= 10.0)) ||
+               ((this.Peso >= 85 && this.Peso <= 150) && (this.Longitud >= 10.0 && this.Longitud <= 18.0)))
             {
                 rta = " ";
 

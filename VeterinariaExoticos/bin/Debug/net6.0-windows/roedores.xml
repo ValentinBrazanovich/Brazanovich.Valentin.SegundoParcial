@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfRoedor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Roedor xsi:type="Hamster">
-    <nombre>a</nombre>
-    <peso>50</peso>
-    <tipoAlimentacion>Omnivoro</tipoAlimentacion>
-    <longitud>8</longitud>
-    <esNocturno>false</esNocturno>
+    <Nombre>Hammy</Nombre>
+    <Peso>50</Peso>
+    <TipoAlimentacion>Omnivoro</TipoAlimentacion>
+    <Longitud>8</Longitud>
+    <EsNocturno>true</EsNocturno>
+  </Roedor>
+  <Roedor xsi:type="Topo">
+    <Nombre>Topon</Nombre>
+    <Peso>80</Peso>
+    <TipoAlimentacion>Carnivoro</TipoAlimentacion>
+    <ProfundidadExcavada>12</ProfundidadExcavada>
+    <GarrasAfiladas>true</GarrasAfiladas>
   </Roedor>
   <Roedor xsi:type="Raton">
-    <nombre>a</nombre>
-    <peso>50</peso>
-    <tipoAlimentacion>Carnivoro</tipoAlimentacion>
-    <largoCola>8</largoCola>
-    <esAlbino>false</esAlbino>
+    <Nombre>Jamon</Nombre>
+    <Peso>30</Peso>
+    <TipoAlimentacion>Herbivoro</TipoAlimentacion>
+    <LargoCola>6</LargoCola>
+    <EsAlbino>false</EsAlbino>
   </Roedor>
 </ArrayOfRoedor>

@@ -19,6 +19,11 @@ namespace WinFormR
             comboAlimentacion.DataSource = Enum.GetNames(typeof(ETipoAlimentacion));
         }
 
+        private void MensajeError(string mensaje)
+        {
+            MessageBox.Show(mensaje, "Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
 
         public Roedor RoedorDelFormulario { 
             get { return CrearRoedor(); }
@@ -26,30 +31,30 @@ namespace WinFormR
 
         public void CargarDatosRoedor(Roedor roedor)
         {
-            txtNombre.Text = roedor.nombre;
-            txtPeso.Text = roedor.peso.ToString();
-            comboAlimentacion.SelectedItem = roedor.tipoAlimentacion.ToString();
+            txtNombre.Text = roedor.Nombre;
+            txtPeso.Text = roedor.Peso.ToString();
+            comboAlimentacion.SelectedItem = roedor.TipoAlimentacion.ToString();
 
             if (roedor is Hamster)
             {
                 Hamster hamster = (Hamster)roedor;
                 rdoHamster.Checked = true;
-                txtAtributo.Text = hamster.longitud.ToString();
-                checkAtributo.Checked = hamster.esNocturno;
+                txtAtributo.Text = hamster.Longitud.ToString();
+                checkAtributo.Checked = hamster.EsNocturno;
             }
             else if (roedor is Raton)
             {
                 Raton raton = (Raton)roedor;
                 rdoRaton.Checked = true;
-                txtAtributo.Text = raton.largoCola.ToString();
-                checkAtributo.Checked = raton.esAlbino;
+                txtAtributo.Text = raton.LargoCola.ToString();
+                checkAtributo.Checked = raton.EsAlbino;
             }
             else if (roedor is Topo)
             {
                 Topo topo = (Topo)roedor;
                 rdoTopo.Checked = true;
-                txtAtributo.Text = topo.profundidadExcavada.ToString();
-                checkAtributo.Checked = topo.garrasAfiladas;
+                txtAtributo.Text = topo.ProfundidadExcavada.ToString();
+                checkAtributo.Checked = topo.GarrasAfiladas;
             }
 
             ActualizarCampos();
@@ -65,8 +70,7 @@ namespace WinFormR
             }
             else
             {
-                MessageBox.Show("Debe completar bien los campos.", "Error",
-                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MensajeError("Debe completar bien los campos.");
             }
             
         }
@@ -149,10 +153,12 @@ namespace WinFormR
             }
             else if (atributoValido)
             {
+                MensajeError("El peso no es válido. Se asignó el peso por defecto para un Hámster.");
                 hamster = new Hamster(nombre, tipoAlimentacion, atributoDouble, esNocturno);
             }
             else
             {
+                MensajeError("El peso y longitud no son válidos. Se asignaron valores por defecto para un Hámster.");
                 hamster = new Hamster(nombre, esNocturno);
             }
 
@@ -168,10 +174,12 @@ namespace WinFormR
             }
             else if (atributoValido)
             {
+                MensajeError("El peso no es válido. Se asignó el peso por defecto para un Ratón.");
                 raton = new Raton(nombre, tipoAlimentacion, atributoDouble, esAlbino);
             }
             else
             {
+                MensajeError("El peso y longitud de cola no son válidos. Se asignaron valores por defecto para un Ratón.");
                 raton = new Raton(nombre, esAlbino);
             }
 
@@ -187,10 +195,12 @@ namespace WinFormR
             }
             else if (atributoValido)
             {
+                MensajeError("El peso no es válido. Se asignó el peso por defecto para un Topo.");
                 topo = new Topo(nombre, tipoAlimentacion, atributoDouble, garrasAfiladas);
             }
             else
             {
+                MensajeError("El peso y profundidad excavado no son válidos. Se asignaron valores por defecto para un Topo.");
                 topo = new Topo(nombre, garrasAfiladas);
             }
 

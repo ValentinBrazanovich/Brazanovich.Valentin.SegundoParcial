@@ -1,18 +1,26 @@
 [
   {
     "Discriminator": "Hamster",
-    "longitud": 8,
-    "esNocturno": false,
-    "nombre": "a",
-    "peso": 50,
-    "tipoAlimentacion": 1
+    "Longitud": 8,
+    "EsNocturno": true,
+    "Nombre": "Hammy",
+    "Peso": 50,
+    "TipoAlimentacion": 1
+  },
+  {
+    "Discriminator": "Topo",
+    "ProfundidadExcavada": 12,
+    "GarrasAfiladas": true,
+    "Nombre": "Topon",
+    "Peso": 80,
+    "TipoAlimentacion": 2
   },
   {
     "Discriminator": "Raton",
-    "largoCola": 8,
-    "esAlbino": false,
-    "nombre": "a",
-    "peso": 50,
-    "tipoAlimentacion": 2
+    "LargoCola": 6,
+    "EsAlbino": false,
+    "Nombre": "Jamon",
+    "Peso": 30,
+    "TipoAlimentacion": 0
   }
 ]

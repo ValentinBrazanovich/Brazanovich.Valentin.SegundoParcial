@@ -50,7 +50,11 @@
             lblTopo = new Label();
             lblRaton = new Label();
             btnActualizar = new Button();
+            statusStrip1 = new StatusStrip();
+            toolStripStatusLabel1 = new ToolStripStatusLabel();
+            toolStripStatusLabel2 = new ToolStripStatusLabel();
             menuStrip1.SuspendLayout();
+            statusStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // lstRoedores
@@ -80,7 +84,7 @@
             // btnModificar
             // 
             btnModificar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnModificar.Location = new Point(185, 300);
+            btnModificar.Location = new Point(168, 300);
             btnModificar.Name = "btnModificar";
             btnModificar.Size = new Size(130, 50);
             btnModificar.TabIndex = 2;
@@ -91,7 +95,7 @@
             // btnEliminar
             // 
             btnEliminar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnEliminar.Location = new Point(359, 300);
+            btnEliminar.Location = new Point(322, 300);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(130, 50);
             btnEliminar.TabIndex = 3;
@@ -161,7 +165,7 @@
             // 
             ascendenteToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { porNombreToolStripMenuItem, porPesoToolStripMenuItem });
             ascendenteToolStripMenuItem.Name = "ascendenteToolStripMenuItem";
-            ascendenteToolStripMenuItem.Size = new Size(180, 22);
+            ascendenteToolStripMenuItem.Size = new Size(142, 22);
             ascendenteToolStripMenuItem.Text = "Ascendente";
             // 
             // porNombreToolStripMenuItem
@@ -182,20 +186,20 @@
             // 
             descendenteToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { porNombreToolStripMenuItem1, porPesoToolStripMenuItem1 });
             descendenteToolStripMenuItem.Name = "descendenteToolStripMenuItem";
-            descendenteToolStripMenuItem.Size = new Size(180, 22);
+            descendenteToolStripMenuItem.Size = new Size(142, 22);
             descendenteToolStripMenuItem.Text = "Descendente";
             // 
             // porNombreToolStripMenuItem1
             // 
             porNombreToolStripMenuItem1.Name = "porNombreToolStripMenuItem1";
-            porNombreToolStripMenuItem1.Size = new Size(180, 22);
+            porNombreToolStripMenuItem1.Size = new Size(137, 22);
             porNombreToolStripMenuItem1.Text = "Por nombre";
             porNombreToolStripMenuItem1.Click += ordenarDescendentePorNombreToolStripMenuItem_Click;
             // 
             // porPesoToolStripMenuItem1
             // 
             porPesoToolStripMenuItem1.Name = "porPesoToolStripMenuItem1";
-            porPesoToolStripMenuItem1.Size = new Size(180, 22);
+            porPesoToolStripMenuItem1.Size = new Size(137, 22);
             porPesoToolStripMenuItem1.Text = "Por peso";
             porPesoToolStripMenuItem1.Click += ordenarDescendentePorPesoToolStripMenuItem_Click;
             // 
@@ -206,7 +210,7 @@
             lblHamster.BackColor = SystemColors.GradientActiveCaption;
             lblHamster.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblHamster.ForeColor = Color.Red;
-            lblHamster.Location = new Point(536, 300);
+            lblHamster.Location = new Point(471, 300);
             lblHamster.Name = "lblHamster";
             lblHamster.Size = new Size(79, 19);
             lblHamster.TabIndex = 4;
@@ -219,7 +223,7 @@
             lblTopo.BackColor = SystemColors.GradientActiveCaption;
             lblTopo.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblTopo.ForeColor = Color.Green;
-            lblTopo.Location = new Point(536, 331);
+            lblTopo.Location = new Point(471, 331);
             lblTopo.Name = "lblTopo";
             lblTopo.Size = new Size(77, 19);
             lblTopo.TabIndex = 5;
@@ -232,7 +236,7 @@
             lblRaton.BackColor = SystemColors.GradientActiveCaption;
             lblRaton.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblRaton.ForeColor = Color.Blue;
-            lblRaton.Location = new Point(536, 316);
+            lblRaton.Location = new Point(471, 316);
             lblRaton.Name = "lblRaton";
             lblRaton.Size = new Size(79, 19);
             lblRaton.TabIndex = 6;
@@ -249,11 +253,36 @@
             btnActualizar.UseVisualStyleBackColor = true;
             btnActualizar.Click += btnActualizar_Click;
             // 
+            // statusStrip1
+            // 
+            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, toolStripStatusLabel2 });
+            statusStrip1.Location = new Point(0, 362);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Size = new Size(753, 24);
+            statusStrip1.TabIndex = 8;
+            statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            toolStripStatusLabel1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            toolStripStatusLabel1.Size = new Size(63, 19);
+            toolStripStatusLabel1.Text = "Usuario: ";
+            // 
+            // toolStripStatusLabel2
+            // 
+            toolStripStatusLabel2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            toolStripStatusLabel2.RightToLeft = RightToLeft.No;
+            toolStripStatusLabel2.Size = new Size(51, 19);
+            toolStripStatusLabel2.Text = "Fecha: ";
+            // 
             // VeterinariaCRUD
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(753, 378);
+            ClientSize = new Size(753, 386);
+            Controls.Add(statusStrip1);
             Controls.Add(btnActualizar);
             Controls.Add(lblRaton);
             Controls.Add(lblTopo);
@@ -268,8 +297,12 @@
             Name = "VeterinariaCRUD";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Veterinaria Exóticos";
+            FormClosing += VeterinariaCRUD_FormClosing;
+            Load += VeterinariaCRUD_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -298,5 +331,8 @@
         private ToolStripMenuItem porNombreToolStripMenuItem1;
         private ToolStripMenuItem porPesoToolStripMenuItem1;
         private Button btnActualizar;
+        private StatusStrip statusStrip1;
+        private ToolStripStatusLabel toolStripStatusLabel1;
+        private ToolStripStatusLabel toolStripStatusLabel2;
     }
 }

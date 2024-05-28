@@ -96,11 +96,11 @@ namespace Roedores
         {
             if (ascendente)
             {
-                roedores = roedores.OrderBy(r => r.nombre).ToList();
+                roedores = roedores.OrderBy(r => r.Nombre).ToList();
             }
             else
             {
-                roedores = roedores.OrderByDescending(r => r.nombre).ToList();
+                roedores = roedores.OrderByDescending(r => r.Nombre).ToList();
             }
         }
 
@@ -108,11 +108,11 @@ namespace Roedores
         {
             if (ascendente)
             {
-                roedores = roedores.OrderBy(r => r.peso).ToList();
+                roedores = roedores.OrderBy(r => r.Peso).ToList();
             }
             else
             {
-                roedores = roedores.OrderByDescending(r => r.peso).ToList();
+                roedores = roedores.OrderByDescending(r => r.Peso).ToList();
             }
         }
 

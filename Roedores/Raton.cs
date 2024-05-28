@@ -8,8 +8,8 @@ namespace Roedores
 {
     public class Raton : Roedor
     {
-        public double largoCola { get; set; }
-        public bool esAlbino { get; set; }
+        private double largoCola;
+        private bool esAlbino;
 
         public string TypeDiscriminator => "Raton";
 
@@ -34,7 +34,22 @@ namespace Roedores
             this.esAlbino = esAlbino;
         }
 
-        public Raton() { }
+        public Raton() {
+            this.largoCola = 0;
+            this.esAlbino = false;
+        }
+
+        public double LargoCola
+        {
+            get { return largoCola; }
+            set { largoCola = value;}
+        }
+
+        public bool EsAlbino
+        {
+            get { return esAlbino; }
+            set { esAlbino = value; }
+        }
 
         public override string obtenerSonido()
         {
@@ -51,8 +66,8 @@ namespace Roedores
         {
             StringBuilder sb = new StringBuilder();
             sb.Append(base.ToString()).Append(" - ");
-            sb.Append($"Largo de cola: {this.largoCola}cm - ");
-            sb.Append($"Albino: {this.esAlbino}");
+            sb.Append($"Largo de cola: {this.LargoCola}cm - ");
+            sb.Append($"Albino: {this.EsAlbino}");
             sb.Append($" /// Es: Ratón");
 
             return sb.ToString();
@@ -72,14 +87,14 @@ namespace Roedores
 
         public override int GetHashCode()
         {
-            return (base.GetHashCode(), largoCola, esAlbino).GetHashCode();
+            return (base.GetHashCode(), LargoCola, EsAlbino).GetHashCode();
         }
 
 
         public override string PesoIdeal()
         {
             string rta;
-            if (this.peso >= 25 && this.peso <= 50)
+            if (this.Peso >= 25 && this.Peso <= 50)
             {
                 rta = " ";
             }

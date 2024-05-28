@@ -17,11 +17,11 @@ namespace VeterinariaExoticos
 
             LoginRoedor loginForm = new LoginRoedor();
 
-            // Se muestra el formulario de login
             if (loginForm.ShowDialog() == DialogResult.OK)
             {
-                // Si el login es exitoso, se muestra el formulario principal
-                Application.Run(new VeterinariaCRUD());
+                string? nombreOperador = loginForm.Tag.ToString();
+
+                Application.Run(new VeterinariaCRUD(nombreOperador));
             }
             else
             {

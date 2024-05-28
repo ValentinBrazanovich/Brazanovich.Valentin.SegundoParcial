@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtContraseña = new TextBox();
+            txtClave = new TextBox();
             txtCorreo = new TextBox();
             btnIngresar = new Button();
             labelCorreo = new Label();
-            labelContraseña = new Label();
+            labelClave = new Label();
             SuspendLayout();
             // 
-            // txtContraseña
+            // txtClave
             // 
-            txtContraseña.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            txtContraseña.Location = new Point(50, 145);
-            txtContraseña.MaxLength = 20;
-            txtContraseña.Name = "txtContraseña";
-            txtContraseña.Size = new Size(200, 25);
-            txtContraseña.TabIndex = 0;
+            txtClave.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txtClave.Location = new Point(50, 145);
+            txtClave.MaxLength = 20;
+            txtClave.Name = "txtClave";
+            txtClave.Size = new Size(200, 25);
+            txtClave.TabIndex = 0;
             // 
             // txtCorreo
             // 
@@ -74,26 +74,26 @@
             labelCorreo.TabIndex = 3;
             labelCorreo.Text = "Correo";
             // 
-            // labelContraseña
+            // labelClave
             // 
-            labelContraseña.AutoSize = true;
-            labelContraseña.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelContraseña.Location = new Point(50, 120);
-            labelContraseña.Name = "labelContraseña";
-            labelContraseña.Size = new Size(89, 21);
-            labelContraseña.TabIndex = 4;
-            labelContraseña.Text = "Contraseña";
+            labelClave.AutoSize = true;
+            labelClave.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelClave.Location = new Point(50, 120);
+            labelClave.Name = "labelClave";
+            labelClave.Size = new Size(48, 21);
+            labelClave.TabIndex = 4;
+            labelClave.Text = "Clave";
             // 
             // LoginRoedor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(304, 280);
-            Controls.Add(labelContraseña);
+            Controls.Add(labelClave);
             Controls.Add(labelCorreo);
             Controls.Add(btnIngresar);
             Controls.Add(txtCorreo);
-            Controls.Add(txtContraseña);
+            Controls.Add(txtClave);
             Name = "LoginRoedor";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Inicio de sesión";
@@ -103,10 +103,10 @@
 
         #endregion
 
-        private TextBox txtContraseña;
+        private TextBox txtClave;
         private TextBox txtCorreo;
         private Button btnIngresar;
         private Label labelCorreo;
-        private Label labelContraseña;
+        private Label labelClave;
     }
 }

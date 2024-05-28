@@ -8,9 +8,9 @@ namespace Roedores
     [XmlInclude(typeof(Topo))]
     public abstract class Roedor
     {
-        public string nombre { get; set; }
-        public double peso { get; set; }
-        public ETipoAlimentacion tipoAlimentacion { get; set; }
+        private string nombre;
+        private double peso;
+        private ETipoAlimentacion tipoAlimentacion;
 
         /// <summary>
         /// Constructor de la clase padre Roedor
@@ -33,7 +33,29 @@ namespace Roedores
         {
         }
 
-        public Roedor() { }
+        public Roedor() {
+            this.nombre = "sin nombre";
+            this.peso = 0;
+            this.tipoAlimentacion = ETipoAlimentacion.Omnivoro;
+        }
+
+        public string Nombre
+        {
+            get { return nombre; }
+            set { nombre = value; }
+        }
+
+        public double Peso
+        {
+            get { return peso; }
+            set { peso = value; }
+        }
+
+        public ETipoAlimentacion TipoAlimentacion
+        {
+            get { return tipoAlimentacion; }
+            set {  tipoAlimentacion = value; }
+        }
 
         public abstract string obtenerSonido();
 
@@ -46,9 +68,9 @@ namespace Roedores
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append($"Nombre: {this.nombre} - ");
-            sb.Append($"Peso: {this.peso}g - ");
-            sb.Append($"Alimentación: {this.tipoAlimentacion}");
+            sb.Append($"Nombre: {Nombre} - ");
+            sb.Append($"Peso: {Peso}g - ");
+            sb.Append($"Alimentación: {TipoAlimentacion}");
 
             return sb.ToString();
         }
@@ -67,7 +89,7 @@ namespace Roedores
 
         public override int GetHashCode()
         {
-            return (nombre, peso, tipoAlimentacion).GetHashCode();
+            return (Nombre, Peso, TipoAlimentacion).GetHashCode();
         }
 
 
@@ -86,7 +108,7 @@ namespace Roedores
             }
 
             // Compara las propiedades relevantes para determinar la igualdad
-            return r.nombre == r1.nombre && r.peso == r1.peso && r.tipoAlimentacion == r1.tipoAlimentacion;
+            return r.Nombre == r1.Nombre && r.Peso == r1.Peso && r.TipoAlimentacion == r1.TipoAlimentacion;
         }
 
         public static bool operator !=(Roedor r, Roedor r1)

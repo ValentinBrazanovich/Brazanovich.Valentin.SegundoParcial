@@ -8,8 +8,8 @@ namespace Roedores
 {
     public class Topo : Roedor
     {
-        public double profundidadExcavada { get; set; }
-        public bool garrasAfiladas { get; set; }
+        private double profundidadExcavada;
+        private bool garrasAfiladas;
 
         public string TypeDiscriminator => "Topo";
 
@@ -34,7 +34,23 @@ namespace Roedores
             this.garrasAfiladas = garrasAfiladas;
         }
 
-        public Topo() { }
+        public Topo() {
+            this.profundidadExcavada = 0;
+            this.garrasAfiladas = false;
+        }
+
+        public double ProfundidadExcavada
+        {
+            get { return profundidadExcavada; }
+            set { profundidadExcavada = value; }
+        }
+
+        public bool GarrasAfiladas
+        {
+            get { return garrasAfiladas; }
+            set { garrasAfiladas = value; }
+        }
+
 
         public override string obtenerSonido()
         {
@@ -46,8 +62,8 @@ namespace Roedores
         {
             StringBuilder sb = new StringBuilder();
             sb.Append(base.ToString()).Append(" - ");
-            sb.Append($"Profundidad excavada: {this.profundidadExcavada}cm - ");
-            sb.Append($"Garras afiladas: {this.garrasAfiladas}");
+            sb.Append($"Profundidad excavada: {ProfundidadExcavada}cm - ");
+            sb.Append($"Garras afiladas: {GarrasAfiladas}");
             sb.Append($" /// Es: Topo");
 
             return sb.ToString();
@@ -67,14 +83,14 @@ namespace Roedores
 
         public override int GetHashCode()
         {
-            return (base.GetHashCode(), profundidadExcavada, garrasAfiladas).GetHashCode();
+            return (base.GetHashCode(), ProfundidadExcavada, GarrasAfiladas).GetHashCode();
         }
 
 
         public override string PesoIdeal()
         {
             string rta;
-            if (this.peso >= 50 && this.peso <= 80)
+            if (this.Peso >= 50 && this.Peso <= 80)
             {
                 rta = " ";
             }
