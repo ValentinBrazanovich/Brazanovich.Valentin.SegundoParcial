@@ -11,6 +11,9 @@ namespace VeterinariaExoticos
 {
     public class RoedorConverter : JsonConverter<Roedor>
     {
+        /// <summary>
+        /// Se crea un diccionario que mapea nombres de Tipo
+        /// </summary>
         private static Dictionary<string, Type> _typeMapping = new Dictionary<string, Type>
         {
             { nameof(Hamster), typeof(Hamster) },
@@ -18,6 +21,14 @@ namespace VeterinariaExoticos
             { nameof(Topo), typeof(Topo) }
         };
 
+        /// <summary>
+        /// Deserializa el tipo de Roedor para poder leerlo.
+        /// </summary>
+        /// <param name="reader"></param>
+        /// <param name="typeToConvert"></param>
+        /// <param name="options"></param>
+        /// <returns></returns>
+        /// <exception cref="JsonException"></exception>
         public override Roedor Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
             using (JsonDocument doc = JsonDocument.ParseValue(ref reader))
@@ -40,6 +51,12 @@ namespace VeterinariaExoticos
             }
         }
 
+        /// <summary>
+        /// Serializa el tipo de Roedor para poder guardarlo.
+        /// </summary>
+        /// <param name="writer"></param>
+        /// <param name="value"></param>
+        /// <param name="options"></param>
         public override void Write(Utf8JsonWriter writer, Roedor value, JsonSerializerOptions options)
         {
             var type = value.GetType();

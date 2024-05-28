@@ -166,7 +166,7 @@
             // 
             ascendenteToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { porNombreToolStripMenuItem, porPesoToolStripMenuItem });
             ascendenteToolStripMenuItem.Name = "ascendenteToolStripMenuItem";
-            ascendenteToolStripMenuItem.Size = new Size(180, 22);
+            ascendenteToolStripMenuItem.Size = new Size(142, 22);
             ascendenteToolStripMenuItem.Text = "Ascendente";
             // 
             // porNombreToolStripMenuItem
@@ -187,20 +187,20 @@
             // 
             descendenteToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { porNombreToolStripMenuItem1, porPesoToolStripMenuItem1 });
             descendenteToolStripMenuItem.Name = "descendenteToolStripMenuItem";
-            descendenteToolStripMenuItem.Size = new Size(180, 22);
+            descendenteToolStripMenuItem.Size = new Size(142, 22);
             descendenteToolStripMenuItem.Text = "Descendente";
             // 
             // porNombreToolStripMenuItem1
             // 
             porNombreToolStripMenuItem1.Name = "porNombreToolStripMenuItem1";
-            porNombreToolStripMenuItem1.Size = new Size(180, 22);
+            porNombreToolStripMenuItem1.Size = new Size(137, 22);
             porNombreToolStripMenuItem1.Text = "Por nombre";
             porNombreToolStripMenuItem1.Click += OrdenarDescendentePorNombreToolStripMenuItem_Click;
             // 
             // porPesoToolStripMenuItem1
             // 
             porPesoToolStripMenuItem1.Name = "porPesoToolStripMenuItem1";
-            porPesoToolStripMenuItem1.Size = new Size(180, 22);
+            porPesoToolStripMenuItem1.Size = new Size(137, 22);
             porPesoToolStripMenuItem1.Text = "Por peso";
             porPesoToolStripMenuItem1.Click += OrdenarDescendentePorPesoToolStripMenuItem_Click;
             // 
@@ -267,8 +267,8 @@
             // 
             toolStripStatusLabel1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new Size(63, 19);
-            toolStripStatusLabel1.Text = "Usuario: ";
+            toolStripStatusLabel1.Size = new Size(75, 19);
+            toolStripStatusLabel1.Text = "Operador: ";
             // 
             // toolStripStatusLabel2
             // 

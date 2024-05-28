@@ -3,6 +3,7 @@ using System.Xml.Serialization;
 
 namespace Roedores
 {
+    // Indico que que estas 3 clases son subtipos de la clase serializada o deserializada en XML.
     [XmlInclude(typeof(Hamster))]
     [XmlInclude(typeof(Raton))]
     [XmlInclude(typeof(Topo))]
@@ -12,12 +13,6 @@ namespace Roedores
         private double peso;
         private ETipoAlimentacion tipoAlimentacion;
 
-        /// <summary>
-        /// Constructor de la clase padre Roedor
-        /// </summary>
-        /// <param name="nombre"> El nombre del roedor</param>
-        /// <param name="peso"> El peso del roedor</param>
-        /// <param name="tipoAlimentacion"> El tipo de alimentacion del roedor</param>
         public Roedor(string nombre, double peso, ETipoAlimentacion tipoAlimentacion)
         {
             this.nombre = nombre;
@@ -93,19 +88,16 @@ namespace Roedores
 
         public static bool operator ==(Roedor r, Roedor r1)
         {
-            // Si ambos son nulos, o si son la misma instancia, entonces son iguales
             if (ReferenceEquals(r, r1))
             {
                 return true;
             }
 
-            // Si uno de ellos es nulo, o si son de diferentes tipos, entonces no son iguales
             if (ReferenceEquals(r, null) || ReferenceEquals(r1, null) || r.GetType() != r1.GetType())
             {
                 return false;
             }
 
-            // Compara las propiedades relevantes para determinar la igualdad
             return r.Nombre == r1.Nombre && r.Peso == r1.Peso && r.TipoAlimentacion == r1.TipoAlimentacion;
         }
 

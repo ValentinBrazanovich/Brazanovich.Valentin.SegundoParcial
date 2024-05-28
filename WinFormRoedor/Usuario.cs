@@ -16,7 +16,13 @@ namespace WinFormRoedor
         public string clave { get; set; }
         public string perfil { get; set; }
 
-
+        /// <summary>
+        /// Verifica que el archivo de usuarios exista o si es nulo
+        /// </summary>
+        /// <param name="filePath"></param>
+        /// <returns>Retorna la lista de usuarios en caso de existir el archivo y no ser nulo</returns>
+        /// <exception cref="InvalidOperationException"></exception>
+        /// <exception cref="FileNotFoundException"></exception>
         public static List<Usuario> VerificarUsuarios(string filePath)
         {
             if (File.Exists(filePath))
@@ -35,7 +41,6 @@ namespace WinFormRoedor
             {
                 throw new FileNotFoundException("El archivo de usuarios no existe.");
             }
-
         }
 
     }

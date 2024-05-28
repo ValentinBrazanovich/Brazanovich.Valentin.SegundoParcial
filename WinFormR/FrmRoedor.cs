@@ -16,7 +16,6 @@ namespace WinFormR
 
         private void FrmRoedor_Load(object sender, EventArgs e)
         {
-            // Llenar el ComboBox con los nombres de los valores del enumerado
             comboAlimentacion.DataSource = Enum.GetNames(typeof(ETipoAlimentacion));
         }
 
@@ -31,6 +30,11 @@ namespace WinFormR
             get { return CrearRoedor(); }
         }
 
+        /// <summary>
+        /// Carga los datos del Roedor (según sea el caso)
+        /// que posiblemente se vaya a .
+        /// </summary>
+        /// <param name="roedor"></param>
         public void CargarDatosRoedor(Roedor roedor)
         {
             txtNombre.Text = roedor.Nombre;
@@ -82,6 +86,10 @@ namespace WinFormR
             Close();
         }
 
+        /// <summary>
+        /// Actualiza los campos mostrados en el Form según sea
+        /// un Hámster, un Ratón o un Topo.
+        /// </summary>
         private void ActualizarCampos()
         {
             if (rdoHamster.Checked)
@@ -101,17 +109,33 @@ namespace WinFormR
             }
         }
 
+        /// <summary>
+        /// Verifica que los campos Nombre (padre) y el primer atributo (derivada)
+        /// no estén vacios.
+        /// </summary>
+        /// <returns></returns>
         private bool CamposValidos()
         {
             return !string.IsNullOrEmpty(txtNombre.Text) &&
                    !string.IsNullOrEmpty(txtAtributo.Text);
         }
 
+        /// <summary>
+        /// Cada vez que se aprete un RadioButton se cambian los campos según
+        /// el roedor que indique el mismo RadioButton.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
         {
             ActualizarCampos();
         }
 
+        /// <summary>
+        /// Crea una instancia de clase derivada de Roedor verificando los atributos que
+        /// se le intentan ingresar y, dependiendo del caso, se le asignan ciertos valores por defecto.
+        /// </summary>
+        /// <returns></returns>
         private Roedor CrearRoedor()
         {
             string nombre = txtNombre.Text;
@@ -146,6 +170,17 @@ namespace WinFormR
             return hamster;
         }
 
+        /// <summary>
+        /// Se crea una instancia de Hamster
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <param name="peso"></param>
+        /// <param name="pesoValido"></param>
+        /// <param name="tipoAlimentacion"></param>
+        /// <param name="atributoDouble"></param>
+        /// <param name="atributoValido"></param>
+        /// <param name="esNocturno"></param>
+        /// <returns> Retorna el Hamster con atributos dependiendo de los atributos validos </returns>
         private Hamster CrearHamster(string nombre, double peso, bool pesoValido, ETipoAlimentacion tipoAlimentacion,
                                         double atributoDouble, bool atributoValido, bool esNocturno)
         {
@@ -167,6 +202,17 @@ namespace WinFormR
             return hamster;
         }
 
+        /// <summary>
+        /// Se crea una instancia de Raton
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <param name="peso"></param>
+        /// <param name="pesoValido"></param>
+        /// <param name="tipoAlimentacion"></param>
+        /// <param name="atributoDouble"></param>
+        /// <param name="atributoValido"></param>
+        /// <param name="esAlbino"></param>
+        /// <returns> Retorna el Raton con atributos dependiendo de los atributos validos</returns>
         private Raton CrearRaton(string nombre, double peso, bool pesoValido, ETipoAlimentacion tipoAlimentacion,
                                     double atributoDouble, bool atributoValido, bool esAlbino)
         {
@@ -188,6 +234,17 @@ namespace WinFormR
             return raton;
         }
 
+        /// <summary>
+        /// Se crea una instancia de Topo
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <param name="peso"></param>
+        /// <param name="pesoValido"></param>
+        /// <param name="tipoAlimentacion"></param>
+        /// <param name="atributoDouble"></param>
+        /// <param name="atributoValido"></param>
+        /// <param name="garrasAfiladas"></param>
+        /// <returns> Retorna el Topo con atributos dependiendo de los atributos validos</returns>
         private Topo CrearTopo(string nombre, double peso, bool pesoValido, ETipoAlimentacion tipoAlimentacion,
                                     double atributoDouble, bool atributoValido, bool garrasAfiladas)
         {

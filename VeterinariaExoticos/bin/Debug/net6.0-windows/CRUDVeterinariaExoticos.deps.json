@@ -1,0 +1,88 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CRUDVeterinariaExoticos/1.0.0": {
+        "dependencies": {
+          "Opciones": "1.0.0",
+          "Roedores": "1.0.0",
+          "WinFormLogin": "1.0.0",
+          "WinFormRoedor": "1.0.0"
+        },
+        "runtime": {
+          "CRUDVeterinariaExoticos.dll": {}
+        }
+      },
+      "Opciones/1.0.0": {
+        "dependencies": {
+          "Roedores": "1.0.0"
+        },
+        "runtime": {
+          "Opciones.dll": {}
+        }
+      },
+      "Roedores/1.0.0": {
+        "runtime": {
+          "Roedores.dll": {}
+        }
+      },
+      "WinFormLogin/1.0.0": {
+        "dependencies": {
+          "WinFormVisualizador": "1.0.0"
+        },
+        "runtime": {
+          "WinFormLogin.dll": {}
+        }
+      },
+      "WinFormRoedor/1.0.0": {
+        "dependencies": {
+          "Roedores": "1.0.0"
+        },
+        "runtime": {
+          "WinFormRoedor.dll": {}
+        }
+      },
+      "WinFormVisualizador/1.0.0": {
+        "runtime": {
+          "WinFormVisualizador.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CRUDVeterinariaExoticos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Opciones/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roedores/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WinFormLogin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WinFormRoedor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WinFormVisualizador/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

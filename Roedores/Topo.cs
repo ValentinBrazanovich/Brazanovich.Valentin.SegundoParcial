@@ -11,7 +11,7 @@ namespace Roedores
         private double profundidadExcavada;
         private bool garrasAfiladas;
 
-        public string TypeDiscriminator => "Topo";
+        public static string TypeDiscriminator => "Topo";
 
         public Topo(string nombre, double peso, ETipoAlimentacion tipoAlimetacion, double profundidadExcavada, bool garrasAfiladas)
             : base(nombre, peso, tipoAlimetacion)
@@ -90,7 +90,10 @@ namespace Roedores
             return (base.GetHashCode(), ProfundidadExcavada, GarrasAfiladas).GetHashCode();
         }
 
-
+        /// <summary>
+        /// Determina si el Topo está en su peso ideal dependiendo de su peso.
+        /// </summary>
+        /// <returns>Retorna la cadena que muestra si está o no en su peso ideal y un estimativo</returns>
         public override string PesoIdeal()
         {
             string rta;

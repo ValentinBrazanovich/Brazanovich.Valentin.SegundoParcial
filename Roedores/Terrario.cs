@@ -12,7 +12,7 @@ namespace Roedores
 
         /// <summary>
         /// En el metodo constructor se declara la lista roedores que contendra instancias
-        /// de la clase Roedor y/o sus clases derivadas
+        /// de las clases derivadas de Roedor.
         /// </summary>
         public Terrario()
         {
@@ -91,7 +91,11 @@ namespace Roedores
             return roedores.GetHashCode();
         }
 
-
+        /// <summary>
+        /// Se ordena la lista por nombres de manera ascendente o descendente
+        /// (según indique el parametro)
+        /// </summary>
+        /// <param name="ascendente"> Indica si se ordenara de forma ascendente o descendente</param>
         public void OrdenarPorNombre(bool ascendente)
         {
             if (ascendente)
@@ -104,6 +108,12 @@ namespace Roedores
             }
         }
 
+
+        /// <summary>
+        /// Se ordena la lista por peso de manera ascendente o descendente
+        /// (según indique el parametro)
+        /// </summary>
+        /// <param name="ascendente"> Indica si se ordenara de forma ascendente o descendente</param>
         public void OrdenarPorPeso(bool ascendente)
         {
             if (ascendente)
@@ -115,7 +125,6 @@ namespace Roedores
                 roedores = roedores.OrderByDescending(r => r.Peso).ToList();
             }
         }
-
 
     }
 }

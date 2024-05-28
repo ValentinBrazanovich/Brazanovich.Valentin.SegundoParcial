@@ -56,7 +56,11 @@ namespace Roedores
             return "Hiss!";
         }
 
-
+        /// <summary>
+        /// Sobrecarga del método ToString para la clase actual. Se implementa StringBuilder y
+        /// el método sobrecargado de la clase padre.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -85,7 +89,10 @@ namespace Roedores
             return (base.GetHashCode(), Longitud, EsNocturno).GetHashCode();
         }
 
-
+        /// <summary>
+        /// Determina si el peso del Hámster es el ideal o no dependiendo de su peso y longitud.
+        /// </summary>
+        /// <returns>La cadena que dice si el Hámster está en su peso ideal y un estimativo</returns>
         public override string PesoIdeal()
         {
             string rta;

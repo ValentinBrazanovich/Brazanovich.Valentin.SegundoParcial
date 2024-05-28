@@ -97,7 +97,7 @@
             btnRegistro.TabIndex = 5;
             btnRegistro.Text = "Registro";
             btnRegistro.UseVisualStyleBackColor = true;
-            btnRegistro.Click += btnRegistro_Click;
+            btnRegistro.Click += BtnRegistro_Click;
             // 
             // LoginRoedor
             // 

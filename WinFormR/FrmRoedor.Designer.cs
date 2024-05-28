@@ -98,9 +98,11 @@
             // labelPeso
             // 
             labelPeso.AutoSize = true;
-            labelPeso.Location = new Point(30, 100);
+            labelPeso.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelPeso.ForeColor = SystemColors.MenuHighlight;
+            labelPeso.Location = new Point(30, 94);
             labelPeso.Name = "labelPeso";
-            labelPeso.Size = new Size(45, 15);
+            labelPeso.Size = new Size(60, 21);
             labelPeso.TabIndex = 8;
             labelPeso.Text = "Peso **";
             // 
@@ -108,6 +110,7 @@
             // 
             txtAtributo.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             txtAtributo.Location = new Point(240, 48);
+            txtAtributo.MaxLength = 5;
             txtAtributo.Name = "txtAtributo";
             txtAtributo.Size = new Size(150, 25);
             txtAtributo.TabIndex = 5;
@@ -115,9 +118,11 @@
             // labelAtributo
             // 
             labelAtributo.AutoSize = true;
-            labelAtributo.Location = new Point(240, 30);
+            labelAtributo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelAtributo.ForeColor = Color.Red;
+            labelAtributo.Location = new Point(240, 23);
             labelAtributo.Name = "labelAtributo";
-            labelAtributo.Size = new Size(63, 15);
+            labelAtributo.Size = new Size(83, 21);
             labelAtributo.TabIndex = 9;
             labelAtributo.Text = "Longitud *";
             // 
@@ -125,6 +130,7 @@
             // 
             txtPeso.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             txtPeso.Location = new Point(30, 118);
+            txtPeso.MaxLength = 5;
             txtPeso.Name = "txtPeso";
             txtPeso.Size = new Size(150, 25);
             txtPeso.TabIndex = 2;
@@ -132,28 +138,31 @@
             // labelAlimentacion
             // 
             labelAlimentacion.AutoSize = true;
-            labelAlimentacion.Location = new Point(30, 170);
+            labelAlimentacion.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            labelAlimentacion.Location = new Point(30, 166);
             labelAlimentacion.Name = "labelAlimentacion";
-            labelAlimentacion.Size = new Size(128, 15);
+            labelAlimentacion.Size = new Size(137, 19);
             labelAlimentacion.TabIndex = 6;
-            labelAlimentacion.Text = "Tipo de Alimentacion *";
+            labelAlimentacion.Text = "Tipo de Alimentacion";
             // 
             // labelNombre
             // 
             labelNombre.AutoSize = true;
-            labelNombre.Location = new Point(30, 30);
+            labelNombre.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelNombre.ForeColor = Color.Red;
+            labelNombre.Location = new Point(30, 23);
             labelNombre.Name = "labelNombre";
-            labelNombre.Size = new Size(59, 15);
+            labelNombre.Size = new Size(79, 21);
             labelNombre.TabIndex = 0;
             labelNombre.Text = "Nombre *";
             // 
             // checkAtributo
             // 
             checkAtributo.AutoSize = true;
-            checkAtributo.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            checkAtributo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             checkAtributo.Location = new Point(240, 118);
             checkAtributo.Name = "checkAtributo";
-            checkAtributo.Size = new Size(101, 23);
+            checkAtributo.Size = new Size(111, 25);
             checkAtributo.TabIndex = 14;
             checkAtributo.Text = "Es nocturno";
             checkAtributo.UseVisualStyleBackColor = true;

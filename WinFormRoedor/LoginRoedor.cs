@@ -15,6 +15,9 @@ namespace WinFormRoedor
             this.MaximizeBox = false;
         }
 
+        /// <summary>
+        /// Carga los usuarios de MOCK_DATA.json en una lista de usuarios.
+        /// </summary>
         private void CargarUsuarios()
         {
             try
@@ -30,7 +33,11 @@ namespace WinFormRoedor
             }
         }
 
-        private void GuardarLogUsuario(Usuario usuario)
+        /// <summary>
+        /// Guarda en usuarios.log los datos del usuario que ingresó.
+        /// </summary>
+        /// <param name="usuario">El usuario que ingresó</param>
+        private static void GuardarLogUsuario(Usuario usuario)
         {
             string filePath = "./usuarios.log";
 
@@ -52,6 +59,12 @@ namespace WinFormRoedor
             }
         }
 
+        /// <summary>
+        /// Al hacer click en el btnIngresar, se busca el primer objeto en la lista que contenga
+        /// el correo y la clave ingresada en txtCorreo y txtClave. Luego guarda los datos del usuario ingresado.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnIngresar_Click(object sender, EventArgs e)
         {
             string correo = txtCorreo.Text;
@@ -72,7 +85,12 @@ namespace WinFormRoedor
             }
         }
 
-        private void btnRegistro_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Abre un Form con el registro de cada ingreso exitoso.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnRegistro_Click(object sender, EventArgs e)
         {
             FrmVisualizador visualizador = new FrmVisualizador();
             visualizador.ShowDialog();

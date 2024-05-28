@@ -12,6 +12,9 @@ namespace WinFormVisualizador
             MostrarContenidoLog();
         }
 
+        /// <summary>
+        /// Muestra el contenido de usuarios.log en el richTextBox del Form.
+        /// </summary>
         private void MostrarContenidoLog()
         {
             string filePath = "./usuarios.log";

@@ -19,6 +19,11 @@ namespace VeterinariaExoticos
             this.nombreOperador = nombreOperador;
         }
 
+        /// <summary>
+        /// Muestra en el toolStripStatus el nombre del usuario que ha ingresado y la fecha.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void VeterinariaCRUD_Load(object sender, EventArgs e)
         {
             toolStripStatusLabel1.Text = "Operador: " + nombreOperador;
@@ -27,12 +32,14 @@ namespace VeterinariaExoticos
             toolStripStatusLabel2.Text = "Fecha: " + fechaActual;
         }
 
-
+        /// <summary>
+        /// Agrega un nuevo Roedor a la lista si es que no existe.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
-            //Se crea la instancia del formulario frmRoedor
             FrmRoedor frmRoedor = new FrmRoedor();
-            //Se muestra ese formulario de forma modal
             DialogResult result = frmRoedor.ShowDialog();
 
             if (result == DialogResult.OK)
@@ -51,6 +58,11 @@ namespace VeterinariaExoticos
             }
         }
 
+        /// <summary>
+        /// Modifica el Roedor seleccionado de la lista si no coincide con uno ya existente.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnModificar_Click(object sender, EventArgs e)
         {
             if (lstRoedores.SelectedIndex != -1)
@@ -64,9 +76,17 @@ namespace VeterinariaExoticos
 
                 if (result == DialogResult.OK)
                 {
-                    terrario.Roedores[lstRoedores.SelectedIndex] = frmRoedor.RoedorDelFormulario;
+                    Roedor roedorMod = frmRoedor.RoedorDelFormulario;
 
-                    ActualizarVisor();
+                    if (terrario.Roedores.Contains(roedorMod))
+                    {
+                        MensajeError("El roedor modificado ya existe en la lista.");
+                    }
+                    else
+                    {
+                        terrario.Roedores[lstRoedores.SelectedIndex] = roedorMod;
+                        ActualizarVisor();
+                    }
                 }
             }
             else
@@ -75,6 +95,11 @@ namespace VeterinariaExoticos
             }
         }
 
+        /// <summary>
+        /// Elimina el Roedor seleccionado de la lista
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
             if (lstRoedores.SelectedIndex != -1)
@@ -91,12 +116,19 @@ namespace VeterinariaExoticos
             }
         }
 
+        /// <summary>
+        /// Muestra un mensaje de error personalizado.
+        /// </summary>
+        /// <param name="mensaje"> El error que se quiere mostrar</param>
         private static void MensajeError(string mensaje)
         {
             MessageBox.Show(mensaje, "Error",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        /// <summary>
+        /// Actualiza el visor para poder ver sus elementos correctamente.
+        /// </summary>
         private void ActualizarVisor()
         {
             lstRoedores.Items.Clear();
@@ -106,6 +138,10 @@ namespace VeterinariaExoticos
             }
         }
 
+        /// <summary>
+        /// Serializa la lista de Roedores en un archivo .JSON ingresando
+        /// manualmente la ubicación.
+        /// </summary>
         private void SerializarJSON()
         {
             try
@@ -143,6 +179,10 @@ namespace VeterinariaExoticos
             }
         }
 
+        /// <summary>
+        /// Deserializa el archivo JSON indicado manualmente solo si contiene
+        /// instancias de Roedor.
+        /// </summary>
         private void DeserializarJSON()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -154,14 +194,12 @@ namespace VeterinariaExoticos
             {
                 string json = File.ReadAllText(openFileDialog.FileName);
 
-                // Verificar si el JSON contiene datos de roedores
                 if (string.IsNullOrEmpty(json))
                 {
                     MensajeError("El archivo seleccionado está vacío.");
                     return;
                 }
 
-                // Deserializar el JSON solo si contiene datos de roedores
                 JsonSerializerOptions options = new JsonSerializerOptions
                 {
                     Converters = { new RoedorConverter() }
@@ -187,6 +225,10 @@ namespace VeterinariaExoticos
             }
         }
 
+        /// <summary>
+        /// Serializa la lista de Roedores en un archivo .XML ingresando
+        /// manualmente la ubicación.
+        /// </summary>
         private void SerializarXML()
         {
             try
@@ -222,6 +264,10 @@ namespace VeterinariaExoticos
             }
         }
 
+        /// <summary>
+        /// Deserializa el archivo .XML indicado manualmente solo si contiene
+        /// instancias de Roedor.
+        /// </summary>
         private void DeserializarXML()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -276,6 +322,12 @@ namespace VeterinariaExoticos
             ActualizarVisor();
         }
 
+        /// <summary>
+        /// Cambia el color del item de la lista dependiendo si pertenece a
+        /// un Hamster, un Raton o un Topo.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LstRoedores_DrawItem(object sender, DrawItemEventArgs e)
         {
             e.DrawBackground();
@@ -298,7 +350,6 @@ namespace VeterinariaExoticos
                     color = Color.Green;
                 }
 
-                // Dibuja el texto del ítem con el color especificado
                 e.Graphics.DrawString(roedor.ToString(), e.Font, new SolidBrush(color), e.Bounds);
             }
             e.DrawFocusRectangle();
@@ -333,6 +384,12 @@ namespace VeterinariaExoticos
             ActualizarVisor();
         }
 
+        /// <summary>
+        /// Al intentar cerrar el Form principal se instancia el Form FrmSalir
+        /// preguntando si se desea salir o no.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void VeterinariaCRUD_FormClosing(object sender, FormClosingEventArgs e)
         {
             Roedor roedorSeleccionado = (Roedor)lstRoedores.SelectedItem;
@@ -352,6 +409,12 @@ namespace VeterinariaExoticos
             }
         }
 
+        /// <summary>
+        /// Al apretar el BtnOpciones, se muestra una serie de opciones dependiendo
+        /// del item que se haya seleccionado de la lista.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnOpciones_Click(object sender, EventArgs e)
         {
             if (lstRoedores.SelectedIndex != -1)

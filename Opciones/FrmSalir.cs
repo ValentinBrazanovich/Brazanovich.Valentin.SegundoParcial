@@ -35,7 +35,7 @@ namespace Opciones
 
         /// <summary>
         /// No se hace override porque primero debe hacer el sonido del
-        /// ultimo animal si se ha seleccionado) y luego cerrar el programa.
+        /// último animal (si se ha seleccionado) y luego cerrar el programa.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

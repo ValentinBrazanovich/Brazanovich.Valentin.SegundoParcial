@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roedores", "Roedores\Roedores.csproj", "{C9F62556-821C-4193-BDA0-346579D9D7C7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VeterinariaExoticos", "VeterinariaExoticos\VeterinariaExoticos.csproj", "{86278CB9-7E70-4D96-A51B-34DD0E166571}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUDVeterinariaExoticos", "VeterinariaExoticos\CRUDVeterinariaExoticos.csproj", "{86278CB9-7E70-4D96-A51B-34DD0E166571}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormLogin", "WinFormRoedor\WinFormLogin.csproj", "{C292DE3C-D839-493B-9C6C-0EC86BCDCFAB}"
 EndProject
@@ -18,7 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opciones", "Opciones\Opciones.csproj", "{700C0E4D-9756-4FC7-ABEF-45D454A3AD29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormVisualizador", "WinFormVisualizador\WinFormVisualizador.csproj", "{53722358-F83E-4A48-A746-20F40CA21035}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormVisualizador", "WinFormVisualizador\WinFormVisualizador.csproj", "{53722358-F83E-4A48-A746-20F40CA21035}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

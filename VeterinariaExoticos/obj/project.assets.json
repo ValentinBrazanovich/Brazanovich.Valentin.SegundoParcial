@@ -116,9 +116,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\VeterinariaExoticos.csproj",
-      "projectName": "VeterinariaExoticos",
-      "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\VeterinariaExoticos.csproj",
+      "projectUniqueName": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\CRUDVeterinariaExoticos.csproj",
+      "projectName": "CRUDVeterinariaExoticos",
+      "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\CRUDVeterinariaExoticos.csproj",
       "packagesPath": "C:\\Users\\Joshua\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\obj\\",
       "projectStyle": "PackageReference",

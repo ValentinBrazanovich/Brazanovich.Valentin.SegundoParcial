@@ -90,7 +90,10 @@ namespace Roedores
             return (base.GetHashCode(), LargoCola, EsAlbino).GetHashCode();
         }
 
-
+        /// <summary>
+        /// Determina si el peso del Ratón es el ideal teniendo en cuenta su peso
+        /// </summary>
+        /// <returns>Retorna si está o no en su peso ideal y un estimativo</returns>
         public override string PesoIdeal()
         {
             string rta;
