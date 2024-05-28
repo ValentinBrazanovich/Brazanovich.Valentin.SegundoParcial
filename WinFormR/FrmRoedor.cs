@@ -60,7 +60,6 @@ namespace WinFormR
         {
             if (CamposValidos())
             {
-                //CrearRoedor();
                 DialogResult = DialogResult.OK;
                 Close();
             }
@@ -144,7 +143,7 @@ namespace WinFormR
         private Hamster CrearHamster(string nombre, double peso, bool pesoValido, ETipoAlimentacion tipoAlimentacion,
                                         double atributoDouble, bool atributoValido, bool esNocturno)
         {
-            if (pesoValido && peso >= 0.020 && peso <= 0.180 && atributoValido)
+            if (pesoValido && peso >= 20 && peso <= 180 && atributoValido)
             {
                 hamster = new Hamster(nombre, peso, tipoAlimentacion, atributoDouble, esNocturno);
             }
@@ -163,7 +162,7 @@ namespace WinFormR
         private Raton CrearRaton(string nombre, double peso, bool pesoValido, ETipoAlimentacion tipoAlimentacion,
                                     double atributoDouble, bool atributoValido, bool esAlbino)
         {
-            if (pesoValido && peso >= 0.015 && peso <= 0.080 && atributoValido)
+            if (pesoValido && peso >= 15 && peso <= 80 && atributoValido)
             {
                 raton = new Raton(nombre, peso, tipoAlimentacion, atributoDouble, esAlbino);
             }
@@ -182,7 +181,7 @@ namespace WinFormR
         private Topo CrearTopo(string nombre, double peso, bool pesoValido, ETipoAlimentacion tipoAlimentacion,
                                     double atributoDouble, bool atributoValido, bool garrasAfiladas)
         {
-            if (pesoValido && peso >= 0.030 && peso <= 0.110 && atributoValido)
+            if (pesoValido && peso >= 30 && peso <= 110 && atributoValido)
             {
                 topo = new Topo(nombre, peso, tipoAlimentacion, atributoDouble, garrasAfiladas);
             }

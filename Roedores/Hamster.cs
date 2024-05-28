@@ -8,9 +8,10 @@ namespace Roedores
 {
     public class Hamster : Roedor
     {
-        public double longitud;
-        public bool esNocturno;
+        public double longitud { get; set; }
+        public bool esNocturno { get; set; }
 
+        public string TypeDiscriminator => "Hamster";
 
         public Hamster(string nombre, double peso, ETipoAlimentacion tipoAlimentacion, double longitud, bool esNocturno)
             : base(nombre, peso, tipoAlimentacion)
@@ -33,6 +34,7 @@ namespace Roedores
             this.esNocturno = esNocturno;
         }
 
+        public Hamster() { }
 
         public override string obtenerSonido()
         {
@@ -46,6 +48,7 @@ namespace Roedores
             sb.Append(base.ToString()).Append(" - ");
             sb.Append($"Longitud: {this.longitud}cm - ");
             sb.Append($"Nocturno: {this.esNocturno}");
+            sb.Append($" /// Es: Hámster");
 
             return sb.ToString();
         }
@@ -71,8 +74,8 @@ namespace Roedores
         public override string PesoIdeal()
         {
             string rta;
-            if (((this.peso >= 0.045 && this.peso <= 0.065) && (this.longitud >= 6.0 && this.longitud <= 10.0)) ||
-               ((this.peso >= 0.085 && this.peso <= 0.150) && (this.longitud >= 10.0 && this.longitud <= 18.0)))
+            if (((this.peso >= 45 && this.peso <= 65) && (this.longitud >= 6.0 && this.longitud <= 10.0)) ||
+               ((this.peso >= 85 && this.peso <= 150) && (this.longitud >= 10.0 && this.longitud <= 18.0)))
             {
                 rta = " ";
 

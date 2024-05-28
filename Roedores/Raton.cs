@@ -8,9 +8,10 @@ namespace Roedores
 {
     public class Raton : Roedor
     {
-        public double largoCola;
-        public bool esAlbino;
+        public double largoCola { get; set; }
+        public bool esAlbino { get; set; }
 
+        public string TypeDiscriminator => "Raton";
 
         public Raton(string nombre, double peso, ETipoAlimentacion tipoAlimentacion, double largoCola, bool esAlbino)
             : base(nombre, peso, tipoAlimentacion)
@@ -33,6 +34,7 @@ namespace Roedores
             this.esAlbino = esAlbino;
         }
 
+        public Raton() { }
 
         public override string obtenerSonido()
         {
@@ -51,6 +53,7 @@ namespace Roedores
             sb.Append(base.ToString()).Append(" - ");
             sb.Append($"Largo de cola: {this.largoCola}cm - ");
             sb.Append($"Albino: {this.esAlbino}");
+            sb.Append($" /// Es: Ratón");
 
             return sb.ToString();
         }
@@ -76,7 +79,7 @@ namespace Roedores
         public override string PesoIdeal()
         {
             string rta;
-            if (this.peso >= 0.025 && this.peso <= 0.050)
+            if (this.peso >= 25 && this.peso <= 50)
             {
                 rta = " ";
             }

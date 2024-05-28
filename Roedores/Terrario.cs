@@ -22,6 +22,7 @@ namespace Roedores
         public List<Roedor> Roedores
         {
             get { return roedores; }
+            set { roedores = value; }
         }
 
         /// <summary>

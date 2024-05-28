@@ -1,14 +1,16 @@
 ﻿using System.Text;
+using System.Xml.Serialization;
 
 namespace Roedores
 {
+    [XmlInclude(typeof(Hamster))]
+    [XmlInclude(typeof(Raton))]
+    [XmlInclude(typeof(Topo))]
     public abstract class Roedor
     {
-        public string nombre;
-        public double peso;
-        public ETipoAlimentacion tipoAlimentacion;
-
-        //public protected abstract List<Pasajero> Pasajeros {  get; }
+        public string nombre { get; set; }
+        public double peso { get; set; }
+        public ETipoAlimentacion tipoAlimentacion { get; set; }
 
         /// <summary>
         /// Constructor de la clase padre Roedor
@@ -24,13 +26,14 @@ namespace Roedores
         }
 
         public Roedor(string nombre, ETipoAlimentacion tipoAlimentacion) 
-            : this(nombre, 0.050, tipoAlimentacion)
+            : this(nombre, 50, tipoAlimentacion)
         {
         }
-        public Roedor(string nombre) : this(nombre, 0.050, ETipoAlimentacion.Omnivoro)
+        public Roedor(string nombre) : this(nombre, 50, ETipoAlimentacion.Omnivoro)
         {
         }
 
+        public Roedor() { }
 
         public abstract string obtenerSonido();
 
@@ -70,12 +73,20 @@ namespace Roedores
 
         public static bool operator ==(Roedor r, Roedor r1)
         {
-            if (r.nombre == r1.nombre && r.peso == r1.peso && r.tipoAlimentacion == r1.tipoAlimentacion)
+            // Si ambos son nulos, o si son la misma instancia, entonces son iguales
+            if (ReferenceEquals(r, r1))
             {
                 return true;
             }
 
-            return r.Equals(r1);
+            // Si uno de ellos es nulo, o si son de diferentes tipos, entonces no son iguales
+            if (ReferenceEquals(r, null) || ReferenceEquals(r1, null) || r.GetType() != r1.GetType())
+            {
+                return false;
+            }
+
+            // Compara las propiedades relevantes para determinar la igualdad
+            return r.nombre == r1.nombre && r.peso == r1.peso && r.tipoAlimentacion == r1.tipoAlimentacion;
         }
 
         public static bool operator !=(Roedor r, Roedor r1)

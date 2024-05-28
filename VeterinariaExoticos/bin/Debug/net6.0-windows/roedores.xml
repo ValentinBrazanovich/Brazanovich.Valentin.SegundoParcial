@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfRoedor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Roedor xsi:type="Hamster">
+    <nombre>a</nombre>
+    <peso>50</peso>
+    <tipoAlimentacion>Omnivoro</tipoAlimentacion>
+    <longitud>8</longitud>
+    <esNocturno>false</esNocturno>
+  </Roedor>
+  <Roedor xsi:type="Raton">
+    <nombre>a</nombre>
+    <peso>50</peso>
+    <tipoAlimentacion>Carnivoro</tipoAlimentacion>
+    <largoCola>8</largoCola>
+    <esAlbino>false</esAlbino>
+  </Roedor>
+</ArrayOfRoedor>

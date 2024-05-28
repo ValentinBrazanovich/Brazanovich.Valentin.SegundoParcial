@@ -8,13 +8,10 @@ namespace Roedores
 {
     public class Topo : Roedor
     {
-        public double profundidadExcavada;
-        public bool garrasAfiladas;
+        public double profundidadExcavada { get; set; }
+        public bool garrasAfiladas { get; set; }
 
-
-        public double largoCola;
-        public bool esAlbino;
-
+        public string TypeDiscriminator => "Topo";
 
         public Topo(string nombre, double peso, ETipoAlimentacion tipoAlimetacion, double profundidadExcavada, bool garrasAfiladas)
             : base(nombre, peso, tipoAlimetacion)
@@ -37,6 +34,7 @@ namespace Roedores
             this.garrasAfiladas = garrasAfiladas;
         }
 
+        public Topo() { }
 
         public override string obtenerSonido()
         {
@@ -50,6 +48,7 @@ namespace Roedores
             sb.Append(base.ToString()).Append(" - ");
             sb.Append($"Profundidad excavada: {this.profundidadExcavada}cm - ");
             sb.Append($"Garras afiladas: {this.garrasAfiladas}");
+            sb.Append($" /// Es: Topo");
 
             return sb.ToString();
         }
@@ -75,7 +74,7 @@ namespace Roedores
         public override string PesoIdeal()
         {
             string rta;
-            if (this.peso >= 0.050 && this.peso <= 0.080)
+            if (this.peso >= 50 && this.peso <= 80)
             {
                 rta = " ";
             }

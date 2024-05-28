@@ -232,6 +232,7 @@
             Controls.Add(txtPeso);
             Controls.Add(txtNombre);
             Controls.Add(labelNombre);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "FrmRoedor";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Roedor";

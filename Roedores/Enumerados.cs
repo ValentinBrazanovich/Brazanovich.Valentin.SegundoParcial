@@ -1,6 +1,6 @@
 ﻿public enum ETipoAlimentacion
 {
-    Omnivoro,
     Herbivoro,
-    Insectivoro
+    Omnivoro,
+    Carnivoro
 }
