@@ -52,11 +52,15 @@ namespace Roedores
         }
 
 
-        public override string obtenerSonido()
+        public override string ObtenerSonido()
         {
             return "Gruñido";
         }
 
+        public override string MoverCola()
+        {
+            return "El topo mueve su pesada cola";
+        }
 
         public override string ToString()
         {

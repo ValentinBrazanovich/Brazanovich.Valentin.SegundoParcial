@@ -8,12 +8,21 @@
     ".NETCoreApp,Version=v6.0": {
       "VeterinariaExoticos/1.0.0": {
         "dependencies": {
+          "Opciones": "1.0.0",
           "Roedores": "1.0.0",
           "WinFormLogin": "1.0.0",
           "WinFormR": "1.0.0"
         },
         "runtime": {
           "VeterinariaExoticos.dll": {}
+        }
+      },
+      "Opciones/1.0.0": {
+        "dependencies": {
+          "Roedores": "1.0.0"
+        },
+        "runtime": {
+          "Opciones.dll": {}
         }
       },
       "Roedores/1.0.0": {
@@ -38,6 +47,11 @@
   },
   "libraries": {
     "VeterinariaExoticos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Opciones/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

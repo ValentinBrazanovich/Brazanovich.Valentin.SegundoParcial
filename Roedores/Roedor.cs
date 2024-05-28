@@ -57,9 +57,7 @@ namespace Roedores
             set {  tipoAlimentacion = value; }
         }
 
-        public abstract string obtenerSonido();
-
-        public virtual string moverCola()
+        public virtual string MoverCola()
         {
             return "El roedor mueve su pequeña cola";
         }
@@ -116,7 +114,7 @@ namespace Roedores
             return !(r == r1);
         }
 
-
+        public abstract string ObtenerSonido();
         public abstract string PesoIdeal();
 
     }

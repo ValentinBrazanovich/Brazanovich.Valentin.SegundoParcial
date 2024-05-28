@@ -11,7 +11,7 @@ namespace Roedores
         private double longitud;
         private bool esNocturno;
 
-        public string TypeDiscriminator => "Hamster";
+        public static string TypeDiscriminator => "Hamster";
 
         public Hamster(string nombre, double peso, ETipoAlimentacion tipoAlimentacion, double longitud, bool esNocturno)
             : base(nombre, peso, tipoAlimentacion)
@@ -51,7 +51,7 @@ namespace Roedores
             set { esNocturno = value;}
         }
 
-        public override string obtenerSonido()
+        public override string ObtenerSonido()
         {
             return "Hiss!";
         }

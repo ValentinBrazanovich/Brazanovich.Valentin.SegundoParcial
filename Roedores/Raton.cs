@@ -11,7 +11,7 @@ namespace Roedores
         private double largoCola;
         private bool esAlbino;
 
-        public string TypeDiscriminator => "Raton";
+        public static string TypeDiscriminator => "Raton";
 
         public Raton(string nombre, double peso, ETipoAlimentacion tipoAlimentacion, double largoCola, bool esAlbino)
             : base(nombre, peso, tipoAlimentacion)
@@ -51,12 +51,12 @@ namespace Roedores
             set { esAlbino = value; }
         }
 
-        public override string obtenerSonido()
+        public override string ObtenerSonido()
         {
             return "Squeak";
         }
 
-        public override string moverCola()
+        public override string MoverCola()
         {
             return "El ratón mueve su larga cola";
         }

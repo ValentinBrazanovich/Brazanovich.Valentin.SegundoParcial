@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{700C0E4D-9756-4FC7-ABEF-45D454A3AD29}|Opciones\\Opciones.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\opciones\\frmopciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{700C0E4D-9756-4FC7-ABEF-45D454A3AD29}|Opciones\\Opciones.csproj|solutionrelative:opciones\\frmopciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{700C0E4D-9756-4FC7-ABEF-45D454A3AD29}|Opciones\\Opciones.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\opciones\\frmopciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{700C0E4D-9756-4FC7-ABEF-45D454A3AD29}|Opciones\\Opciones.csproj|solutionrelative:opciones\\frmopciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{86278CB9-7E70-4D96-A51B-34DD0E166571}|VeterinariaExoticos\\VeterinariaExoticos.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\veterinariaexoticos\\veterinariacrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{86278CB9-7E70-4D96-A51B-34DD0E166571}|VeterinariaExoticos\\VeterinariaExoticos.csproj|solutionrelative:veterinariaexoticos\\veterinariacrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86278CB9-7E70-4D96-A51B-34DD0E166571}|VeterinariaExoticos\\VeterinariaExoticos.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\veterinariaexoticos\\veterinariacrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86278CB9-7E70-4D96-A51B-34DD0E166571}|VeterinariaExoticos\\VeterinariaExoticos.csproj|solutionrelative:veterinariaexoticos\\veterinariacrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D63BA35-AADE-468C-A5CA-770A65EBCFD4}|WinFormR\\WinFormR.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\winformr\\frmroedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D63BA35-AADE-468C-A5CA-770A65EBCFD4}|WinFormR\\WinFormR.csproj|solutionrelative:winformr\\frmroedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,40 +34,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmRoedor.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormR\\FrmRoedor.cs",
-              "RelativeDocumentMoniker": "WinFormR\\FrmRoedor.cs",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormR\\FrmRoedor.cs",
-              "RelativeToolTip": "WinFormR\\FrmRoedor.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAACMAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T05:49:57.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "VeterinariaCRUD.cs",
               "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\VeterinariaCRUD.cs",
               "RelativeDocumentMoniker": "VeterinariaExoticos\\VeterinariaCRUD.cs",
               "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\VeterinariaCRUD.cs",
               "RelativeToolTip": "VeterinariaExoticos\\VeterinariaCRUD.cs",
-              "ViewState": "AQIAAAcBAAAAAAAAAIAwwBUBAAAAAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAAwAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T04:37:43.671Z",
+              "WhenOpened": "2024-05-28T06:52:34.546Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "VeterinariaCRUD.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\VeterinariaCRUD.cs",
               "RelativeDocumentMoniker": "VeterinariaExoticos\\VeterinariaCRUD.cs",
               "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\VeterinariaCRUD.cs [Dise\u00F1o]",
               "RelativeToolTip": "VeterinariaExoticos\\VeterinariaCRUD.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T04:49:26.964Z",
+              "WhenOpened": "2024-05-28T07:48:03.152Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmOpciones.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Opciones\\FrmOpciones.cs",
+              "RelativeDocumentMoniker": "Opciones\\FrmOpciones.cs",
+              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Opciones\\FrmOpciones.cs",
+              "RelativeToolTip": "Opciones\\FrmOpciones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T07:02:47.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmOpciones.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Opciones\\FrmOpciones.cs",
+              "RelativeDocumentMoniker": "Opciones\\FrmOpciones.cs",
+              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Opciones\\FrmOpciones.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Opciones\\FrmOpciones.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T06:51:13.336Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

@@ -29,3 +29,8 @@ C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormLogin.exe
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormLogin.dll
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormLogin.pdb
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\Opciones.deps.json
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\Opciones.runtimeconfig.json
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\Opciones.exe
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\Opciones.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\Opciones.pdb

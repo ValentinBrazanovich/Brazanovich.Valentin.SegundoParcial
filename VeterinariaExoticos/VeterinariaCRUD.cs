@@ -1,3 +1,4 @@
+using Opciones;
 using Roedores;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -27,7 +28,7 @@ namespace VeterinariaExoticos
         }
 
 
-        private void btnAgregar_Click(object sender, EventArgs e)
+        private void BtnAgregar_Click(object sender, EventArgs e)
         {
             //Se crea la instancia del formulario frmRoedor
             FrmRoedor frmRoedor = new FrmRoedor();
@@ -50,7 +51,7 @@ namespace VeterinariaExoticos
             }
         }
 
-        private void btnModificar_Click(object sender, EventArgs e)
+        private void BtnModificar_Click(object sender, EventArgs e)
         {
             if (lstRoedores.SelectedIndex != -1)
             {
@@ -74,7 +75,7 @@ namespace VeterinariaExoticos
             }
         }
 
-        private void btnEliminar_Click(object sender, EventArgs e)
+        private void BtnEliminar_Click(object sender, EventArgs e)
         {
             if (lstRoedores.SelectedIndex != -1)
             {
@@ -90,7 +91,7 @@ namespace VeterinariaExoticos
             }
         }
 
-        private void MensajeError(string mensaje)
+        private static void MensajeError(string mensaje)
         {
             MessageBox.Show(mensaje, "Error",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -216,7 +217,7 @@ namespace VeterinariaExoticos
             ActualizarVisor();
         }
 
-        private void lstRoedores_DrawItem(object sender, DrawItemEventArgs e)
+        private void LstRoedores_DrawItem(object sender, DrawItemEventArgs e)
         {
             e.DrawBackground();
             if (e.Index >= 0)
@@ -244,38 +245,53 @@ namespace VeterinariaExoticos
             e.DrawFocusRectangle();
         }
 
-        private void ordenarAscendentePorNombreToolStripMenuItem_Click(object sender, EventArgs e)
+        private void OrdenarAscendentePorNombreToolStripMenuItem_Click(object sender, EventArgs e)
         {
             terrario.OrdenarPorNombre(true);
             ActualizarVisor();
         }
 
-        private void ordenarDescendentePorNombreToolStripMenuItem_Click(object sender, EventArgs e)
+        private void OrdenarDescendentePorNombreToolStripMenuItem_Click(object sender, EventArgs e)
         {
             terrario.OrdenarPorNombre(false);
             ActualizarVisor();
         }
 
-        private void ordenarAscendentePorPesoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void OrdenarAscendentePorPesoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             terrario.OrdenarPorPeso(true);
             ActualizarVisor();
         }
 
-        private void ordenarDescendentePorPesoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void OrdenarDescendentePorPesoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             terrario.OrdenarPorPeso(false);
             ActualizarVisor();
         }
 
-        private void btnActualizar_Click(object sender, EventArgs e)
+        private void BtnActualizar_Click(object sender, EventArgs e)
         {
             ActualizarVisor();
         }
 
         private void VeterinariaCRUD_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            ////
         }
+
+        private void BtnOpciones_Click(object sender, EventArgs e)
+        {
+            if (lstRoedores.SelectedIndex != -1)
+            {
+                Roedor roedorSeleccionado = (Roedor)lstRoedores.SelectedItem;
+                FrmOpciones opcionesForm = new FrmOpciones(roedorSeleccionado);
+                opcionesForm.ShowDialog();
+            }
+            else
+            {
+                MensajeError("No hay roedor seleccionado para ver sus opciones.");
+            }
+        }
+
     }
 }

@@ -49,10 +49,11 @@
             lblHamster = new Label();
             lblTopo = new Label();
             lblRaton = new Label();
-            btnActualizar = new Button();
+            BtnActualizar = new Button();
             statusStrip1 = new StatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             toolStripStatusLabel2 = new ToolStripStatusLabel();
+            BtnOpciones = new Button();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
@@ -68,7 +69,7 @@
             lstRoedores.Name = "lstRoedores";
             lstRoedores.Size = new Size(729, 235);
             lstRoedores.TabIndex = 0;
-            lstRoedores.DrawItem += lstRoedores_DrawItem;
+            lstRoedores.DrawItem += LstRoedores_DrawItem;
             // 
             // btnAgregar
             // 
@@ -79,7 +80,7 @@
             btnAgregar.TabIndex = 1;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
-            btnAgregar.Click += btnAgregar_Click;
+            btnAgregar.Click += BtnAgregar_Click;
             // 
             // btnModificar
             // 
@@ -90,7 +91,7 @@
             btnModificar.TabIndex = 2;
             btnModificar.Text = "Modificar";
             btnModificar.UseVisualStyleBackColor = true;
-            btnModificar.Click += btnModificar_Click;
+            btnModificar.Click += BtnModificar_Click;
             // 
             // btnEliminar
             // 
@@ -101,7 +102,7 @@
             btnEliminar.TabIndex = 3;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
-            btnEliminar.Click += btnEliminar_Click;
+            btnEliminar.Click += BtnEliminar_Click;
             // 
             // menuStrip1
             // 
@@ -165,7 +166,7 @@
             // 
             ascendenteToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { porNombreToolStripMenuItem, porPesoToolStripMenuItem });
             ascendenteToolStripMenuItem.Name = "ascendenteToolStripMenuItem";
-            ascendenteToolStripMenuItem.Size = new Size(142, 22);
+            ascendenteToolStripMenuItem.Size = new Size(180, 22);
             ascendenteToolStripMenuItem.Text = "Ascendente";
             // 
             // porNombreToolStripMenuItem
@@ -173,35 +174,35 @@
             porNombreToolStripMenuItem.Name = "porNombreToolStripMenuItem";
             porNombreToolStripMenuItem.Size = new Size(137, 22);
             porNombreToolStripMenuItem.Text = "Por nombre";
-            porNombreToolStripMenuItem.Click += ordenarAscendentePorNombreToolStripMenuItem_Click;
+            porNombreToolStripMenuItem.Click += OrdenarAscendentePorNombreToolStripMenuItem_Click;
             // 
             // porPesoToolStripMenuItem
             // 
             porPesoToolStripMenuItem.Name = "porPesoToolStripMenuItem";
             porPesoToolStripMenuItem.Size = new Size(137, 22);
             porPesoToolStripMenuItem.Text = "Por peso";
-            porPesoToolStripMenuItem.Click += ordenarAscendentePorPesoToolStripMenuItem_Click;
+            porPesoToolStripMenuItem.Click += OrdenarAscendentePorPesoToolStripMenuItem_Click;
             // 
             // descendenteToolStripMenuItem
             // 
             descendenteToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { porNombreToolStripMenuItem1, porPesoToolStripMenuItem1 });
             descendenteToolStripMenuItem.Name = "descendenteToolStripMenuItem";
-            descendenteToolStripMenuItem.Size = new Size(142, 22);
+            descendenteToolStripMenuItem.Size = new Size(180, 22);
             descendenteToolStripMenuItem.Text = "Descendente";
             // 
             // porNombreToolStripMenuItem1
             // 
             porNombreToolStripMenuItem1.Name = "porNombreToolStripMenuItem1";
-            porNombreToolStripMenuItem1.Size = new Size(137, 22);
+            porNombreToolStripMenuItem1.Size = new Size(180, 22);
             porNombreToolStripMenuItem1.Text = "Por nombre";
-            porNombreToolStripMenuItem1.Click += ordenarDescendentePorNombreToolStripMenuItem_Click;
+            porNombreToolStripMenuItem1.Click += OrdenarDescendentePorNombreToolStripMenuItem_Click;
             // 
             // porPesoToolStripMenuItem1
             // 
             porPesoToolStripMenuItem1.Name = "porPesoToolStripMenuItem1";
-            porPesoToolStripMenuItem1.Size = new Size(137, 22);
+            porPesoToolStripMenuItem1.Size = new Size(180, 22);
             porPesoToolStripMenuItem1.Text = "Por peso";
-            porPesoToolStripMenuItem1.Click += ordenarDescendentePorPesoToolStripMenuItem_Click;
+            porPesoToolStripMenuItem1.Click += OrdenarDescendentePorPesoToolStripMenuItem_Click;
             // 
             // lblHamster
             // 
@@ -242,16 +243,16 @@
             lblRaton.TabIndex = 6;
             lblRaton.Text = "***Ratón    ";
             // 
-            // btnActualizar
+            // BtnActualizar
             // 
-            btnActualizar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnActualizar.Location = new Point(660, 300);
-            btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(81, 50);
-            btnActualizar.TabIndex = 7;
-            btnActualizar.Text = "Actualizar";
-            btnActualizar.UseVisualStyleBackColor = true;
-            btnActualizar.Click += btnActualizar_Click;
+            BtnActualizar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            BtnActualizar.Location = new Point(660, 300);
+            BtnActualizar.Name = "BtnActualizar";
+            BtnActualizar.Size = new Size(81, 50);
+            BtnActualizar.TabIndex = 7;
+            BtnActualizar.Text = "Actualizar";
+            BtnActualizar.UseVisualStyleBackColor = true;
+            BtnActualizar.Click += BtnActualizar_Click;
             // 
             // statusStrip1
             // 
@@ -277,13 +278,25 @@
             toolStripStatusLabel2.Size = new Size(51, 19);
             toolStripStatusLabel2.Text = "Fecha: ";
             // 
+            // BtnOpciones
+            // 
+            BtnOpciones.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            BtnOpciones.Location = new Point(573, 300);
+            BtnOpciones.Name = "BtnOpciones";
+            BtnOpciones.Size = new Size(81, 50);
+            BtnOpciones.TabIndex = 9;
+            BtnOpciones.Text = "Opciones";
+            BtnOpciones.UseVisualStyleBackColor = true;
+            BtnOpciones.Click += BtnOpciones_Click;
+            // 
             // VeterinariaCRUD
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(753, 386);
+            Controls.Add(BtnOpciones);
             Controls.Add(statusStrip1);
-            Controls.Add(btnActualizar);
+            Controls.Add(BtnActualizar);
             Controls.Add(lblRaton);
             Controls.Add(lblTopo);
             Controls.Add(lblHamster);
@@ -330,9 +343,10 @@
         private ToolStripMenuItem descendenteToolStripMenuItem;
         private ToolStripMenuItem porNombreToolStripMenuItem1;
         private ToolStripMenuItem porPesoToolStripMenuItem1;
-        private Button btnActualizar;
+        private Button BtnActualizar;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel toolStripStatusLabel1;
         private ToolStripStatusLabel toolStripStatusLabel2;
+        private Button BtnOpciones;
     }
 }

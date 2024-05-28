@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
+      "Opciones/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Roedores": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Opciones.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Opciones.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
       "Roedores/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -44,6 +60,11 @@
     }
   },
   "libraries": {
+    "Opciones/1.0.0": {
+      "type": "project",
+      "path": "../Opciones/Opciones.csproj",
+      "msbuildProject": "../Opciones/Opciones.csproj"
+    },
     "Roedores/1.0.0": {
       "type": "project",
       "path": "../Roedores/Roedores.csproj",
@@ -62,6 +83,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "Opciones >= 1.0.0",
       "Roedores >= 1.0.0",
       "WinFormLogin >= 1.0.0",
       "WinFormR >= 1.0.0"
@@ -94,6 +116,9 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
+            "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Opciones\\Opciones.csproj": {
+              "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Opciones\\Opciones.csproj"
+            },
             "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Roedores.csproj": {
               "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Roedores.csproj"
             },

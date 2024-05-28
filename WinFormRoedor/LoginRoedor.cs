@@ -11,6 +11,8 @@ namespace WinFormRoedor
         {
             InitializeComponent();
             CargarUsuarios();
+
+            this.MaximizeBox = false;
         }
 
         private void CargarUsuarios()
@@ -28,7 +30,7 @@ namespace WinFormRoedor
             }
         }
 
-        private void btnIngresar_Click(object sender, EventArgs e)
+        private void BtnIngresar_Click(object sender, EventArgs e)
         {
             string correo = txtCorreo.Text;
             string clave = txtClave.Text;
@@ -36,7 +38,7 @@ namespace WinFormRoedor
             Usuario? usuarioConectado = usuarios.FirstOrDefault(u => u.correo == correo && u.clave == clave);
 
             if (usuarioConectado != null)
-            {  
+            {
                 DialogResult = DialogResult.OK;
                 Tag = usuarioConectado.nombre;
                 Close();
@@ -56,5 +58,6 @@ namespace WinFormRoedor
             public string clave { get; set; }
             public string perfil { get; set; }
         }
+
     }
 }

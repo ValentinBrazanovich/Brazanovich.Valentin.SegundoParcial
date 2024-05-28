@@ -55,7 +55,7 @@
             btnAceptar.TabIndex = 10;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
-            btnAceptar.Click += btnAceptar_Click;
+            btnAceptar.Click += BtnAceptar_Click;
             // 
             // rdoHamster
             // 
@@ -209,7 +209,7 @@
             btnCancelar.TabIndex = 18;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
-            btnCancelar.Click += btnCancelar_Click;
+            btnCancelar.Click += BtnCancelar_Click;
             // 
             // FrmRoedor
             // 

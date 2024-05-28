@@ -11,6 +11,7 @@ namespace WinFormR
         public FrmRoedor()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
         }
 
         private void FrmRoedor_Load(object sender, EventArgs e)
@@ -19,13 +20,14 @@ namespace WinFormR
             comboAlimentacion.DataSource = Enum.GetNames(typeof(ETipoAlimentacion));
         }
 
-        private void MensajeError(string mensaje)
+        private static void MensajeError(string mensaje)
         {
             MessageBox.Show(mensaje, "Error",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        public Roedor RoedorDelFormulario { 
+        public Roedor RoedorDelFormulario
+        {
             get { return CrearRoedor(); }
         }
 
@@ -61,7 +63,7 @@ namespace WinFormR
         }
 
 
-        private void btnAceptar_Click(object sender, EventArgs e)
+        private void BtnAceptar_Click(object sender, EventArgs e)
         {
             if (CamposValidos())
             {
@@ -72,10 +74,10 @@ namespace WinFormR
             {
                 MensajeError("Debe completar bien los campos.");
             }
-            
+
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void BtnCancelar_Click(object sender, EventArgs e)
         {
             Close();
         }
@@ -136,7 +138,7 @@ namespace WinFormR
                 }
                 else if (rdoTopo.Checked)
                 {
-                    return CrearTopo(nombre, peso, pesoValido, tipoAlimentacion, 
+                    return CrearTopo(nombre, peso, pesoValido, tipoAlimentacion,
                                  atributoDouble, atributoValido, atributoBooleano);
                 }
             }
@@ -207,6 +209,5 @@ namespace WinFormR
             return topo;
         }
 
-        
     }
 }
