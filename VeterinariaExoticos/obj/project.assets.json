@@ -31,6 +31,9 @@
       "WinFormLogin/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "WinFormVisualizador": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/WinFormLogin.dll": {}
         },
@@ -52,6 +55,19 @@
         },
         "runtime": {
           "bin/placeholder/WinFormRoedor.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
+      "WinFormVisualizador/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/WinFormVisualizador.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WinFormVisualizador.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WindowsForms"
@@ -79,6 +95,11 @@
       "type": "project",
       "path": "../WinFormR/WinFormRoedor.csproj",
       "msbuildProject": "../WinFormR/WinFormRoedor.csproj"
+    },
+    "WinFormVisualizador/1.0.0": {
+      "type": "project",
+      "path": "../WinFormVisualizador/WinFormVisualizador.csproj",
+      "msbuildProject": "../WinFormVisualizador/WinFormVisualizador.csproj"
     }
   },
   "projectFileDependencyGroups": {

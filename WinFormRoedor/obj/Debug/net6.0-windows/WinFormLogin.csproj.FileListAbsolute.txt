@@ -15,3 +15,10 @@ C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormRoedor\obj\Debug\net6.0
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormRoedor\obj\Debug\net6.0-windows\WinFormLogin.pdb
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormRoedor\obj\Debug\net6.0-windows\WinFormLogin.genruntimeconfig.cache
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormRoedor\obj\Debug\net6.0-windows\ref\WinFormLogin.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormRoedor\obj\Debug\net6.0-windows\WinFormLogin.csproj.AssemblyReference.cache
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormRoedor\bin\Debug\net6.0-windows\WinFormVisualizador.deps.json
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormRoedor\bin\Debug\net6.0-windows\WinFormVisualizador.runtimeconfig.json
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormRoedor\bin\Debug\net6.0-windows\WinFormVisualizador.exe
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormRoedor\bin\Debug\net6.0-windows\WinFormVisualizador.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormRoedor\bin\Debug\net6.0-windows\WinFormVisualizador.pdb
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormRoedor\obj\Debug\net6.0-windows\WinFormL.903AE1BB.Up2Date

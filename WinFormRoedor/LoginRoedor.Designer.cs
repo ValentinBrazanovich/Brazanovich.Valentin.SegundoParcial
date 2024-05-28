@@ -33,10 +33,12 @@
             btnIngresar = new Button();
             labelCorreo = new Label();
             labelClave = new Label();
+            btnRegistro = new Button();
             SuspendLayout();
             // 
             // txtClave
             // 
+            txtClave.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             txtClave.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             txtClave.Location = new Point(50, 145);
             txtClave.MaxLength = 20;
@@ -46,6 +48,7 @@
             // 
             // txtCorreo
             // 
+            txtCorreo.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtCorreo.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             txtCorreo.Location = new Point(50, 65);
             txtCorreo.MaxLength = 40;
@@ -55,6 +58,7 @@
             // 
             // btnIngresar
             // 
+            btnIngresar.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnIngresar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnIngresar.Location = new Point(90, 200);
             btnIngresar.Name = "btnIngresar";
@@ -84,11 +88,23 @@
             labelClave.TabIndex = 4;
             labelClave.Text = "Clave";
             // 
+            // btnRegistro
+            // 
+            btnRegistro.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnRegistro.Location = new Point(233, 12);
+            btnRegistro.Name = "btnRegistro";
+            btnRegistro.Size = new Size(59, 23);
+            btnRegistro.TabIndex = 5;
+            btnRegistro.Text = "Registro";
+            btnRegistro.UseVisualStyleBackColor = true;
+            btnRegistro.Click += btnRegistro_Click;
+            // 
             // LoginRoedor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(304, 280);
+            Controls.Add(btnRegistro);
             Controls.Add(labelClave);
             Controls.Add(labelCorreo);
             Controls.Add(btnIngresar);
@@ -108,5 +124,6 @@
         private Button btnIngresar;
         private Label labelCorreo;
         private Label labelClave;
+        private Button btnRegistro;
     }
 }

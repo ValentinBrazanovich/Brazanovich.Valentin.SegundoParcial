@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "WinFormLogin/1.0.0": {
+        "dependencies": {
+          "WinFormVisualizador": "1.0.0"
+        },
         "runtime": {
           "WinFormLogin.dll": {}
+        }
+      },
+      "WinFormVisualizador/1.0.0": {
+        "runtime": {
+          "WinFormVisualizador.dll": {}
         }
       }
     }
   },
   "libraries": {
     "WinFormLogin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WinFormVisualizador/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

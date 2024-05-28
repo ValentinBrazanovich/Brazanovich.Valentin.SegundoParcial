@@ -34,3 +34,8 @@ C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormRoedor.exe
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormRoedor.dll
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormRoedor.pdb
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormVisualizador.deps.json
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormVisualizador.runtimeconfig.json
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormVisualizador.exe
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormVisualizador.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormVisualizador.pdb

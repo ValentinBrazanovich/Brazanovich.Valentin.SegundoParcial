@@ -1,11 +1,11 @@
 using System.Text.Json;
+using WinFormVisualizador;
 
 namespace WinFormRoedor
 {
     public partial class LoginRoedor : Form
     {
         private List<Usuario>? usuarios;
-        //public string NombreOperadorConectado { get; set; }
 
         public LoginRoedor()
         {
@@ -70,6 +70,12 @@ namespace WinFormRoedor
             {
                 MessageBox.Show("Correo o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnRegistro_Click(object sender, EventArgs e)
+        {
+            FrmVisualizador visualizador = new FrmVisualizador();
+            visualizador.ShowDialog();
         }
 
     }

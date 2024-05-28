@@ -31,6 +31,9 @@
         }
       },
       "WinFormLogin/1.0.0": {
+        "dependencies": {
+          "WinFormVisualizador": "1.0.0"
+        },
         "runtime": {
           "WinFormLogin.dll": {}
         }
@@ -41,6 +44,11 @@
         },
         "runtime": {
           "WinFormRoedor.dll": {}
+        }
+      },
+      "WinFormVisualizador/1.0.0": {
+        "runtime": {
+          "WinFormVisualizador.dll": {}
         }
       }
     }
@@ -67,6 +75,11 @@
       "sha512": ""
     },
     "WinFormRoedor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WinFormVisualizador/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
