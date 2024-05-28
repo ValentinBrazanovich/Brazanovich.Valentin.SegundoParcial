@@ -22,4 +22,4 @@ La aplicación permite al usuario gestionar la información de diferentes tipos 
 - **Visualizacion de Roedores**: Se pueden agregar, modificar y eliminar Roedores y cada uno tiene características específicas.
 
 ## Diagrama de clases
-![Diagrama de Clases](VeterinariaExoticos/DiagramaRoedor.png)
+![Diagrama de Clases](DiagramaRoedor.png)
