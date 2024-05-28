@@ -28,10 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            SuspendLayout();
+            // 
+            // btnVerde
+            // 
+            btnVerde.Text = "Si";
+            btnVerde.Click += BtnVerde_Click;
+            // 
+            // btnAzul
+            // 
+            btnAzul.Size = new Size(102, 59);
+            btnAzul.Text = "Guardar (En JSON y XML) y salir";
+            btnAzul.Click += BtnAzul_Click;
+            // 
+            // lblInformacion
+            // 
+            lblInformacion.Location = new Point(78, 30);
+            lblInformacion.Size = new Size(223, 20);
+            lblInformacion.Text = "¿Está seguro de que desea salir?";
+            // 
+            // btnRojo
+            // 
+            btnRojo.Text = "No";
+            btnRojo.Click += BtnRojo_Click;
+            // 
+            // FrmSalir
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(380, 172);
+            Name = "FrmSalir";
+            Text = "Advertencia";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

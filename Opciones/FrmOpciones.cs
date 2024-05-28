@@ -6,10 +6,9 @@ namespace Opciones
     {
         internal Roedor roedorSeleccionado;
 
-        public FrmOpciones(Roedor roedorSeleccionado)
+        public FrmOpciones(Roedor roedorSeleccionado) : this ()
         {
             this.roedorSeleccionado = roedorSeleccionado;
-            InitializeComponent();
 
             this.MaximizeBox = false;
             if (roedorSeleccionado is Hamster)
@@ -18,11 +17,19 @@ namespace Opciones
             }
         }
 
-
-        public virtual void BtnVerde_Click(object sender, EventArgs e)
+        public FrmOpciones()
         {
-            MessageBox.Show(roedorSeleccionado.ObtenerSonido(), "Información",
+            InitializeComponent();
+        }
+
+        private void BtnVerde_Click(object sender, EventArgs e)
+        {
+            if(roedorSeleccionado is Hamster || roedorSeleccionado is Raton ||
+               roedorSeleccionado is Topo)
+            {
+                MessageBox.Show(roedorSeleccionado.ObtenerSonido(), "Información",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         public virtual void BtnAzul_Click(object sender, EventArgs e)

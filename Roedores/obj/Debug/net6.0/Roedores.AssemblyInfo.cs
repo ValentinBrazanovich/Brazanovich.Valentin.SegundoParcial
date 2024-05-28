@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Roedores")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48db2308c00712a93a7f973c06055b537cb5c9a1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7bf1a75d08d03b39fe2ba13be51335402ab72ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("Roedores")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Roedores")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

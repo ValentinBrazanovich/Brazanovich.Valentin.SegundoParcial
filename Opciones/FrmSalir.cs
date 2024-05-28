@@ -14,26 +14,14 @@ namespace Opciones
     public partial class FrmSalir : FrmOpciones
     {
 
-        public FrmSalir(Roedor roedorseleccionado) : base(roedorseleccionado) 
+        public FrmSalir(Roedor roedorseleccionado) : base(roedorseleccionado)
         {
             InitializeComponent();
             CambiarColorLabel(roedorSeleccionado);
 
-            Config();
-        }
-
-        void Config()
-        {
-            this.Size = new Size(396, 211);
-
-            this.Text = "Advertencia";
-            lblInformacion.Text = "¿Está seguro de que desea salir?";
-            btnVerde.Text = "Si";
-            btnAzul.Text = "Guardar (En JSON y XML) y salir";
-            btnRojo.Text = "No";
             btnRojo.Visible = true;
-            lblInformacion.Location = new Point(75, 31);
         }
+
 
         private void CambiarColorLabel(Roedor roedor)
         {
@@ -45,7 +33,13 @@ namespace Opciones
                 lblInformacion.ForeColor = Color.Green;
         }
 
-        public override void BtnVerde_Click(object sender, EventArgs e)
+        /// <summary>
+        /// No se hace override porque primero debe hacer el sonido del
+        /// ultimo animal si se ha seleccionado) y luego cerrar el programa.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnVerde_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
         }
