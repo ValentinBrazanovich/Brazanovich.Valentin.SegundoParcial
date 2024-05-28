@@ -11,7 +11,7 @@
           "Opciones": "1.0.0",
           "Roedores": "1.0.0",
           "WinFormLogin": "1.0.0",
-          "WinFormR": "1.0.0"
+          "WinFormRoedor": "1.0.0"
         },
         "runtime": {
           "VeterinariaExoticos.dll": {}
@@ -35,12 +35,12 @@
           "WinFormLogin.dll": {}
         }
       },
-      "WinFormR/1.0.0": {
+      "WinFormRoedor/1.0.0": {
         "dependencies": {
           "Roedores": "1.0.0"
         },
         "runtime": {
-          "WinFormR.dll": {}
+          "WinFormRoedor.dll": {}
         }
       }
     }
@@ -66,7 +66,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "WinFormR/1.0.0": {
+    "WinFormRoedor/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

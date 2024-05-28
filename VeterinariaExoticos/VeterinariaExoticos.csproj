@@ -12,7 +12,7 @@
     <ProjectReference Include="..\Opciones\Opciones.csproj" />
     <ProjectReference Include="..\Roedores\Roedores.csproj" />
     <ProjectReference Include="..\WinFormRoedor\WinFormLogin.csproj" />
-    <ProjectReference Include="..\WinFormR\WinFormR.csproj" />
+    <ProjectReference Include="..\WinFormR\WinFormRoedor.csproj" />
   </ItemGroup>
 
 </Project>

@@ -7,17 +7,21 @@ using System.Threading.Tasks;
 
 namespace WinFormRoedor
 {
-    internal class Usuario
+    public class Usuario
     {
+        public string apellido { get; set; }
+        public string nombre { get; set; }
+        public int legajo { get; set; }
         public string correo { get; set; }
-        public string contraseña { get; set; }
+        public string clave { get; set; }
+        public string perfil { get; set; }
 
 
         public static List<Usuario> VerificarUsuarios(string filePath)
         {
             if (File.Exists(filePath))
             {
-                var json = File.ReadAllText(filePath);
+                string json = File.ReadAllText(filePath);
                 var usuarios = JsonSerializer.Deserialize<List<Usuario>>(json);
 
                 if (usuarios == null)

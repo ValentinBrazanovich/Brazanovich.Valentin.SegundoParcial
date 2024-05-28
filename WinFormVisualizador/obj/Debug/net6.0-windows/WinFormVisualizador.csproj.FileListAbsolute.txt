@@ -1,0 +1,17 @@
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormVisualizador\bin\Debug\net6.0-windows\WinFormVisualizador.exe
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormVisualizador\bin\Debug\net6.0-windows\WinFormVisualizador.deps.json
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormVisualizador\bin\Debug\net6.0-windows\WinFormVisualizador.runtimeconfig.json
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormVisualizador\bin\Debug\net6.0-windows\WinFormVisualizador.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormVisualizador\bin\Debug\net6.0-windows\WinFormVisualizador.pdb
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormVisualizador\obj\Debug\net6.0-windows\WinFormVisualizador.Form1.resources
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormVisualizador\obj\Debug\net6.0-windows\WinFormVisualizador.csproj.GenerateResource.cache
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormVisualizador\obj\Debug\net6.0-windows\WinFormVisualizador.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormVisualizador\obj\Debug\net6.0-windows\WinFormVisualizador.AssemblyInfoInputs.cache
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormVisualizador\obj\Debug\net6.0-windows\WinFormVisualizador.AssemblyInfo.cs
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormVisualizador\obj\Debug\net6.0-windows\WinFormVisualizador.csproj.CoreCompileInputs.cache
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormVisualizador\obj\Debug\net6.0-windows\WinFormVisualizador.sourcelink.json
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormVisualizador\obj\Debug\net6.0-windows\WinFormVisualizador.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormVisualizador\obj\Debug\net6.0-windows\refint\WinFormVisualizador.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormVisualizador\obj\Debug\net6.0-windows\WinFormVisualizador.pdb
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormVisualizador\obj\Debug\net6.0-windows\WinFormVisualizador.genruntimeconfig.cache
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\WinFormVisualizador\obj\Debug\net6.0-windows\ref\WinFormVisualizador.dll

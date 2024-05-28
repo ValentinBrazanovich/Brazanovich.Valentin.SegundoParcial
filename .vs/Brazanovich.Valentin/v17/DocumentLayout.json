@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{86278CB9-7E70-4D96-A51B-34DD0E166571}|VeterinariaExoticos\\VeterinariaExoticos.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\veterinariaexoticos\\veterinariacrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86278CB9-7E70-4D96-A51B-34DD0E166571}|VeterinariaExoticos\\VeterinariaExoticos.csproj|solutionrelative:veterinariaexoticos\\veterinariacrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{53722358-F83E-4A48-A746-20F40CA21035}|WinFormVisualizador\\WinFormVisualizador.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\winformvisualizador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{53722358-F83E-4A48-A746-20F40CA21035}|WinFormVisualizador\\WinFormVisualizador.csproj|solutionrelative:winformvisualizador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86278CB9-7E70-4D96-A51B-34DD0E166571}|VeterinariaExoticos\\VeterinariaExoticos.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\veterinariaexoticos\\roedorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86278CB9-7E70-4D96-A51B-34DD0E166571}|VeterinariaExoticos\\VeterinariaExoticos.csproj|solutionrelative:veterinariaexoticos\\roedorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C292DE3C-D839-493B-9C6C-0EC86BCDCFAB}|WinFormRoedor\\WinFormLogin.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\winformroedor\\loginroedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C292DE3C-D839-493B-9C6C-0EC86BCDCFAB}|WinFormRoedor\\WinFormLogin.csproj|solutionrelative:winformroedor\\loginroedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C292DE3C-D839-493B-9C6C-0EC86BCDCFAB}|WinFormRoedor\\WinFormLogin.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\winformroedor\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C292DE3C-D839-493B-9C6C-0EC86BCDCFAB}|WinFormRoedor\\WinFormLogin.csproj|solutionrelative:winformroedor\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +30,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RoedorConverter.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\RoedorConverter.cs",
-              "RelativeDocumentMoniker": "VeterinariaExoticos\\RoedorConverter.cs",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\RoedorConverter.cs",
-              "RelativeToolTip": "VeterinariaExoticos\\RoedorConverter.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACYAAABNAAAA",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormVisualizador\\Form1.cs",
+              "RelativeDocumentMoniker": "WinFormVisualizador\\Form1.cs",
+              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormVisualizador\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WinFormVisualizador\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T14:02:21.566Z",
+              "WhenOpened": "2024-05-28T15:46:35.985Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginRoedor.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormRoedor\\LoginRoedor.cs",
+              "RelativeDocumentMoniker": "WinFormRoedor\\LoginRoedor.cs",
+              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormRoedor\\LoginRoedor.cs",
+              "RelativeToolTip": "WinFormRoedor\\LoginRoedor.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAwwCwAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T14:33:24.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VeterinariaCRUD.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\VeterinariaCRUD.cs",
-              "RelativeDocumentMoniker": "VeterinariaExoticos\\VeterinariaCRUD.cs",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\VeterinariaCRUD.cs",
-              "RelativeToolTip": "VeterinariaExoticos\\VeterinariaCRUD.cs",
-              "ViewState": "AQIAAPIAAAAAAAAAAAAAAP4AAAAJAAAA",
+              "DocumentIndex": 2,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormRoedor\\Usuario.cs",
+              "RelativeDocumentMoniker": "WinFormRoedor\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormRoedor\\Usuario.cs",
+              "RelativeToolTip": "WinFormRoedor\\Usuario.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T13:59:34.275Z",
+              "WhenOpened": "2024-05-28T14:43:20.725Z",
               "EditorCaption": ""
             }
           ]

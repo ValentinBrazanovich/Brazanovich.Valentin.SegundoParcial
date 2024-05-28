@@ -6,12 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "WinFormR/1.0.0": {
+      "WinFormRoedor/1.0.0": {
         "dependencies": {
           "Roedores": "1.0.0"
         },
         "runtime": {
-          "WinFormR.dll": {}
+          "WinFormRoedor.dll": {}
         }
       },
       "Roedores/1.0.0": {
@@ -22,7 +22,7 @@
     }
   },
   "libraries": {
-    "WinFormR/1.0.0": {
+    "WinFormRoedor/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

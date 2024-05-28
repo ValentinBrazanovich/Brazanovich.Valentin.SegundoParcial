@@ -32,9 +32,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormR\\WinFormR.csproj",
-      "projectName": "WinFormR",
-      "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormR\\WinFormR.csproj",
+      "projectUniqueName": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormR\\WinFormRoedor.csproj",
+      "projectName": "WinFormRoedor",
+      "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormR\\WinFormRoedor.csproj",
       "packagesPath": "C:\\Users\\Joshua\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormR\\obj\\",
       "projectStyle": "PackageReference",

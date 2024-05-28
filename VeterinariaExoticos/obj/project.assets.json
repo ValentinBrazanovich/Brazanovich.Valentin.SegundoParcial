@@ -41,17 +41,17 @@
           "Microsoft.WindowsDesktop.App.WindowsForms"
         ]
       },
-      "WinFormR/1.0.0": {
+      "WinFormRoedor/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Roedores": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/WinFormR.dll": {}
+          "bin/placeholder/WinFormRoedor.dll": {}
         },
         "runtime": {
-          "bin/placeholder/WinFormR.dll": {}
+          "bin/placeholder/WinFormRoedor.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WindowsForms"
@@ -75,10 +75,10 @@
       "path": "../WinFormRoedor/WinFormLogin.csproj",
       "msbuildProject": "../WinFormRoedor/WinFormLogin.csproj"
     },
-    "WinFormR/1.0.0": {
+    "WinFormRoedor/1.0.0": {
       "type": "project",
-      "path": "../WinFormR/WinFormR.csproj",
-      "msbuildProject": "../WinFormR/WinFormR.csproj"
+      "path": "../WinFormR/WinFormRoedor.csproj",
+      "msbuildProject": "../WinFormR/WinFormRoedor.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -86,7 +86,7 @@
       "Opciones >= 1.0.0",
       "Roedores >= 1.0.0",
       "WinFormLogin >= 1.0.0",
-      "WinFormR >= 1.0.0"
+      "WinFormRoedor >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -125,8 +125,8 @@
             "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormRoedor\\WinFormLogin.csproj": {
               "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormRoedor\\WinFormLogin.csproj"
             },
-            "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormR\\WinFormR.csproj": {
-              "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormR\\WinFormR.csproj"
+            "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormR\\WinFormRoedor.csproj": {
+              "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormR\\WinFormRoedor.csproj"
             }
           }
         }

@@ -1,15 +1,10 @@
-C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormR.deps.json
-C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormR.runtimeconfig.json
-C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormR.exe
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\VeterinariaExoticos.exe
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\VeterinariaExoticos.deps.json
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\VeterinariaExoticos.runtimeconfig.json
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\VeterinariaExoticos.dll
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\VeterinariaExoticos.pdb
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\Roedores.dll
-C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormR.dll
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\Roedores.pdb
-C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormR.pdb
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\obj\Debug\net6.0-windows\VeterinariaExoticos.csproj.AssemblyReference.cache
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\obj\Debug\net6.0-windows\VeterinariaExoticos.csproj.GenerateResource.cache
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\obj\Debug\net6.0-windows\VeterinariaExoticos.GeneratedMSBuildEditorConfig.editorconfig
@@ -34,3 +29,8 @@ C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\Opciones.exe
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\Opciones.dll
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\Opciones.pdb
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormRoedor.deps.json
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormRoedor.runtimeconfig.json
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormRoedor.exe
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormRoedor.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormRoedor.pdb

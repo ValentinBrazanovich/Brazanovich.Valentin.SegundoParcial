@@ -5,7 +5,7 @@ namespace WinFormRoedor
     public partial class LoginRoedor : Form
     {
         private List<Usuario>? usuarios;
-        public string NombreOperadorConectado { get; set; }
+        //public string NombreOperadorConectado { get; set; }
 
         public LoginRoedor()
         {
@@ -30,6 +30,28 @@ namespace WinFormRoedor
             }
         }
 
+        private void GuardarLogUsuario(Usuario usuario)
+        {
+            string filePath = "./usuarios.log";
+
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(filePath, true))
+                {
+                    string fecha = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                    string datos = $"{fecha}: Apellido: {usuario.apellido}, Usuario: {usuario.nombre}," +
+                                   $" Legajo: {usuario.legajo}, Correo: {usuario.correo}," +
+                                   $" Clave: {usuario.clave}, Perfil: {usuario.perfil}";
+                    writer.WriteLine(datos);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ocurrió un error al guardar el log de usuario: {ex.Message}",
+                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private void BtnIngresar_Click(object sender, EventArgs e)
         {
             string correo = txtCorreo.Text;
@@ -41,22 +63,13 @@ namespace WinFormRoedor
             {
                 DialogResult = DialogResult.OK;
                 Tag = usuarioConectado.nombre;
+                GuardarLogUsuario(usuarioConectado);
                 Close();
             }
             else
             {
                 MessageBox.Show("Correo o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        public class Usuario
-        {
-            public string apellido { get; set; }
-            public string nombre { get; set; }
-            public int legajo { get; set; }
-            public string correo { get; set; }
-            public string clave { get; set; }
-            public string perfil { get; set; }
         }
 
     }
