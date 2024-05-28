@@ -3,44 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Roedores.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\roedores\\topo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Roedores.csproj|solutionrelative:roedores\\topo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Roedores.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\roedores\\terrario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Roedores.csproj|solutionrelative:roedores\\terrario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Roedores.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\roedores\\roedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Roedores.csproj|solutionrelative:roedores\\roedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Roedores.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\roedores\\raton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Roedores.csproj|solutionrelative:roedores\\raton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Roedores.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\roedores\\hamster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Roedores.csproj|solutionrelative:roedores\\hamster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C292DE3C-D839-493B-9C6C-0EC86BCDCFAB}|WinFormRoedor\\WinFormLogin.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\winformroedor\\loginroedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C292DE3C-D839-493B-9C6C-0EC86BCDCFAB}|WinFormRoedor\\WinFormLogin.csproj|solutionrelative:winformroedor\\loginroedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C292DE3C-D839-493B-9C6C-0EC86BCDCFAB}|WinFormRoedor\\WinFormLogin.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\winformroedor\\loginroedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C292DE3C-D839-493B-9C6C-0EC86BCDCFAB}|WinFormRoedor\\WinFormLogin.csproj|solutionrelative:winformroedor\\loginroedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C292DE3C-D839-493B-9C6C-0EC86BCDCFAB}|WinFormRoedor\\WinFormLogin.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\winformroedor\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C292DE3C-D839-493B-9C6C-0EC86BCDCFAB}|WinFormRoedor\\WinFormLogin.csproj|solutionrelative:winformroedor\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D63BA35-AADE-468C-A5CA-770A65EBCFD4}|WinFormR\\WinFormRoedor.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\winformr\\frmroedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D63BA35-AADE-468C-A5CA-770A65EBCFD4}|WinFormR\\WinFormRoedor.csproj|solutionrelative:winformr\\frmroedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86278CB9-7E70-4D96-A51B-34DD0E166571}|VeterinariaExoticos\\CRUDVeterinariaExoticos.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\veterinariaexoticos\\veterinariacrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86278CB9-7E70-4D96-A51B-34DD0E166571}|VeterinariaExoticos\\CRUDVeterinariaExoticos.csproj|solutionrelative:veterinariaexoticos\\veterinariacrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,132 +22,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Terrario.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Terrario.cs",
-              "RelativeDocumentMoniker": "Roedores\\Terrario.cs",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Terrario.cs",
-              "RelativeToolTip": "Roedores\\Terrario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T20:19:18.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Roedor.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Roedor.cs",
-              "RelativeDocumentMoniker": "Roedores\\Roedor.cs",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Roedor.cs",
-              "RelativeToolTip": "Roedores\\Roedor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T20:19:13.736Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Raton.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Raton.cs",
-              "RelativeDocumentMoniker": "Roedores\\Raton.cs",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Raton.cs",
-              "RelativeToolTip": "Roedores\\Raton.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T20:19:12.448Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Hamster.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Hamster.cs",
-              "RelativeDocumentMoniker": "Roedores\\Hamster.cs",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Hamster.cs",
-              "RelativeToolTip": "Roedores\\Hamster.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T20:19:10.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Topo.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Topo.cs",
-              "RelativeDocumentMoniker": "Roedores\\Topo.cs",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Topo.cs",
-              "RelativeToolTip": "Roedores\\Topo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T20:18:42.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "LoginRoedor.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormRoedor\\LoginRoedor.cs",
               "RelativeDocumentMoniker": "WinFormRoedor\\LoginRoedor.cs",
               "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormRoedor\\LoginRoedor.cs [Dise\u00F1o]",
               "RelativeToolTip": "WinFormRoedor\\LoginRoedor.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T20:18:03.77Z",
+              "WhenOpened": "2024-05-28T20:32:43.425Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginRoedor.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormRoedor\\LoginRoedor.cs",
-              "RelativeDocumentMoniker": "WinFormRoedor\\LoginRoedor.cs",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormRoedor\\LoginRoedor.cs",
-              "RelativeToolTip": "WinFormRoedor\\LoginRoedor.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAmwCcAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T20:17:40.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormRoedor\\Usuario.cs",
-              "RelativeDocumentMoniker": "WinFormRoedor\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormRoedor\\Usuario.cs",
-              "RelativeToolTip": "WinFormRoedor\\Usuario.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAmwBAAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T20:17:27.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FrmRoedor.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormR\\FrmRoedor.cs",
-              "RelativeDocumentMoniker": "WinFormR\\FrmRoedor.cs",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormR\\FrmRoedor.cs",
-              "RelativeToolTip": "WinFormR\\FrmRoedor.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAmwDsAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T20:16:52.309Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "VeterinariaCRUD.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\VeterinariaCRUD.cs",
-              "RelativeDocumentMoniker": "VeterinariaExoticos\\VeterinariaCRUD.cs",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\VeterinariaCRUD.cs",
-              "RelativeToolTip": "VeterinariaExoticos\\VeterinariaCRUD.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T20:16:38.937Z",
-              "EditorCaption": ""
             }
           ]
         }

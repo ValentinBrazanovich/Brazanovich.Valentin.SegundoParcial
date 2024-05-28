@@ -45,6 +45,7 @@
             txtClave.Name = "txtClave";
             txtClave.Size = new Size(200, 25);
             txtClave.TabIndex = 0;
+            txtClave.UseSystemPasswordChar = true;
             // 
             // txtCorreo
             // 
