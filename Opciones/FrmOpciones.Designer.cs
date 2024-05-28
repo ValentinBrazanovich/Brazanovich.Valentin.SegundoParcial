@@ -28,46 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnHacerSonido = new Button();
-            btnCalcularPeso = new Button();
-            btnMoverCola = new Button();
+            btnVerde = new Button();
+            btnAzul = new Button();
+            btnRojo = new Button();
             lblInformacion = new Label();
             SuspendLayout();
             // 
-            // btnHacerSonido
+            // btnVerde
             // 
-            btnHacerSonido.BackColor = Color.DarkSeaGreen;
-            btnHacerSonido.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            btnHacerSonido.Location = new Point(12, 101);
-            btnHacerSonido.Name = "btnHacerSonido";
-            btnHacerSonido.Size = new Size(102, 47);
-            btnHacerSonido.TabIndex = 0;
-            btnHacerSonido.Text = "Hacer sonido";
-            btnHacerSonido.UseVisualStyleBackColor = false;
-            btnHacerSonido.Click += this.BtnHacerSonido_Click;
+            btnVerde.BackColor = Color.DarkSeaGreen;
+            btnVerde.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            btnVerde.Location = new Point(12, 101);
+            btnVerde.Name = "btnVerde";
+            btnVerde.Size = new Size(102, 47);
+            btnVerde.TabIndex = 0;
+            btnVerde.Text = "Hacer sonido";
+            btnVerde.UseVisualStyleBackColor = false;
+            btnVerde.Click += BtnVerde_Click;
             // 
-            // btnCalcularPeso
+            // btnAzul
             // 
-            btnCalcularPeso.BackColor = SystemColors.ActiveCaption;
-            btnCalcularPeso.Location = new Point(139, 101);
-            btnCalcularPeso.Name = "btnCalcularPeso";
-            btnCalcularPeso.Size = new Size(102, 47);
-            btnCalcularPeso.TabIndex = 1;
-            btnCalcularPeso.Text = "Calcular peso ideal";
-            btnCalcularPeso.UseVisualStyleBackColor = false;
-            btnCalcularPeso.Click += this.BtnCalcularPesoIdeal_Click;
+            btnAzul.BackColor = SystemColors.ActiveCaption;
+            btnAzul.Location = new Point(139, 101);
+            btnAzul.Name = "btnAzul";
+            btnAzul.Size = new Size(102, 47);
+            btnAzul.TabIndex = 1;
+            btnAzul.Text = "Calcular peso ideal";
+            btnAzul.UseVisualStyleBackColor = false;
+            btnAzul.Click += BtnAzul_Click;
             // 
-            // btnMoverCola
+            // btnRojo
             // 
-            btnMoverCola.BackColor = Color.RosyBrown;
-            btnMoverCola.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            btnMoverCola.Location = new Point(266, 101);
-            btnMoverCola.Name = "btnMoverCola";
-            btnMoverCola.Size = new Size(102, 47);
-            btnMoverCola.TabIndex = 2;
-            btnMoverCola.Text = "Mover la cola";
-            btnMoverCola.UseVisualStyleBackColor = false;
-            btnMoverCola.Click += this.BtnMoverCola_Click;
+            btnRojo.BackColor = Color.RosyBrown;
+            btnRojo.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            btnRojo.Location = new Point(266, 101);
+            btnRojo.Name = "btnRojo";
+            btnRojo.Size = new Size(102, 47);
+            btnRojo.TabIndex = 2;
+            btnRojo.Text = "Mover la cola";
+            btnRojo.UseVisualStyleBackColor = false;
+            btnRojo.Click += BtnRojo_Click;
             // 
             // lblInformacion
             // 
@@ -87,9 +87,9 @@
             AutoValidate = AutoValidate.EnablePreventFocusChange;
             ClientSize = new Size(380, 172);
             Controls.Add(lblInformacion);
-            Controls.Add(btnMoverCola);
-            Controls.Add(btnCalcularPeso);
-            Controls.Add(btnHacerSonido);
+            Controls.Add(btnRojo);
+            Controls.Add(btnAzul);
+            Controls.Add(btnVerde);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "FrmOpciones";
             StartPosition = FormStartPosition.CenterScreen;
@@ -100,9 +100,9 @@
 
         #endregion
 
-        private Button btnHacerSonido;
-        private Button btnCalcularPeso;
-        private Button btnMoverCola;
-        private Label lblInformacion;
+        protected Button btnVerde;
+        protected Button btnAzul;
+        protected Label lblInformacion;
+        protected Button btnRojo;
     }
 }

@@ -19,3 +19,4 @@ C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\obj\Debug\net6.0-wind
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\obj\Debug\net6.0-windows\Opciones.pdb
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\obj\Debug\net6.0-windows\Opciones.genruntimeconfig.cache
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\obj\Debug\net6.0-windows\ref\Opciones.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\obj\Debug\net6.0-windows\Opciones.FrmSalir.resources

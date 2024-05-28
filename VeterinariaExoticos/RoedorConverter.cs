@@ -24,10 +24,16 @@ namespace VeterinariaExoticos
             {
                 if (doc.RootElement.TryGetProperty("Discriminator", out JsonElement typeProperty))
                 {
-                    string typeName = typeProperty.GetString();
-                    if (_typeMapping.TryGetValue(typeName, out Type type))
+                    string? typeName = typeProperty.GetString();
+                    if (_typeMapping.TryGetValue(typeName, out Type? type))
                     {
-                        return (Roedor)JsonSerializer.Deserialize(doc.RootElement.GetRawText(), type, options);
+                        if(type != null)
+                        {
+                            return (Roedor?)JsonSerializer.Deserialize(doc.RootElement.GetRawText(), type, options);
+                        }else
+                        {
+                            throw new JsonException("Type is null.");
+                        }
                     }
                 }
                 throw new JsonException("Cannot determine type for Roedor.");

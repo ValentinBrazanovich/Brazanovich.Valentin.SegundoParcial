@@ -59,7 +59,7 @@ namespace Roedores
 
         public virtual string MoverCola()
         {
-            return "El roedor mueve su pequeña cola";
+            return "El roedor mueve su cola";
         }
 
 

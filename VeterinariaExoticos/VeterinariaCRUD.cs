@@ -276,7 +276,21 @@ namespace VeterinariaExoticos
 
         private void VeterinariaCRUD_FormClosing(object sender, FormClosingEventArgs e)
         {
-            ////
+            Roedor roedorSeleccionado = (Roedor)lstRoedores.SelectedItem;
+            FrmSalir frmSalir = new FrmSalir(roedorSeleccionado);
+
+            DialogResult resultado = frmSalir.ShowDialog();
+
+
+            if (resultado == DialogResult.Retry)
+            {
+                SerializarJSON();
+                SerializarXML();
+            }
+            else if (resultado == DialogResult.Cancel)
+            {
+                e.Cancel = true;
+            }
         }
 
         private void BtnOpciones_Click(object sender, EventArgs e)
