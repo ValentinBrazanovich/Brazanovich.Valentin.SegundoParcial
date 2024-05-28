@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C292DE3C-D839-493B-9C6C-0EC86BCDCFAB}|WinFormRoedor\\WinFormLogin.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\winformroedor\\loginroedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C292DE3C-D839-493B-9C6C-0EC86BCDCFAB}|WinFormRoedor\\WinFormLogin.csproj|solutionrelative:winformroedor\\loginroedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{86278CB9-7E70-4D96-A51B-34DD0E166571}|VeterinariaExoticos\\CRUDVeterinariaExoticos.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\veterinariaexoticos\\diagramaroedor.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{86278CB9-7E70-4D96-A51B-34DD0E166571}|VeterinariaExoticos\\CRUDVeterinariaExoticos.csproj|solutionrelative:veterinariaexoticos\\diagramaroedor.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginRoedor.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormRoedor\\LoginRoedor.cs",
-              "RelativeDocumentMoniker": "WinFormRoedor\\LoginRoedor.cs",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormRoedor\\LoginRoedor.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WinFormRoedor\\LoginRoedor.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T20:32:43.425Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "Title": "DiagramaRoedor.cd",
+              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\DiagramaRoedor.cd",
+              "RelativeDocumentMoniker": "VeterinariaExoticos\\DiagramaRoedor.cd",
+              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\DiagramaRoedor.cd",
+              "RelativeToolTip": "VeterinariaExoticos\\DiagramaRoedor.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2024-05-28T20:38:10.7Z",
+              "EditorCaption": ""
             }
           ]
         }
