@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{86278CB9-7E70-4D96-A51B-34DD0E166571}|VeterinariaExoticos\\CRUDVeterinariaExoticos.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\veterinariaexoticos\\diagramaroedor.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
-      "RelativeMoniker": "D:0:0:{86278CB9-7E70-4D96-A51B-34DD0E166571}|VeterinariaExoticos\\CRUDVeterinariaExoticos.csproj|solutionrelative:veterinariaexoticos\\diagramaroedor.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,23 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DiagramaRoedor.cd",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\DiagramaRoedor.cd",
-              "RelativeDocumentMoniker": "VeterinariaExoticos\\DiagramaRoedor.cd",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\VeterinariaExoticos\\DiagramaRoedor.cd",
-              "RelativeToolTip": "VeterinariaExoticos\\DiagramaRoedor.cd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2024-05-28T20:38:10.7Z",
-              "EditorCaption": ""
             }
           ]
         }
