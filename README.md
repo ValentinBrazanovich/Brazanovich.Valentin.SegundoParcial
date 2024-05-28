@@ -23,3 +23,4 @@ La aplicación permite al usuario gestionar la información de diferentes tipos 
 
 ## Diagrama de clases
 ![Diagrama de Clases](DiagramaRoedor.png)
+Este es el diagrama de clases con el Formulario principal, la clase Padre (Roedor) y sus Derivadas (Hamster, Raton, Topo)
