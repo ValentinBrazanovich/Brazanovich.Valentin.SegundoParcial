@@ -125,8 +125,17 @@ namespace VeterinariaExoticos
                     WriteIndented = true
                 };
 
-                string json = JsonSerializer.Serialize(roedores, opciones);
-                File.WriteAllText("./roedores.json", json);
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Title = "Guardar archivo JSON";
+                saveFileDialog.Filter = "JSON files (*.json)|*.json";
+                saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string ruta = saveFileDialog.FileName;
+                    string json = JsonSerializer.Serialize(roedores, opciones);
+                    File.WriteAllText(ruta, json);
+                }
             }
             catch (Exception ex)
             {
@@ -136,62 +145,112 @@ namespace VeterinariaExoticos
 
         private void DeserializarJSON()
         {
-            if (File.Exists("./roedores.json"))
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Title = "Abrir archivo JSON";
+            openFileDialog.Filter = "JSON files (*.json)|*.json";
+            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                string json = File.ReadAllText("./roedores.json");
+                string json = File.ReadAllText(openFileDialog.FileName);
+
+                // Verificar si el JSON contiene datos de roedores
+                if (string.IsNullOrEmpty(json))
+                {
+                    MensajeError("El archivo seleccionado está vacío.");
+                    return;
+                }
+
+                // Deserializar el JSON solo si contiene datos de roedores
                 JsonSerializerOptions options = new JsonSerializerOptions
                 {
                     Converters = { new RoedorConverter() }
                 };
 
-                List<Roedor>? roedoresDeserializados = JsonSerializer.Deserialize<List<Roedor>>(json, options);
-                if (roedoresDeserializados != null)
+                try
                 {
-                    terrario.Roedores = roedoresDeserializados;
-                    ActualizarVisor();
-                }
-            }
-            else
-            {
-                MensajeError("El archivo 'roedores.json' no existe.");
-            }
-        }
-
-        private void SerializarXML()
-        {
-            List<Roedor> roedores = new List<Roedor>();
-            foreach (object item in lstRoedores.Items)
-            {
-                if (item is Roedor roedor)
-                {
-                    roedores.Add(roedor);
-                }
-            }
-
-            XmlSerializer serializer = new XmlSerializer(typeof(List<Roedor>));
-            using (TextWriter writer = new StreamWriter("./roedores.xml"))
-            {
-                serializer.Serialize(writer, roedores);
-            }
-        }
-
-        private void DeserializarXML()
-        {
-            if (File.Exists("./roedores.xml"))
-            {
-                XmlSerializer serializer = new XmlSerializer(typeof(List<Roedor>));
-                using (FileStream fs = new FileStream("./roedores.xml", FileMode.Open))
-                {
-                    if (serializer.Deserialize(fs) is List<Roedor> roedoresDeserializados)
+                    List<Roedor>? roedoresDeserializados = JsonSerializer.Deserialize<List<Roedor>>(json, options);
+                    if (roedoresDeserializados != null)
                     {
                         terrario.Roedores = roedoresDeserializados;
                         ActualizarVisor();
                     }
                 }
+                catch (JsonException)
+                {
+                    MensajeError("El archivo seleccionado no tiene el formato adecuado.");
+                }
             }
             else
             {
-                MensajeError("El archivo 'roedores.xml' no existe.");
+                MensajeError("No se seleccionó ningún archivo.");
+            }
+        }
+
+        private void SerializarXML()
+        {
+            try
+            {
+                List<Roedor> roedores = new List<Roedor>();
+                foreach (object item in lstRoedores.Items)
+                {
+                    if (item is Roedor roedor)
+                    {
+                        roedores.Add(roedor);
+                    }
+                }
+
+                XmlSerializer serializer = new XmlSerializer(typeof(List<Roedor>));
+
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Title = "Guardar archivo XML";
+                saveFileDialog.Filter = "XML files (*.xml)|*.xml";
+                saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string ruta = saveFileDialog.FileName;
+                    using (TextWriter writer = new StreamWriter(ruta))
+                    {
+                        serializer.Serialize(writer, roedores);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MensajeError($"Error al serializar a XML: {ex.Message}");
+            }
+        }
+
+        private void DeserializarXML()
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Title = "Abrir archivo XML";
+            openFileDialog.Filter = "XML files (*.xml)|*.xml";
+            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    XmlSerializer serializer = new XmlSerializer(typeof(List<Roedor>));
+                    using (FileStream fs = new FileStream(openFileDialog.FileName, FileMode.Open))
+                    {
+                        if (serializer.Deserialize(fs) is List<Roedor> roedoresDeserializados)
+                        {
+                            terrario.Roedores = roedoresDeserializados;
+                            ActualizarVisor();
+                        }
+                    }
+                }
+                catch (InvalidOperationException)
+                {
+                    MensajeError("El archivo XML no tiene el formato adecuado.");
+                }
+            }
+            else
+            {
+                MensajeError("No se seleccionó ningún archivo.");
             }
         }
 
