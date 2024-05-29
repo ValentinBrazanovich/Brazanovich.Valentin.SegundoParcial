@@ -12,7 +12,7 @@ Fecha de entrega: 29/05/2024
 
 ## Sobre mí: 
 Mi nombre es Valentín Jorge Brazanovich y estoy estudiando la Tecnicatura Universitaria en Programación. 
-Este proyecto es una demostración de mis capacidades creando código en C# y la buena implementación de Clases y la Interfaz de Usuario (UI).
+Este proyecto es una demostración de mis capacidades creando código en C# y la buena implementación de Clases e Interfaz de Usuario (UI).
 
 ## Resumen: 
 La aplicación permite al usuario gestionar la información de diferentes tipos de roedores (Hámsters, Ratones, Topos). Las funcionalidades incluyen:
