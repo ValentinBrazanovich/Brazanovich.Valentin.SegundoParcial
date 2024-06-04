@@ -22,7 +22,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Roedores.Topo">
-    <Position X="13.75" Y="2.75" Width="7.75" />
+    <Position X="13.75" Y="4.5" Width="7.75" />
     <TypeIdentifier>
       <HashCode>AAACBAAAAgCAAAAEgAAAAAAAAAgAAIABQAAABAAAAAA=</HashCode>
       <FileName>Topo.cs</FileName>
