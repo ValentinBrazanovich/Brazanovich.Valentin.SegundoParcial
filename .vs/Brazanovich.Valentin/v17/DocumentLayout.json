@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Roedores.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\roedores\\diagramaroedor.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
-      "RelativeMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Roedores.csproj|solutionrelative:roedores\\diagramaroedor.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,23 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DiagramaRoedor.cd",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\DiagramaRoedor.cd",
-              "RelativeDocumentMoniker": "Roedores\\DiagramaRoedor.cd",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\DiagramaRoedor.cd",
-              "RelativeToolTip": "Roedores\\DiagramaRoedor.cd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2024-06-04T12:28:48.275Z",
-              "EditorCaption": ""
             }
           ]
         }
