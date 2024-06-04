@@ -20,7 +20,11 @@ La aplicación permite al usuario gestionar la información de diferentes tipos 
 ![](Capturas/Login.png)
 - **Registro de accesos**: Guarda la información del usuario que ha ingresado, incluyendo la fecha y hora para luego visualizarla en un log.
 ![](Capturas/RegistroUsuarios.png)
+
+
 - **Serialización y deserialización**: Guarda y recupera la información de los roedores en formatos JSON y XML.
+
+
 - **Visualizacion de Roedores**: Se pueden agregar, modificar y eliminar Roedores y cada uno tiene características específicas.
 ![](Capturas/VisualizadorRoedores.png)
 
