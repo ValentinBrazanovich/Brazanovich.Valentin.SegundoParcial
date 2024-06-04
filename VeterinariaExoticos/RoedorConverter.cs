@@ -71,7 +71,9 @@ namespace VeterinariaExoticos
                     JsonSerializer.Serialize(writer, propValue, prop.PropertyType, options);
                 }
             }
+
             writer.WriteEndObject();
         }
+
     }
 }

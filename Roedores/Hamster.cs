@@ -109,5 +109,6 @@ namespace Roedores
 
             return $"El hámster{rta}está en su peso ideal\n\t(45g - 65g ruso, 85g - 150g sirio)";
         }
+
     }
 }
