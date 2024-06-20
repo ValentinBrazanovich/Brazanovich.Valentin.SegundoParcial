@@ -39,7 +39,7 @@
             richTextBoxLog.Location = new Point(12, 12);
             richTextBoxLog.Name = "richTextBoxLog";
             richTextBoxLog.ReadOnly = true;
-            richTextBoxLog.Size = new Size(776, 426);
+            richTextBoxLog.Size = new Size(985, 426);
             richTextBoxLog.TabIndex = 1;
             richTextBoxLog.Text = "";
             // 
@@ -47,7 +47,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1009, 450);
             Controls.Add(richTextBoxLog);
             Name = "FrmVisualizador";
             Text = "Registro de usuarios";

@@ -46,6 +46,8 @@
             descendenteToolStripMenuItem = new ToolStripMenuItem();
             porNombreToolStripMenuItem1 = new ToolStripMenuItem();
             porPesoToolStripMenuItem1 = new ToolStripMenuItem();
+            verToolStripMenuItem = new ToolStripMenuItem();
+            registroDeUsuariosToolStripMenuItem = new ToolStripMenuItem();
             lblHamster = new Label();
             lblTopo = new Label();
             lblRaton = new Label();
@@ -106,7 +108,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { JSONToolStrip, deserializarToolStripMenuItem, ordenarToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { JSONToolStrip, deserializarToolStripMenuItem, ordenarToolStripMenuItem, verToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(753, 24);
@@ -203,6 +205,20 @@
             porPesoToolStripMenuItem1.Size = new Size(137, 22);
             porPesoToolStripMenuItem1.Text = "Por peso";
             porPesoToolStripMenuItem1.Click += OrdenarDescendentePorPesoToolStripMenuItem_Click;
+            // 
+            // verToolStripMenuItem
+            // 
+            verToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { registroDeUsuariosToolStripMenuItem });
+            verToolStripMenuItem.Name = "verToolStripMenuItem";
+            verToolStripMenuItem.Size = new Size(35, 20);
+            verToolStripMenuItem.Text = "Ver";
+            // 
+            // registroDeUsuariosToolStripMenuItem
+            // 
+            registroDeUsuariosToolStripMenuItem.Name = "registroDeUsuariosToolStripMenuItem";
+            registroDeUsuariosToolStripMenuItem.Size = new Size(180, 22);
+            registroDeUsuariosToolStripMenuItem.Text = "Registro de usuarios";
+            registroDeUsuariosToolStripMenuItem.Click += RegistroDeUsuariosToolStripMenuItem_Click;
             // 
             // lblHamster
             // 
@@ -348,5 +364,7 @@
         private ToolStripStatusLabel toolStripStatusLabel1;
         private ToolStripStatusLabel toolStripStatusLabel2;
         private Button BtnOpciones;
+        private ToolStripMenuItem verToolStripMenuItem;
+        private ToolStripMenuItem registroDeUsuariosToolStripMenuItem;
     }
 }

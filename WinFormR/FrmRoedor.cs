@@ -111,13 +111,14 @@ namespace WinFormR
 
         /// <summary>
         /// Verifica que los campos Nombre (padre) y el primer atributo (derivada)
-        /// no estén vacios.
+        /// no estén vacios y contengan datos válidos.
         /// </summary>
         /// <returns></returns>
         private bool CamposValidos()
         {
             return !string.IsNullOrEmpty(txtNombre.Text) &&
-                   !string.IsNullOrEmpty(txtAtributo.Text);
+                   !string.IsNullOrEmpty(txtAtributo.Text) &&
+                    double.TryParse(txtAtributo.Text, out _);
         }
 
         /// <summary>
@@ -190,7 +191,7 @@ namespace WinFormR
             }
             else if (atributoValido)
             {
-                MensajeError("El peso no es válido. Se asignó el peso por defecto para un Hámster.");
+                MensajeError("El peso no ha sido ingresado. Se asignó el peso por defecto para un Hámster.");
                 hamster = new Hamster(nombre, tipoAlimentacion, atributoDouble, esNocturno);
             }
             else
@@ -222,7 +223,7 @@ namespace WinFormR
             }
             else if (atributoValido)
             {
-                MensajeError("El peso no es válido. Se asignó el peso por defecto para un Ratón.");
+                MensajeError("El peso no ha sido ingresado. Se asignó el peso por defecto para un Ratón.");
                 raton = new Raton(nombre, tipoAlimentacion, atributoDouble, esAlbino);
             }
             else
@@ -254,7 +255,7 @@ namespace WinFormR
             }
             else if (atributoValido)
             {
-                MensajeError("El peso no es válido. Se asignó el peso por defecto para un Topo.");
+                MensajeError("El peso no ha sido ingresado. Se asignó el peso por defecto para un Topo.");
                 topo = new Topo(nombre, tipoAlimentacion, atributoDouble, garrasAfiladas);
             }
             else

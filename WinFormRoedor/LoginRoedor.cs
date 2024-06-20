@@ -12,6 +12,9 @@ namespace WinFormRoedor
             InitializeComponent();
             CargarUsuarios();
 
+            txtCorreo.KeyPress += Txt_KeyPress;
+            txtClave.KeyPress += Txt_KeyPress;
+
             this.MaximizeBox = false;
         }
 
@@ -86,14 +89,16 @@ namespace WinFormRoedor
         }
 
         /// <summary>
-        /// Abre un Form con el registro de cada ingreso exitoso.
+        /// Maneja el evento KeyPress para los TextBox de correo y clave.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void BtnRegistro_Click(object sender, EventArgs e)
+        private void Txt_KeyPress(object? sender, KeyPressEventArgs e)
         {
-            FrmVisualizador visualizador = new FrmVisualizador();
-            visualizador.ShowDialog();
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                BtnIngresar_Click(sender, e);
+            }
         }
 
     }

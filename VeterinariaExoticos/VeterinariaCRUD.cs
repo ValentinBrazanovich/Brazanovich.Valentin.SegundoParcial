@@ -4,6 +4,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Xml.Serialization;
 using WinFormR;
+using WinFormVisualizador;
 
 namespace VeterinariaExoticos
 {
@@ -106,9 +107,13 @@ namespace VeterinariaExoticos
             {
                 Roedor roedorSeleccionado = (Roedor)lstRoedores.SelectedItem;
 
-                terrario -= roedorSeleccionado;
-
-                ActualizarVisor();
+                DialogResult result = MessageBox.Show("¿Está seguro de que desea eliminar al roedor?",
+                                                      "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    terrario -= roedorSeleccionado;
+                    ActualizarVisor();
+                }
             }
             else
             {
@@ -137,6 +142,18 @@ namespace VeterinariaExoticos
                 lstRoedores.Items.Add(roedor);
             }
         }
+
+        /// <summary>
+        /// Abre un Form con el registro de cada ingreso exitoso.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void RegistroDeUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmVisualizador visualizador = new FrmVisualizador();
+            visualizador.ShowDialog();
+        }
+
 
         /// <summary>
         /// Serializa la lista de Roedores en un archivo .JSON ingresando
