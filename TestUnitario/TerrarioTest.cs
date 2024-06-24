@@ -49,6 +49,36 @@ namespace TestUnitario
             Assert.IsFalse(terrario.Roedores.Contains(hamster));
         }
 
+        public void OrdenarPorNombre_Ascendente()
+        {
+            Terrario terrario = new Terrario();
+            Hamster hamster = new Hamster("Zara", 50, ETipoAlimentacion.Herbivoro, 4, true);
+            Topo topo = new Topo("Ana", 60, ETipoAlimentacion.Omnivoro, 7.2, true);
+            terrario += hamster;
+            terrario += topo;
+
+            terrario.OrdenarPorNombre(true);
+
+            Assert.AreEqual("Ana", terrario.Roedores[0].Nombre);
+            Assert.AreEqual("Zara", terrario.Roedores[1].Nombre);
+        }
+
+        [TestMethod]
+        public void OrdenarPorPeso_Descendente()
+        {
+            Terrario terrario = new Terrario();
+            Hamster hamster = new Hamster("Zara", 48.65, ETipoAlimentacion.Herbivoro, 4.25, true);
+            Raton raton = new Raton("Ana", 63.7, ETipoAlimentacion.Herbivoro, 6, true);
+
+            terrario += hamster;
+            terrario += raton;
+
+            terrario.OrdenarPorPeso(false);
+
+            Assert.AreEqual(63.7, terrario.Roedores[0].Peso);
+            Assert.AreEqual(48.65, terrario.Roedores[1].Peso);
+        }
+
         [TestMethod]
         public void TerrarioDefault()
         {

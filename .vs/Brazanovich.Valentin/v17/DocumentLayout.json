@@ -5,22 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{70A99014-5310-4D9F-A75F-E40A54FEE4E2}|TestUnitario\\TestUnitario.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\testunitario\\terrariotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70A99014-5310-4D9F-A75F-E40A54FEE4E2}|TestUnitario\\TestUnitario.csproj|solutionrelative:testunitario\\terrariotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Roedores.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\roedores\\terrario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Roedores.csproj|solutionrelative:roedores\\terrario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70A99014-5310-4D9F-A75F-E40A54FEE4E2}|TestUnitario\\TestUnitario.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\testunitario\\topotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70A99014-5310-4D9F-A75F-E40A54FEE4E2}|TestUnitario\\TestUnitario.csproj|solutionrelative:testunitario\\topotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70A99014-5310-4D9F-A75F-E40A54FEE4E2}|TestUnitario\\TestUnitario.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\testunitario\\ratontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70A99014-5310-4D9F-A75F-E40A54FEE4E2}|TestUnitario\\TestUnitario.csproj|solutionrelative:testunitario\\ratontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70A99014-5310-4D9F-A75F-E40A54FEE4E2}|TestUnitario\\TestUnitario.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\testunitario\\hamstertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70A99014-5310-4D9F-A75F-E40A54FEE4E2}|TestUnitario\\TestUnitario.csproj|solutionrelative:testunitario\\hamstertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,24 +14,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Terrario.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Terrario.cs",
-              "RelativeDocumentMoniker": "Roedores\\Terrario.cs",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Terrario.cs",
-              "RelativeToolTip": "Roedores\\Terrario.cs",
-              "ViewState": "AQIAAGgAAAAAAAAAAAAcwIIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T02:31:39.898Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -57,48 +28,9 @@
               "RelativeDocumentMoniker": "TestUnitario\\TerrarioTest.cs",
               "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\TestUnitario\\TerrarioTest.cs",
               "RelativeToolTip": "TestUnitario\\TerrarioTest.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAADwAAAABAAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAAAowE0AAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T02:30:40.664Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TopoTest.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\TestUnitario\\TopoTest.cs",
-              "RelativeDocumentMoniker": "TestUnitario\\TopoTest.cs",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\TestUnitario\\TopoTest.cs",
-              "RelativeToolTip": "TestUnitario\\TopoTest.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAowEEAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T02:12:07.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RatonTest.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\TestUnitario\\RatonTest.cs",
-              "RelativeDocumentMoniker": "TestUnitario\\RatonTest.cs",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\TestUnitario\\RatonTest.cs",
-              "RelativeToolTip": "TestUnitario\\RatonTest.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAowBgAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T01:59:37.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HamsterTest.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\TestUnitario\\HamsterTest.cs",
-              "RelativeDocumentMoniker": "TestUnitario\\HamsterTest.cs",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\TestUnitario\\HamsterTest.cs",
-              "RelativeToolTip": "TestUnitario\\HamsterTest.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABkAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T23:53:31.684Z",
+              "WhenOpened": "2024-06-24T02:50:32.916Z",
               "EditorCaption": ""
             }
           ]
