@@ -35,7 +35,7 @@ namespace Roedores
         }
 
         public Hamster() {
-            this.longitud = 0;
+            this.longitud = 4;
             this.esNocturno = false;
         }
 
@@ -82,6 +82,29 @@ namespace Roedores
             {
                 return false;
             }
+        }
+
+        public static bool operator ==(Hamster h1, Hamster h2)
+        {
+            if (ReferenceEquals(h1, h2))
+            {
+                return true;
+            }
+            if (h1 is null || h2 is null)
+            {
+                return false;
+            }
+
+            return h1.Nombre == h2.Nombre &&
+                   h1.Peso == h2.Peso &&
+                   h1.TipoAlimentacion == h2.TipoAlimentacion &&
+                   h1.longitud == h2.longitud &&
+                   h1.esNocturno == h2.esNocturno;
+        }
+
+        public static bool operator !=(Hamster h1, Hamster h2)
+        {
+            return !(h1 == h2);
         }
 
         public override int GetHashCode()

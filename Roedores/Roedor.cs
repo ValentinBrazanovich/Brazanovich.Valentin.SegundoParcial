@@ -30,7 +30,7 @@ namespace Roedores
 
         public Roedor() {
             this.nombre = "sin nombre";
-            this.peso = 0;
+            this.peso = 40;
             this.tipoAlimentacion = ETipoAlimentacion.Omnivoro;
         }
 

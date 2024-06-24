@@ -35,7 +35,7 @@ namespace Roedores
         }
 
         public Raton() {
-            this.largoCola = 0;
+            this.largoCola = 4;
             this.esAlbino = false;
         }
 
@@ -83,6 +83,29 @@ namespace Roedores
             {
                 return false;
             }
+        }
+
+        public static bool operator ==(Raton r1, Raton r2)
+        {
+            if (ReferenceEquals(r1, r2))
+            {
+                return true;
+            }
+            if (r1 is null || r2 is null)
+            {
+                return false;
+            }
+
+            return r1.Nombre == r2.Nombre &&
+                   r1.Peso == r2.Peso &&
+                   r1.TipoAlimentacion == r2.TipoAlimentacion &&
+                   r1.largoCola == r2.largoCola &&
+                   r1.esAlbino == r2.esAlbino;
+        }
+
+        public static bool operator !=(Raton r1, Raton r2)
+        {
+            return !(r1 == r2);
         }
 
         public override int GetHashCode()

@@ -35,7 +35,7 @@ namespace Roedores
         }
 
         public Topo() {
-            this.profundidadExcavada = 0;
+            this.profundidadExcavada = 4;
             this.garrasAfiladas = false;
         }
 
@@ -83,6 +83,29 @@ namespace Roedores
             {
                 return false;
             }
+        }
+
+        public static bool operator ==(Topo t1, Topo t2)
+        {
+            if (ReferenceEquals(t1, t2))
+            {
+                return true;
+            }
+            if (t1 is null || t2 is null)
+            {
+                return false;
+            }
+
+            return t1.Nombre == t2.Nombre &&
+                   t1.Peso == t2.Peso &&
+                   t1.TipoAlimentacion == t2.TipoAlimentacion &&
+                   t1.profundidadExcavada == t2.profundidadExcavada &&
+                   t1.garrasAfiladas == t2.garrasAfiladas;
+        }
+
+        public static bool operator !=(Topo t1, Topo t2)
+        {
+            return !(t1 == t2);
         }
 
         public override int GetHashCode()
