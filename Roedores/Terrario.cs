@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Roedores
 {
-    public class Terrario
+    public class Terrario : IPesoPromedio, IOperaciones
     {
         private List<Roedor> roedores;
 
@@ -26,6 +26,24 @@ namespace Roedores
         }
 
         /// <summary>
+        /// Agrega un roedor a la lista de roedores
+        /// </summary>
+        /// <param name="roedor"> El roedor que se agrega </param>
+        void IOperaciones.AgregarRoedor(Roedor roedor) 
+        {
+            roedores.Add(roedor);
+        }
+
+        /// <summary>
+        /// Elimina un roedor de la lista de roedores
+        /// </summary>
+        /// <param name="roedor"> El roedor que se eliminará </param>
+        void IOperaciones.EliminarRoedor(Roedor roedor)
+        {
+            roedores.Remove(roedor);
+        }
+
+        /// <summary>
         /// Si la instancia de la clase Roedor no existe en la lista de roedores del terrario,
         /// entonces se agrega a la misma, caso contrario no se agrega.
         /// </summary>
@@ -37,11 +55,11 @@ namespace Roedores
         {
             if (t != r)
             {
-                t.roedores.Add(r);
+                Gestion.AgregarRoedorAlTerrario(t, r);
             }
+
             return t;
         }
-
 
         /// <summary>
         /// Si la instancia de la clase Roedor existe en la lista de roedores del terrario,
@@ -52,10 +70,11 @@ namespace Roedores
         /// <returns> Segun el caso, se devuelve la lista con un roedor menos </returns>
         public static Terrario operator -(Terrario t, Roedor r)
         {
-            if (t == r)
+            if(t == r)
             {
-                t.roedores.Remove(r);
+                Gestion.EliminarRoedorDelTerrario(t, r);
             }
+
             return t;
         }
 
@@ -124,6 +143,25 @@ namespace Roedores
             {
                 roedores = roedores.OrderByDescending(r => r.Peso).ToList();
             }
+        }
+
+        /// <summary>
+        /// Calcula el peso promedio del tipo de roedor especificado
+        /// como parámetro
+        /// </summary>
+        /// <typeparam name="T"> El tipo de roedor </typeparam>
+        /// <returns> Retorna el promedio calculado o 0 si no hay un
+        /// roedor del tipo especificado </returns>
+        double IPesoPromedio.CalcularPesoPromedio<T>()
+        {
+            var roedoresDelTipo = roedores.OfType<T>();
+
+            if (roedoresDelTipo.Any())
+            {
+                return roedoresDelTipo.Average(r => r.Peso);
+            }
+
+            return 0;
         }
 
     }

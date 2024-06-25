@@ -20,7 +20,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opciones", "Opciones\Opcion
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormVisualizador", "WinFormVisualizador\WinFormVisualizador.csproj", "{53722358-F83E-4A48-A746-20F40CA21035}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUnitario", "TestUnitario\TestUnitario.csproj", "{70A99014-5310-4D9F-A75F-E40A54FEE4E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestUnitario", "TestUnitario\TestUnitario.csproj", "{70A99014-5310-4D9F-A75F-E40A54FEE4E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

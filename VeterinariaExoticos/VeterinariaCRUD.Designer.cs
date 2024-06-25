@@ -48,6 +48,11 @@
             porPesoToolStripMenuItem1 = new ToolStripMenuItem();
             verToolStripMenuItem = new ToolStripMenuItem();
             registroDeUsuariosToolStripMenuItem = new ToolStripMenuItem();
+            calcularToolStripMenuItem = new ToolStripMenuItem();
+            pesoPromedioToolStripMenuItem = new ToolStripMenuItem();
+            hámsterToolStripMenuItem = new ToolStripMenuItem();
+            ratónToolStripMenuItem = new ToolStripMenuItem();
+            topoToolStripMenuItem = new ToolStripMenuItem();
             lblHamster = new Label();
             lblTopo = new Label();
             lblRaton = new Label();
@@ -108,7 +113,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { JSONToolStrip, deserializarToolStripMenuItem, ordenarToolStripMenuItem, verToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { JSONToolStrip, deserializarToolStripMenuItem, ordenarToolStripMenuItem, verToolStripMenuItem, calcularToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(753, 24);
@@ -219,6 +224,41 @@
             registroDeUsuariosToolStripMenuItem.Size = new Size(180, 22);
             registroDeUsuariosToolStripMenuItem.Text = "Registro de usuarios";
             registroDeUsuariosToolStripMenuItem.Click += RegistroDeUsuariosToolStripMenuItem_Click;
+            // 
+            // calcularToolStripMenuItem
+            // 
+            calcularToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { pesoPromedioToolStripMenuItem });
+            calcularToolStripMenuItem.Name = "calcularToolStripMenuItem";
+            calcularToolStripMenuItem.Size = new Size(62, 20);
+            calcularToolStripMenuItem.Text = "Calcular";
+            // 
+            // pesoPromedioToolStripMenuItem
+            // 
+            pesoPromedioToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { hámsterToolStripMenuItem, ratónToolStripMenuItem, topoToolStripMenuItem });
+            pesoPromedioToolStripMenuItem.Name = "pesoPromedioToolStripMenuItem";
+            pesoPromedioToolStripMenuItem.Size = new Size(180, 22);
+            pesoPromedioToolStripMenuItem.Text = "Peso promedio";
+            // 
+            // hámsterToolStripMenuItem
+            // 
+            hámsterToolStripMenuItem.Name = "hámsterToolStripMenuItem";
+            hámsterToolStripMenuItem.Size = new Size(180, 22);
+            hámsterToolStripMenuItem.Text = "Hámster";
+            hámsterToolStripMenuItem.Click += HamsterToolStripMenuItem_Click;
+            // 
+            // ratónToolStripMenuItem
+            // 
+            ratónToolStripMenuItem.Name = "ratónToolStripMenuItem";
+            ratónToolStripMenuItem.Size = new Size(180, 22);
+            ratónToolStripMenuItem.Text = "Ratón";
+            ratónToolStripMenuItem.Click += RatonToolStripMenuItem_Click;
+            // 
+            // topoToolStripMenuItem
+            // 
+            topoToolStripMenuItem.Name = "topoToolStripMenuItem";
+            topoToolStripMenuItem.Size = new Size(180, 22);
+            topoToolStripMenuItem.Text = "Topo";
+            topoToolStripMenuItem.Click += TopoToolStripMenuItem_Click;
             // 
             // lblHamster
             // 
@@ -366,5 +406,10 @@
         private Button BtnOpciones;
         private ToolStripMenuItem verToolStripMenuItem;
         private ToolStripMenuItem registroDeUsuariosToolStripMenuItem;
+        private ToolStripMenuItem calcularToolStripMenuItem;
+        private ToolStripMenuItem pesoPromedioToolStripMenuItem;
+        private ToolStripMenuItem hámsterToolStripMenuItem;
+        private ToolStripMenuItem ratónToolStripMenuItem;
+        private ToolStripMenuItem topoToolStripMenuItem;
     }
 }

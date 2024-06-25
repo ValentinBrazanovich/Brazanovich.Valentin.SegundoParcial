@@ -446,5 +446,50 @@ namespace VeterinariaExoticos
             }
         }
 
+        /// <summary>
+        /// Se muestra el mensaje de peso promedio
+        /// </summary>
+        /// <param name="msg"> El mensaje a mostrar </param>
+        /// <param name="promedio"> El promedio de peso </param>
+        private static void MensajePromedio(string msg, double promedio)
+        {
+            MessageBox.Show($"{msg}: {promedio}", "Promedio de Peso",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        /// <summary>
+        /// Al hacer click se muestra el peso promedio de hámsters
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void HamsterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            double promedioHamster = Gestion.MostrarPromedioRoedor<Hamster>(terrario);
+            MensajePromedio("Promedio de peso de Hámsters", promedioHamster);
+        }
+
+        /// <summary>
+        /// Al hacer click se muestra el peso promedio de ratones
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void RatonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            double promedioRaton = Gestion.MostrarPromedioRoedor<Raton>(terrario);
+            MensajePromedio("Promedio de peso de Ratón", promedioRaton);
+        }
+
+        /// <summary>
+        /// Al hacer click se muestra el peso promedio de topos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TopoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            double promedioTopo = Gestion.MostrarPromedioRoedor<Topo>(terrario);
+            MensajePromedio("Promedio de peso de Topo", promedioTopo);
+        }
+
+
     }
 }
