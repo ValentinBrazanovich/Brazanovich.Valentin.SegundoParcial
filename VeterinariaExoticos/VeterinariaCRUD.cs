@@ -2,6 +2,7 @@ using Opciones;
 using Roedores;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Windows.Forms;
 using System.Xml.Serialization;
 using WinFormR;
 using WinFormVisualizador;
@@ -181,7 +182,7 @@ namespace VeterinariaExoticos
                 SaveFileDialog saveFileDialog = new SaveFileDialog();
                 saveFileDialog.Title = "Guardar archivo JSON";
                 saveFileDialog.Filter = "JSON files (*.json)|*.json";
-                saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                saveFileDialog.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
@@ -205,7 +206,7 @@ namespace VeterinariaExoticos
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Title = "Abrir archivo JSON";
             openFileDialog.Filter = "JSON files (*.json)|*.json";
-            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            openFileDialog.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -264,7 +265,7 @@ namespace VeterinariaExoticos
                 SaveFileDialog saveFileDialog = new SaveFileDialog();
                 saveFileDialog.Title = "Guardar archivo XML";
                 saveFileDialog.Filter = "XML files (*.xml)|*.xml";
-                saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                saveFileDialog.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
