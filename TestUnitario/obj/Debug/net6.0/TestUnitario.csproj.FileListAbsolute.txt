@@ -86,8 +86,6 @@ C:\Users\Joshua\source\repos\Brazanovich.Valentin\TestUnitario\bin\Debug\net6.0\
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\TestUnitario\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\TestUnitario\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\TestUnitario\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\Joshua\source\repos\Brazanovich.Valentin\TestUnitario\bin\Debug\net6.0\Roedores.dll
-C:\Users\Joshua\source\repos\Brazanovich.Valentin\TestUnitario\bin\Debug\net6.0\Roedores.pdb
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\TestUnitario\obj\Debug\net6.0\TestUnitario.csproj.AssemblyReference.cache
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\TestUnitario\obj\Debug\net6.0\TestUnitario.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\TestUnitario\obj\Debug\net6.0\TestUnitario.AssemblyInfoInputs.cache
@@ -100,3 +98,5 @@ C:\Users\Joshua\source\repos\Brazanovich.Valentin\TestUnitario\obj\Debug\net6.0\
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\TestUnitario\obj\Debug\net6.0\TestUnitario.pdb
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\TestUnitario\obj\Debug\net6.0\TestUnitario.genruntimeconfig.cache
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\TestUnitario\obj\Debug\net6.0\ref\TestUnitario.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\TestUnitario\bin\Debug\net6.0\Entidades.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\TestUnitario\bin\Debug\net6.0\Entidades.pdb

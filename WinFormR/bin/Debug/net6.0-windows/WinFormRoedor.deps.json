@@ -8,15 +8,15 @@
     ".NETCoreApp,Version=v6.0": {
       "WinFormRoedor/1.0.0": {
         "dependencies": {
-          "Roedores": "1.0.0"
+          "Entidades": "1.0.0"
         },
         "runtime": {
           "WinFormRoedor.dll": {}
         }
       },
-      "Roedores/1.0.0": {
+      "Entidades/1.0.0": {
         "runtime": {
-          "Roedores.dll": {}
+          "Entidades.dll": {}
         }
       }
     }
@@ -27,7 +27,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Roedores/1.0.0": {
+    "Entidades/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

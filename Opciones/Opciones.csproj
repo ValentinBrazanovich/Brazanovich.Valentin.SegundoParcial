@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Roedores\Roedores.csproj" />
+    <ProjectReference Include="..\Roedores\Entidades.csproj" />
   </ItemGroup>
 
 </Project>

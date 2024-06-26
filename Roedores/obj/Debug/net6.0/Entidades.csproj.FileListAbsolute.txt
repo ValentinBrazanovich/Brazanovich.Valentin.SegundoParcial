@@ -1,0 +1,12 @@
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\bin\Debug\net6.0\Entidades.deps.json
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\bin\Debug\net6.0\Entidades.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\bin\Debug\net6.0\Entidades.pdb
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\Entidades.AssemblyInfoInputs.cache
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\Entidades.AssemblyInfo.cs
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\Entidades.sourcelink.json
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\Entidades.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\refint\Entidades.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\Entidades.pdb
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\ref\Entidades.dll

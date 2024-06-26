@@ -2,11 +2,21 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
+      "Entidades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Entidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entidades.dll": {}
+        }
+      },
       "Opciones/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Roedores": "1.0.0"
+          "Entidades": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Opciones.dll": {}
@@ -17,16 +27,6 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WindowsForms"
         ]
-      },
-      "Roedores/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Roedores.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Roedores.dll": {}
-        }
       },
       "WinFormLogin/1.0.0": {
         "type": "project",
@@ -48,7 +48,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Roedores": "1.0.0"
+          "Entidades": "1.0.0"
         },
         "compile": {
           "bin/placeholder/WinFormRoedor.dll": {}
@@ -76,15 +76,15 @@
     }
   },
   "libraries": {
+    "Entidades/1.0.0": {
+      "type": "project",
+      "path": "../Roedores/Entidades.csproj",
+      "msbuildProject": "../Roedores/Entidades.csproj"
+    },
     "Opciones/1.0.0": {
       "type": "project",
       "path": "../Opciones/Opciones.csproj",
       "msbuildProject": "../Opciones/Opciones.csproj"
-    },
-    "Roedores/1.0.0": {
-      "type": "project",
-      "path": "../Roedores/Roedores.csproj",
-      "msbuildProject": "../Roedores/Roedores.csproj"
     },
     "WinFormLogin/1.0.0": {
       "type": "project",
@@ -104,8 +104,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "Entidades >= 1.0.0",
       "Opciones >= 1.0.0",
-      "Roedores >= 1.0.0",
       "WinFormLogin >= 1.0.0",
       "WinFormRoedor >= 1.0.0"
     ]
@@ -140,8 +140,8 @@
             "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Opciones\\Opciones.csproj": {
               "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Opciones\\Opciones.csproj"
             },
-            "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Roedores.csproj": {
-              "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Roedores.csproj"
+            "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Entidades.csproj"
             },
             "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormRoedor\\WinFormLogin.csproj": {
               "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormRoedor\\WinFormLogin.csproj"

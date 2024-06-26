@@ -8,8 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "CRUDVeterinariaExoticos/1.0.0": {
         "dependencies": {
+          "Entidades": "1.0.0",
           "Opciones": "1.0.0",
-          "Roedores": "1.0.0",
           "WinFormLogin": "1.0.0",
           "WinFormRoedor": "1.0.0"
         },
@@ -17,17 +17,17 @@
           "CRUDVeterinariaExoticos.dll": {}
         }
       },
+      "Entidades/1.0.0": {
+        "runtime": {
+          "Entidades.dll": {}
+        }
+      },
       "Opciones/1.0.0": {
         "dependencies": {
-          "Roedores": "1.0.0"
+          "Entidades": "1.0.0"
         },
         "runtime": {
           "Opciones.dll": {}
-        }
-      },
-      "Roedores/1.0.0": {
-        "runtime": {
-          "Roedores.dll": {}
         }
       },
       "WinFormLogin/1.0.0": {
@@ -40,7 +40,7 @@
       },
       "WinFormRoedor/1.0.0": {
         "dependencies": {
-          "Roedores": "1.0.0"
+          "Entidades": "1.0.0"
         },
         "runtime": {
           "WinFormRoedor.dll": {}
@@ -59,12 +59,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Opciones/1.0.0": {
+    "Entidades/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Roedores/1.0.0": {
+    "Opciones/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

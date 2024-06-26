@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roedores", "Roedores\Roedores.csproj", "{C9F62556-821C-4193-BDA0-346579D9D7C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entidades", "Roedores\Entidades.csproj", "{C9F62556-821C-4193-BDA0-346579D9D7C7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUDVeterinariaExoticos", "VeterinariaExoticos\CRUDVeterinariaExoticos.csproj", "{86278CB9-7E70-4D96-A51B-34DD0E166571}"
 EndProject

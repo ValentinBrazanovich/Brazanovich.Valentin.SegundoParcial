@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Roedores.csproj",
-      "projectName": "Roedores",
-      "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Roedores.csproj",
+      "projectUniqueName": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Entidades.csproj",
+      "projectName": "Entidades",
+      "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Entidades.csproj",
       "packagesPath": "C:\\Users\\Joshua\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\obj\\",
       "projectStyle": "PackageReference",

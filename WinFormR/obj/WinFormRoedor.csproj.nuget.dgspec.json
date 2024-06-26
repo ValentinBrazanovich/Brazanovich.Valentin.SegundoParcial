@@ -4,12 +4,12 @@
     "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\WinFormR\\WinFormRoedor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Roedores.csproj": {
+    "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Roedores.csproj",
-        "projectName": "Roedores",
-        "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Roedores.csproj",
+        "projectUniqueName": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Entidades.csproj",
+        "projectName": "Entidades",
+        "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Entidades.csproj",
         "packagesPath": "C:\\Users\\Joshua\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\obj\\",
         "projectStyle": "PackageReference",
@@ -102,8 +102,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Roedores.csproj": {
-                "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Roedores.csproj"
+              "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Entidades.csproj"
               }
             }
           }

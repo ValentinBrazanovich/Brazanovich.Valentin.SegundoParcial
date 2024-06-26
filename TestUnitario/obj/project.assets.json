@@ -1789,14 +1789,14 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "Roedores/1.0.0": {
+      "Entidades/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/Roedores.dll": {}
+          "bin/placeholder/Entidades.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Roedores.dll": {}
+          "bin/placeholder/Entidades.dll": {}
         }
       }
     }
@@ -6336,18 +6336,18 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "Roedores/1.0.0": {
+    "Entidades/1.0.0": {
       "type": "project",
-      "path": "../Roedores/Roedores.csproj",
-      "msbuildProject": "../Roedores/Roedores.csproj"
+      "path": "../Roedores/Entidades.csproj",
+      "msbuildProject": "../Roedores/Entidades.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Entidades >= 1.0.0",
       "MSTest.TestAdapter >= 2.2.8",
       "MSTest.TestFramework >= 2.2.8",
       "Microsoft.NET.Test.Sdk >= 17.1.0",
-      "Roedores >= 1.0.0",
       "coverlet.collector >= 3.1.2"
     ]
   },
@@ -6378,8 +6378,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Roedores.csproj": {
-              "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Roedores.csproj"
+            "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Entidades.csproj"
             }
           }
         }

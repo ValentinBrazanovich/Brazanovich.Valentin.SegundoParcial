@@ -3,8 +3,6 @@ C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\bin\Debug\net6.0-wind
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\bin\Debug\net6.0-windows7.0\Opciones.runtimeconfig.json
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\bin\Debug\net6.0-windows7.0\Opciones.dll
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\bin\Debug\net6.0-windows7.0\Opciones.pdb
-C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\bin\Debug\net6.0-windows7.0\Roedores.dll
-C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\bin\Debug\net6.0-windows7.0\Roedores.pdb
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\obj\Debug\net6.0-windows7.0\Opciones.csproj.AssemblyReference.cache
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\obj\Debug\net6.0-windows7.0\Opciones.FrmOpciones.resources
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\obj\Debug\net6.0-windows7.0\Opciones.FrmSalir.resources
@@ -20,3 +18,5 @@ C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\obj\Debug\net6.0-wind
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\obj\Debug\net6.0-windows7.0\Opciones.pdb
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\obj\Debug\net6.0-windows7.0\Opciones.genruntimeconfig.cache
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\obj\Debug\net6.0-windows7.0\ref\Opciones.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\bin\Debug\net6.0-windows7.0\Entidades.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Opciones\bin\Debug\net6.0-windows7.0\Entidades.pdb

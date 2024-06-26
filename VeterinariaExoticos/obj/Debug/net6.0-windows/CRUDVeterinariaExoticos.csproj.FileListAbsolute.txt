@@ -16,12 +16,10 @@ C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\CRUDVeterinariaExoticos.dll
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\CRUDVeterinariaExoticos.pdb
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\Opciones.dll
-C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\Roedores.dll
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormLogin.dll
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormRoedor.dll
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormVisualizador.dll
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\Opciones.pdb
-C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\Roedores.pdb
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormLogin.pdb
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormRoedor.pdb
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\WinFormVisualizador.pdb
@@ -39,3 +37,5 @@ C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\obj\Debug\
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\obj\Debug\net6.0-windows\CRUDVeterinariaExoticos.pdb
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\obj\Debug\net6.0-windows\CRUDVeterinariaExoticos.genruntimeconfig.cache
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\obj\Debug\net6.0-windows\ref\CRUDVeterinariaExoticos.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\Entidades.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\VeterinariaExoticos\bin\Debug\net6.0-windows\Entidades.pdb
