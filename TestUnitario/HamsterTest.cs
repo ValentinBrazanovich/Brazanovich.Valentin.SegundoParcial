@@ -5,6 +5,9 @@ namespace TestUnitario
     [TestClass]
     public class HamsterTest
     {
+        /// <summary>
+        /// Verifica que 2 hámsters con características idénticas de resultado true
+        /// </summary>
         [TestMethod]
         public void VerificarIgualdadHamsters_Ok()
         {
@@ -19,6 +22,10 @@ namespace TestUnitario
             Assert.IsTrue(rta, "Hámsters con características idénticas deberían ser iguales");
         }
 
+        /// <summary>
+        /// Verifica que 2 Hámsters con características distintas de resultado false
+        /// Esto se prueba con cada característica
+        /// </summary>
         [TestMethod]
         public void VerificarIgualdadHamsters_Falla()
         {
@@ -45,6 +52,9 @@ namespace TestUnitario
             Assert.IsFalse(h9 == h10, "Hamsters con diferente vida nocturna no deberían ser iguales.");
         }
 
+        /// <summary>
+        /// Verifica que 2 hámsters sean iguales
+        /// </summary>
         [TestMethod]
         public void VerificarIgualdadHamstersNulos()
         {
@@ -54,6 +64,9 @@ namespace TestUnitario
             Assert.IsTrue(h1 == h2);
         }
 
+        /// <summary>
+        /// Verifica que el hámster "por default" no sea nulo
+        /// </summary>
         [TestMethod]
         public void HamsterDefault()
         {

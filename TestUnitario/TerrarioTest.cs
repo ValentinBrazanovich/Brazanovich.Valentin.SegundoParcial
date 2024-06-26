@@ -5,6 +5,9 @@ namespace TestUnitario
     [TestClass]
     public class TerrarioTest
     {
+        /// <summary>
+        /// Verifica que al agregar roedores estos hayan ingresado con éxito
+        /// </summary>
         [TestMethod]
         public void AgregarRoedores_Ok()
         {
@@ -25,6 +28,9 @@ namespace TestUnitario
             Assert.IsTrue(terrario.Roedores.Contains(topo));
         }
 
+        /// <summary>
+        /// Verifica que 2 roedores idénticos no puedan ingresar a la lista
+        /// </summary>
         [TestMethod]
         public void AgregarRoedores_Falla()
         {
@@ -38,6 +44,10 @@ namespace TestUnitario
             Assert.AreEqual(1, terrario.Roedores.Count); //solo debe haber un hámster
         }
 
+        /// <summary>
+        /// Verifica que el roedor eliminado ya no esté en la lista
+        /// </summary>
+        [TestMethod]
         public void EliminarRoedores_Ok()
         {
             Terrario terrario = new Terrario();
@@ -49,6 +59,10 @@ namespace TestUnitario
             Assert.IsFalse(terrario.Roedores.Contains(hamster));
         }
 
+        /// <summary>
+        /// Verifica que los roedores se ordenen por nombre de manera ascendente con éxito
+        /// </summary>
+        [TestMethod]
         public void OrdenarPorNombre_Ascendente()
         {
             Terrario terrario = new Terrario();
@@ -63,6 +77,9 @@ namespace TestUnitario
             Assert.AreEqual("Zara", terrario.Roedores[1].Nombre);
         }
 
+        /// <summary>
+        /// Verifica que los roedores se ordenen por peso de manera descendente con éxito
+        /// </summary>
         [TestMethod]
         public void OrdenarPorPeso_Descendente()
         {
@@ -77,14 +94,6 @@ namespace TestUnitario
 
             Assert.AreEqual(63.7, terrario.Roedores[0].Peso);
             Assert.AreEqual(48.65, terrario.Roedores[1].Peso);
-        }
-
-        [TestMethod]
-        public void TerrarioDefault()
-        {
-            Terrario t = new Terrario();
-
-            Assert.IsNotNull(t);
         }
 
     }

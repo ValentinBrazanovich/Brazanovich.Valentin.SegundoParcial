@@ -5,6 +5,9 @@ namespace TestUnitario
     [TestClass]
     public class RatonTest
     {
+        /// <summary>
+        /// Verifica que 2 ratones con características idénticas de resultado true
+        /// </summary>
         [TestMethod]
         public void VerificarIgualdadRaton_Ok()
         {
@@ -19,6 +22,10 @@ namespace TestUnitario
             Assert.IsTrue(rta, "Ratones con características idénticas deberían ser iguales");
         }
 
+        /// <summary>
+        /// Verifica que 2 Ratones con características distintas de resultado false
+        /// Esto se prueba con cada característica
+        /// </summary>
         [TestMethod]
         public void VerificarIgualdadRaton_Falla()
         {
@@ -45,6 +52,9 @@ namespace TestUnitario
             Assert.IsFalse(h9 == h10, "Ratones con diferente pelaje no deberían ser iguales.");
         }
 
+        /// <summary>
+        /// Verifica que 2 ratones sean iguales
+        /// </summary>
         [TestMethod]
         public void VerificarIgualdadRatonesNulos()
         {
@@ -54,6 +64,9 @@ namespace TestUnitario
             Assert.IsTrue(r1 == r2);
         }
 
+        /// <summary>
+        /// Verifica que el ratón "por default" no sea nulo
+        /// </summary>
         [TestMethod]
         public void RatonDefault()
         {

@@ -5,6 +5,9 @@ namespace TestUnitario
     [TestClass]
     public class TopoTest
     {
+        /// <summary>
+        /// Verifica que 2 topos con características idénticas de resultado true
+        /// </summary>
         [TestMethod]
         public void VerificarIgualdadTopo_Ok()
         {
@@ -19,6 +22,10 @@ namespace TestUnitario
             Assert.IsTrue(rta, "Topos con características idénticas deberían ser iguales");
         }
 
+        /// <summary>
+        /// Verifica que 2 topos con características distintas de resultado false
+        /// Esto se prueba con cada característica
+        /// </summary>
         [TestMethod]
         public void VerificarIgualdadTopo_Falla()
         {
@@ -45,6 +52,9 @@ namespace TestUnitario
             Assert.IsFalse(t9 == t10, "Topos con diferente pelaje no deberían ser iguales.");
         }
 
+        /// <summary>
+        /// Verifica que 2 topos sean iguales
+        /// </summary>
         [TestMethod]
         public void VerificarIgualdadToposNulos()
         {
@@ -54,6 +64,9 @@ namespace TestUnitario
             Assert.IsTrue(t1 == t2);
         }
 
+        /// <summary>
+        /// Verifica que el topo "por default" no sea nulo
+        /// </summary>
         [TestMethod]
         public void TopoDefault()
         {
