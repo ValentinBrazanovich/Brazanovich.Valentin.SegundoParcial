@@ -56,8 +56,6 @@
             aDOToolStripMenuItem = new ToolStripMenuItem();
             serializarEnBaseDeDatosToolStripMenuItem = new ToolStripMenuItem();
             deserializarEnBaseDeDatosToolStripMenuItem = new ToolStripMenuItem();
-            actualizarBaseDeDatosToolStripMenuItem = new ToolStripMenuItem();
-            eliminarElementosDeLaBaseDeDatosToolStripMenuItem = new ToolStripMenuItem();
             lblHamster = new Label();
             lblTopo = new Label();
             lblRaton = new Label();
@@ -135,14 +133,14 @@
             // JSONToolStripMenuItem
             // 
             JSONToolStripMenuItem.Name = "JSONToolStripMenuItem";
-            JSONToolStripMenuItem.Size = new Size(102, 22);
+            JSONToolStripMenuItem.Size = new Size(180, 22);
             JSONToolStripMenuItem.Text = "JSON";
             JSONToolStripMenuItem.Click += SerializeJSONMenuItem_Click;
             // 
             // XMLMenuItem
             // 
             XMLMenuItem.Name = "XMLMenuItem";
-            XMLMenuItem.Size = new Size(102, 22);
+            XMLMenuItem.Size = new Size(180, 22);
             XMLMenuItem.Text = "XML";
             XMLMenuItem.Click += SerializeXMLMenuItem_Click;
             // 
@@ -267,7 +265,7 @@
             // 
             // aDOToolStripMenuItem
             // 
-            aDOToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { serializarEnBaseDeDatosToolStripMenuItem, deserializarEnBaseDeDatosToolStripMenuItem, actualizarBaseDeDatosToolStripMenuItem, eliminarElementosDeLaBaseDeDatosToolStripMenuItem });
+            aDOToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { serializarEnBaseDeDatosToolStripMenuItem, deserializarEnBaseDeDatosToolStripMenuItem });
             aDOToolStripMenuItem.Name = "aDOToolStripMenuItem";
             aDOToolStripMenuItem.Size = new Size(44, 20);
             aDOToolStripMenuItem.Text = "ADO";
@@ -275,30 +273,16 @@
             // serializarEnBaseDeDatosToolStripMenuItem
             // 
             serializarEnBaseDeDatosToolStripMenuItem.Name = "serializarEnBaseDeDatosToolStripMenuItem";
-            serializarEnBaseDeDatosToolStripMenuItem.Size = new Size(286, 22);
+            serializarEnBaseDeDatosToolStripMenuItem.Size = new Size(224, 22);
             serializarEnBaseDeDatosToolStripMenuItem.Text = "Serializar en base de datos";
             serializarEnBaseDeDatosToolStripMenuItem.Click += SerializarBaseDeDatosToolStripMenuItem_Click;
             // 
             // deserializarEnBaseDeDatosToolStripMenuItem
             // 
             deserializarEnBaseDeDatosToolStripMenuItem.Name = "deserializarEnBaseDeDatosToolStripMenuItem";
-            deserializarEnBaseDeDatosToolStripMenuItem.Size = new Size(286, 22);
+            deserializarEnBaseDeDatosToolStripMenuItem.Size = new Size(224, 22);
             deserializarEnBaseDeDatosToolStripMenuItem.Text = "Deserializar en base de datos";
             deserializarEnBaseDeDatosToolStripMenuItem.Click += DeserializarBaseDeDatosToolStripMenuItem_Click;
-            // 
-            // actualizarBaseDeDatosToolStripMenuItem
-            // 
-            actualizarBaseDeDatosToolStripMenuItem.Name = "actualizarBaseDeDatosToolStripMenuItem";
-            actualizarBaseDeDatosToolStripMenuItem.Size = new Size(286, 22);
-            actualizarBaseDeDatosToolStripMenuItem.Text = "Modificar elementos de la base de datos";
-            actualizarBaseDeDatosToolStripMenuItem.Click += ModificarBaseDatosToolStripMenuItem_Click;
-            // 
-            // eliminarElementosDeLaBaseDeDatosToolStripMenuItem
-            // 
-            eliminarElementosDeLaBaseDeDatosToolStripMenuItem.Name = "eliminarElementosDeLaBaseDeDatosToolStripMenuItem";
-            eliminarElementosDeLaBaseDeDatosToolStripMenuItem.Size = new Size(286, 22);
-            eliminarElementosDeLaBaseDeDatosToolStripMenuItem.Text = "Eliminar elementos de la base de datos";
-            eliminarElementosDeLaBaseDeDatosToolStripMenuItem.Click += EliminarElementosBaseDeDatosToolStripMenuItem_Click;
             // 
             // lblHamster
             // 
@@ -454,7 +438,5 @@
         private ToolStripMenuItem aDOToolStripMenuItem;
         private ToolStripMenuItem serializarEnBaseDeDatosToolStripMenuItem;
         private ToolStripMenuItem deserializarEnBaseDeDatosToolStripMenuItem;
-        private ToolStripMenuItem actualizarBaseDeDatosToolStripMenuItem;
-        private ToolStripMenuItem eliminarElementosDeLaBaseDeDatosToolStripMenuItem;
     }
 }

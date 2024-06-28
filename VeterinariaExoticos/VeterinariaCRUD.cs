@@ -15,6 +15,7 @@ namespace VeterinariaExoticos
     {
         private Terrario terrario;
         private string nombreOperador;
+        private bool esBaseDeDatos;
 
         public VeterinariaCRUD(string nombreOperador)
         {
@@ -84,18 +85,80 @@ namespace VeterinariaExoticos
 
                     if (terrario.Roedores.Contains(roedorMod))
                     {
-                        MensajeError("El roedor modificado ya existe en la lista.");
+                        MensajeError("El nombre del roedor modificado ya está en la lista.");
                     }
                     else
                     {
                         terrario.Roedores[lstRoedores.SelectedIndex] = roedorMod;
                         ActualizarVisor();
+
+                        if (esBaseDeDatos)
+                        {
+                            ModificarBaseDeDatos(roedorMod, roedorSeleccionado);
+                        }
                     }
                 }
             }
             else
             {
                 MensajeError("No hay roedor seleccionado para modificar.");
+            }
+        }
+
+        /// <summary>
+        /// Modifica el roedor en la base de datos
+        /// </summary>
+        /// <param name="roedorMod"> El roedor modificado </param>
+        /// <param name="roedorSeleccionado"> El roedor original que se modificará </param>
+        private static void ModificarBaseDeDatos(Roedor roedorMod, Roedor roedorSeleccionado)
+        {
+            AccesoDatosRoedores ado = new AccesoDatosRoedores();
+            bool resultado = false;
+
+            if (roedorMod is Hamster hamsterMod)
+            {
+                resultado = ado.ModificarHamster(hamsterMod, roedorSeleccionado.Nombre);
+            }
+            else if (roedorMod is Raton ratonMod)
+            {
+                resultado = ado.ModificarRaton(ratonMod, roedorSeleccionado.Nombre);
+            }
+            else if (roedorMod is Topo topoMod)
+            {
+                resultado = ado.ModificarTopo(topoMod, roedorSeleccionado.Nombre);
+            }
+
+            if (!resultado)
+            {
+                MensajeError($"Error al modificar {roedorMod.Nombre} en la base de datos.");
+            }
+        }
+
+        /// <summary>
+        /// Elimina el roedor en la base de datos
+        /// </summary>
+        /// <param name="roedorSeleccionado"> El roedor que se eliminará </param>
+        private static void EliminarRoedorEnBaseDeDatos(Roedor roedorSeleccionado)
+        {
+            AccesoDatosRoedores ado = new AccesoDatosRoedores();
+            bool resultado = false;
+
+            if (roedorSeleccionado is Hamster)
+            {
+                resultado = ado.EliminarHamster(roedorSeleccionado.Nombre);
+            }
+            else if (roedorSeleccionado is Raton)
+            {
+                resultado = ado.EliminarRaton(roedorSeleccionado.Nombre);
+            }
+            else if (roedorSeleccionado is Topo)
+            {
+                resultado = ado.EliminarTopo(roedorSeleccionado.Nombre);
+            }
+
+            if (!resultado)
+            {
+                MensajeError($"Error al eliminar '{roedorSeleccionado.Nombre}' de la base de datos.");
             }
         }
 
@@ -110,12 +173,18 @@ namespace VeterinariaExoticos
             {
                 Roedor roedorSeleccionado = (Roedor)lstRoedores.SelectedItem;
 
-                DialogResult result = MessageBox.Show("¿Está seguro de que desea eliminar al roedor?",
+                DialogResult result = MessageBox.Show("¿Está seguro de que desea eliminar al roedor?\nSi ha deserializado la" +
+                                                      " base de datos, el roedor se eliminará de la misma.",
                                                       "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
                     terrario -= roedorSeleccionado;
                     ActualizarVisor();
+
+                    if (esBaseDeDatos)
+                    {
+                        EliminarRoedorEnBaseDeDatos(roedorSeleccionado);
+                    }
                 }
             }
             else
@@ -265,6 +334,8 @@ namespace VeterinariaExoticos
                     if (roedoresDeserializados != null)
                     {
                         terrario.Roedores = roedoresDeserializados;
+
+                        esBaseDeDatos = false;
                         ActualizarVisor();
                     }
                 }
@@ -339,6 +410,8 @@ namespace VeterinariaExoticos
                         if (serializer.Deserialize(fs) is List<Roedor> roedoresDeserializados)
                         {
                             terrario.Roedores = roedoresDeserializados;
+
+                            esBaseDeDatos = false;
                             ActualizarVisor();
                         }
                     }
@@ -546,6 +619,7 @@ namespace VeterinariaExoticos
             terrario.Roedores.AddRange(listaRatones);
             terrario.Roedores.AddRange(listaTopos);
 
+            esBaseDeDatos = true;
             ActualizarVisor();
         }
 
@@ -590,14 +664,6 @@ namespace VeterinariaExoticos
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void ModificarBaseDatosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void EliminarElementosBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

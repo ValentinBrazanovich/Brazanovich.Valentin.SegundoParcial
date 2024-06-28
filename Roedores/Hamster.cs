@@ -119,8 +119,8 @@ namespace Entidades
         public override string PesoIdeal()
         {
             string rta;
-            if (((this.Peso >= 45 && this.Peso <= 65) && (this.Longitud >= 6.0 && this.Longitud <= 10.0)) ||
-               ((this.Peso >= 85 && this.Peso <= 150) && (this.Longitud >= 10.0 && this.Longitud <= 18.0)))
+            if (((this.Peso >= 45 && this.Peso <= 65) && (this.Longitud >= 5.0 && this.Longitud <= 8.0)) ||
+               ((this.Peso >= 85 && this.Peso <= 140) && (this.Longitud >= 8.0 && this.Longitud <= 14.0)))
             {
                 rta = " ";
 
@@ -130,7 +130,8 @@ namespace Entidades
                 rta = " no ";
             }
 
-            return $"El hámster{rta}está en su peso ideal\n\t(45g - 65g ruso, 85g - 150g sirio)";
+            return $"El hámster{rta}está en su peso ideal\n\t(45g - 65g ruso, 85g - 140g sirio)" +
+                   $"\n\t(5cm - 8cm ruso, 8cm - 14cm sirio)";
         }
 
     }

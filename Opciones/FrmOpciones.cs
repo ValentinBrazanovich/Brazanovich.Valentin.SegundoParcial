@@ -30,12 +30,27 @@ namespace Opciones
         /// <param name="e"></param>
         private void BtnVerde_Click(object sender, EventArgs e)
         {
-            if(roedorSeleccionado is Hamster || roedorSeleccionado is Raton ||
-               roedorSeleccionado is Topo)
+            string sonido;
+            
+            if(roedorSeleccionado is Hamster)
             {
-                MessageBox.Show(roedorSeleccionado.ObtenerSonido(), "Información",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                sonido = "Bufido";
             }
+            else if(roedorSeleccionado is Raton)
+            {
+                sonido = "Chillido";
+            }
+            else if(roedorSeleccionado is Topo)
+            {
+                sonido = "Gruñido";
+            }
+            else
+            {
+                sonido = "sonido";
+            }
+
+            MessageBox.Show(roedorSeleccionado.ObtenerSonido(), $"{sonido}!",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         /// <summary>
