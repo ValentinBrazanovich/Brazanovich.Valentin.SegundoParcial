@@ -53,6 +53,11 @@
             hámsterToolStripMenuItem = new ToolStripMenuItem();
             ratónToolStripMenuItem = new ToolStripMenuItem();
             topoToolStripMenuItem = new ToolStripMenuItem();
+            aDOToolStripMenuItem = new ToolStripMenuItem();
+            serializarEnBaseDeDatosToolStripMenuItem = new ToolStripMenuItem();
+            deserializarEnBaseDeDatosToolStripMenuItem = new ToolStripMenuItem();
+            actualizarBaseDeDatosToolStripMenuItem = new ToolStripMenuItem();
+            eliminarElementosDeLaBaseDeDatosToolStripMenuItem = new ToolStripMenuItem();
             lblHamster = new Label();
             lblTopo = new Label();
             lblRaton = new Label();
@@ -61,7 +66,6 @@
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             toolStripStatusLabel2 = new ToolStripStatusLabel();
             BtnOpciones = new Button();
-            baseDeDatosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
@@ -114,7 +118,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { JSONToolStrip, deserializarToolStripMenuItem, ordenarToolStripMenuItem, verToolStripMenuItem, calcularToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { JSONToolStrip, deserializarToolStripMenuItem, ordenarToolStripMenuItem, verToolStripMenuItem, calcularToolStripMenuItem, aDOToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(753, 24);
@@ -131,20 +135,20 @@
             // JSONToolStripMenuItem
             // 
             JSONToolStripMenuItem.Name = "JSONToolStripMenuItem";
-            JSONToolStripMenuItem.Size = new Size(180, 22);
+            JSONToolStripMenuItem.Size = new Size(102, 22);
             JSONToolStripMenuItem.Text = "JSON";
             JSONToolStripMenuItem.Click += SerializeJSONMenuItem_Click;
             // 
             // XMLMenuItem
             // 
             XMLMenuItem.Name = "XMLMenuItem";
-            XMLMenuItem.Size = new Size(180, 22);
+            XMLMenuItem.Size = new Size(102, 22);
             XMLMenuItem.Text = "XML";
             XMLMenuItem.Click += SerializeXMLMenuItem_Click;
             // 
             // deserializarToolStripMenuItem
             // 
-            deserializarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { jSONToolStripMenuItem1, xMLToolStripMenuItem1, baseDeDatosToolStripMenuItem });
+            deserializarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { jSONToolStripMenuItem1, xMLToolStripMenuItem1 });
             deserializarToolStripMenuItem.Name = "deserializarToolStripMenuItem";
             deserializarToolStripMenuItem.Size = new Size(78, 20);
             deserializarToolStripMenuItem.Text = "Deserializar";
@@ -152,14 +156,14 @@
             // jSONToolStripMenuItem1
             // 
             jSONToolStripMenuItem1.Name = "jSONToolStripMenuItem1";
-            jSONToolStripMenuItem1.Size = new Size(180, 22);
+            jSONToolStripMenuItem1.Size = new Size(102, 22);
             jSONToolStripMenuItem1.Text = "JSON";
             jSONToolStripMenuItem1.Click += DeserializeJSONMenuItem_Click;
             // 
             // xMLToolStripMenuItem1
             // 
             xMLToolStripMenuItem1.Name = "xMLToolStripMenuItem1";
-            xMLToolStripMenuItem1.Size = new Size(180, 22);
+            xMLToolStripMenuItem1.Size = new Size(102, 22);
             xMLToolStripMenuItem1.Text = "XML";
             xMLToolStripMenuItem1.Click += DeserializeXMLMenuItem_Click;
             // 
@@ -174,20 +178,20 @@
             // 
             ascendenteToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { porNombreToolStripMenuItem, porPesoToolStripMenuItem });
             ascendenteToolStripMenuItem.Name = "ascendenteToolStripMenuItem";
-            ascendenteToolStripMenuItem.Size = new Size(180, 22);
+            ascendenteToolStripMenuItem.Size = new Size(142, 22);
             ascendenteToolStripMenuItem.Text = "Ascendente";
             // 
             // porNombreToolStripMenuItem
             // 
             porNombreToolStripMenuItem.Name = "porNombreToolStripMenuItem";
-            porNombreToolStripMenuItem.Size = new Size(180, 22);
+            porNombreToolStripMenuItem.Size = new Size(137, 22);
             porNombreToolStripMenuItem.Text = "Por nombre";
             porNombreToolStripMenuItem.Click += OrdenarAscendentePorNombreToolStripMenuItem_Click;
             // 
             // porPesoToolStripMenuItem
             // 
             porPesoToolStripMenuItem.Name = "porPesoToolStripMenuItem";
-            porPesoToolStripMenuItem.Size = new Size(180, 22);
+            porPesoToolStripMenuItem.Size = new Size(137, 22);
             porPesoToolStripMenuItem.Text = "Por peso";
             porPesoToolStripMenuItem.Click += OrdenarAscendentePorPesoToolStripMenuItem_Click;
             // 
@@ -195,20 +199,20 @@
             // 
             descendenteToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { porNombreToolStripMenuItem1, porPesoToolStripMenuItem1 });
             descendenteToolStripMenuItem.Name = "descendenteToolStripMenuItem";
-            descendenteToolStripMenuItem.Size = new Size(180, 22);
+            descendenteToolStripMenuItem.Size = new Size(142, 22);
             descendenteToolStripMenuItem.Text = "Descendente";
             // 
             // porNombreToolStripMenuItem1
             // 
             porNombreToolStripMenuItem1.Name = "porNombreToolStripMenuItem1";
-            porNombreToolStripMenuItem1.Size = new Size(180, 22);
+            porNombreToolStripMenuItem1.Size = new Size(137, 22);
             porNombreToolStripMenuItem1.Text = "Por nombre";
             porNombreToolStripMenuItem1.Click += OrdenarDescendentePorNombreToolStripMenuItem_Click;
             // 
             // porPesoToolStripMenuItem1
             // 
             porPesoToolStripMenuItem1.Name = "porPesoToolStripMenuItem1";
-            porPesoToolStripMenuItem1.Size = new Size(180, 22);
+            porPesoToolStripMenuItem1.Size = new Size(137, 22);
             porPesoToolStripMenuItem1.Text = "Por peso";
             porPesoToolStripMenuItem1.Click += OrdenarDescendentePorPesoToolStripMenuItem_Click;
             // 
@@ -237,29 +241,64 @@
             // 
             pesoPromedioToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { hámsterToolStripMenuItem, ratónToolStripMenuItem, topoToolStripMenuItem });
             pesoPromedioToolStripMenuItem.Name = "pesoPromedioToolStripMenuItem";
-            pesoPromedioToolStripMenuItem.Size = new Size(180, 22);
+            pesoPromedioToolStripMenuItem.Size = new Size(154, 22);
             pesoPromedioToolStripMenuItem.Text = "Peso promedio";
             // 
             // hámsterToolStripMenuItem
             // 
             hámsterToolStripMenuItem.Name = "hámsterToolStripMenuItem";
-            hámsterToolStripMenuItem.Size = new Size(180, 22);
+            hámsterToolStripMenuItem.Size = new Size(119, 22);
             hámsterToolStripMenuItem.Text = "Hámster";
             hámsterToolStripMenuItem.Click += HamsterToolStripMenuItem_Click;
             // 
             // ratónToolStripMenuItem
             // 
             ratónToolStripMenuItem.Name = "ratónToolStripMenuItem";
-            ratónToolStripMenuItem.Size = new Size(180, 22);
+            ratónToolStripMenuItem.Size = new Size(119, 22);
             ratónToolStripMenuItem.Text = "Ratón";
             ratónToolStripMenuItem.Click += RatonToolStripMenuItem_Click;
             // 
             // topoToolStripMenuItem
             // 
             topoToolStripMenuItem.Name = "topoToolStripMenuItem";
-            topoToolStripMenuItem.Size = new Size(180, 22);
+            topoToolStripMenuItem.Size = new Size(119, 22);
             topoToolStripMenuItem.Text = "Topo";
             topoToolStripMenuItem.Click += TopoToolStripMenuItem_Click;
+            // 
+            // aDOToolStripMenuItem
+            // 
+            aDOToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { serializarEnBaseDeDatosToolStripMenuItem, deserializarEnBaseDeDatosToolStripMenuItem, actualizarBaseDeDatosToolStripMenuItem, eliminarElementosDeLaBaseDeDatosToolStripMenuItem });
+            aDOToolStripMenuItem.Name = "aDOToolStripMenuItem";
+            aDOToolStripMenuItem.Size = new Size(44, 20);
+            aDOToolStripMenuItem.Text = "ADO";
+            // 
+            // serializarEnBaseDeDatosToolStripMenuItem
+            // 
+            serializarEnBaseDeDatosToolStripMenuItem.Name = "serializarEnBaseDeDatosToolStripMenuItem";
+            serializarEnBaseDeDatosToolStripMenuItem.Size = new Size(286, 22);
+            serializarEnBaseDeDatosToolStripMenuItem.Text = "Serializar en base de datos";
+            serializarEnBaseDeDatosToolStripMenuItem.Click += SerializarBaseDeDatosToolStripMenuItem_Click;
+            // 
+            // deserializarEnBaseDeDatosToolStripMenuItem
+            // 
+            deserializarEnBaseDeDatosToolStripMenuItem.Name = "deserializarEnBaseDeDatosToolStripMenuItem";
+            deserializarEnBaseDeDatosToolStripMenuItem.Size = new Size(286, 22);
+            deserializarEnBaseDeDatosToolStripMenuItem.Text = "Deserializar en base de datos";
+            deserializarEnBaseDeDatosToolStripMenuItem.Click += DeserializarBaseDeDatosToolStripMenuItem_Click;
+            // 
+            // actualizarBaseDeDatosToolStripMenuItem
+            // 
+            actualizarBaseDeDatosToolStripMenuItem.Name = "actualizarBaseDeDatosToolStripMenuItem";
+            actualizarBaseDeDatosToolStripMenuItem.Size = new Size(286, 22);
+            actualizarBaseDeDatosToolStripMenuItem.Text = "Modificar elementos de la base de datos";
+            actualizarBaseDeDatosToolStripMenuItem.Click += ModificarBaseDatosToolStripMenuItem_Click;
+            // 
+            // eliminarElementosDeLaBaseDeDatosToolStripMenuItem
+            // 
+            eliminarElementosDeLaBaseDeDatosToolStripMenuItem.Name = "eliminarElementosDeLaBaseDeDatosToolStripMenuItem";
+            eliminarElementosDeLaBaseDeDatosToolStripMenuItem.Size = new Size(286, 22);
+            eliminarElementosDeLaBaseDeDatosToolStripMenuItem.Text = "Eliminar elementos de la base de datos";
+            eliminarElementosDeLaBaseDeDatosToolStripMenuItem.Click += EliminarElementosBaseDeDatosToolStripMenuItem_Click;
             // 
             // lblHamster
             // 
@@ -346,13 +385,6 @@
             BtnOpciones.UseVisualStyleBackColor = true;
             BtnOpciones.Click += BtnOpciones_Click;
             // 
-            // baseDeDatosToolStripMenuItem
-            // 
-            baseDeDatosToolStripMenuItem.Name = "baseDeDatosToolStripMenuItem";
-            baseDeDatosToolStripMenuItem.Size = new Size(180, 22);
-            baseDeDatosToolStripMenuItem.Text = "Base de Datos";
-            baseDeDatosToolStripMenuItem.Click += BaseDeDatosToolStripMenuItem_Click;
-            // 
             // VeterinariaCRUD
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -419,6 +451,10 @@
         private ToolStripMenuItem hámsterToolStripMenuItem;
         private ToolStripMenuItem ratónToolStripMenuItem;
         private ToolStripMenuItem topoToolStripMenuItem;
-        private ToolStripMenuItem baseDeDatosToolStripMenuItem;
+        private ToolStripMenuItem aDOToolStripMenuItem;
+        private ToolStripMenuItem serializarEnBaseDeDatosToolStripMenuItem;
+        private ToolStripMenuItem deserializarEnBaseDeDatosToolStripMenuItem;
+        private ToolStripMenuItem actualizarBaseDeDatosToolStripMenuItem;
+        private ToolStripMenuItem eliminarElementosDeLaBaseDeDatosToolStripMenuItem;
     }
 }

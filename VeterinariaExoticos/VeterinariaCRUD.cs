@@ -6,6 +6,8 @@ using System.Windows.Forms;
 using System.Xml.Serialization;
 using WinFormR;
 using WinFormVisualizador;
+using Microsoft.Data.SqlClient;
+using System.Data;
 
 namespace VeterinariaExoticos
 {
@@ -19,11 +21,6 @@ namespace VeterinariaExoticos
             InitializeComponent();
             terrario = new Terrario();
             this.nombreOperador = nombreOperador;
-
-            AccesoDatosRoedores ado = new AccesoDatosRoedores();
-            List<Hamster> listaHamster = ado.ObtenerHamsters();
-            List<Raton> listaRatones = ado.ObtenerRatones();
-            List<Topo> ListaTopos = ado.ObtenerTopos();
         }
 
         /// <summary>
@@ -54,7 +51,7 @@ namespace VeterinariaExoticos
                 Roedor nuevoRoedor = frmRoedor.RoedorDelFormulario;
                 if (terrario == nuevoRoedor)
                 {
-                    MensajeError("El roedor ya estaba en la lista.");
+                    MensajeError("Ya existe un roedor con ese nombre.");
                 }
                 else
                 {
@@ -165,7 +162,7 @@ namespace VeterinariaExoticos
         /// VeterinariaExoticos
         /// </summary>
         /// <returns> Retorna el directorio </returns>
-        private string ObtenerDirectorioInicial()
+        private static string ObtenerDirectorioInicial()
         {
             try
             {
@@ -530,7 +527,75 @@ namespace VeterinariaExoticos
             MensajePromedio("Promedio de peso de Topo", promedioTopo);
         }
 
-        private void BaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Muestra el contenido de las tablas de la base de datos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void DeserializarBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AccesoDatosRoedores ado = new AccesoDatosRoedores();
+
+            List<Hamster> listaHamster = ado.ObtenerHamsters();
+            List<Raton> listaRatones = ado.ObtenerRatones();
+            List<Topo> listaTopos = ado.ObtenerTopos();
+
+            terrario.Roedores.Clear();
+
+            terrario.Roedores.AddRange(listaHamster);
+            terrario.Roedores.AddRange(listaRatones);
+            terrario.Roedores.AddRange(listaTopos);
+
+            ActualizarVisor();
+        }
+
+        private void SerializarBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AccesoDatosRoedores ado = new AccesoDatosRoedores();
+
+            if (!ado.LimpiarBaseDeDatos())
+            {
+                MensajeError("Error al limpiar la base de datos.");
+                return;
+            }
+
+            foreach (Roedor roedor in terrario.Roedores)
+            {
+                bool resultado;
+
+                if (roedor is Hamster hamster)
+                {
+                    resultado = ado.AgregarHamster(hamster);
+                }
+                else if (roedor is Raton raton)
+                {
+                    resultado = ado.AgregarRaton(raton);
+                }
+                else if (roedor is Topo topo)
+                {
+                    resultado = ado.AgregarTopo(topo);
+                }
+                else
+                {
+                    resultado = false;
+                }
+
+                if (!resultado)
+                {
+                    MensajeError($"Error al sincronizar {roedor.Nombre} con la base de datos.");
+                }
+            }
+
+            MessageBox.Show("Sincronización completada.", "Base de datos",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void ModificarBaseDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EliminarElementosBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

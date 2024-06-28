@@ -79,15 +79,15 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Se sobrecarga el operador == para que verifique si se tiene el roedor ingresado
-        /// por parametro en el terrario (lista).
+        /// Se sobrecarga el operador == para que verifique si ya existe un roedor con el mismo
+        /// nombre que el que se quiere ingresar por parametro en el terrario(lista).
         /// </summary>
         /// <param name="t"></param>
         /// <param name="r"></param>
         /// <returns></returns>
         public static bool operator ==(Terrario t, Roedor r)
         {
-            return t.roedores.Contains(r);
+            return t.roedores.Any(roedor => roedor.Nombre == r.Nombre);
         }
 
         public static bool operator !=(Terrario t, Roedor r)

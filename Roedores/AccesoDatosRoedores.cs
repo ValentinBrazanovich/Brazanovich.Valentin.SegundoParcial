@@ -29,32 +29,6 @@ namespace Entidades
         }
 
 
-        public bool ProbarConexion()
-        {
-            bool rta = true;
-
-            try
-            {
-                this.conexion.Open();
-            }
-            catch (Exception e)
-            {
-                rta = false;
-
-                Console.WriteLine("Error al abrir la conexión: " + e.Message);
-            }
-            finally
-            {
-                if (this.conexion.State == ConnectionState.Open)
-                {
-                    this.conexion.Close();
-                }
-            }
-
-            return rta;
-        }
-
-
         public List<Hamster> ObtenerHamsters()
         {
             List<Hamster> lista = new List<Hamster>();
@@ -86,7 +60,7 @@ namespace Entidades
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.ToString());
+                Console.WriteLine("Error al obtener la tabla Hamster: " + ex.Message);
             }
             finally
             {
@@ -130,7 +104,7 @@ namespace Entidades
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.ToString());
+                Console.WriteLine("Error al obtener la tabla Raton: " + ex.Message);
             }
             finally
             {
@@ -174,7 +148,7 @@ namespace Entidades
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.ToString());
+                Console.WriteLine("Error al obtener la tabla Topo: " + ex.Message);
             }
             finally
             {
@@ -558,6 +532,42 @@ namespace Entidades
             }
             catch (Exception)
             {
+                rta = false;
+            }
+            finally
+            {
+                if (this.conexion.State == ConnectionState.Open)
+                {
+                    this.conexion.Close();
+                }
+            }
+
+            return rta;
+        }
+
+        public bool LimpiarBaseDeDatos()
+        {
+            bool rta = true;
+
+            try
+            {
+                this.comando = new SqlCommand();
+                this.comando.CommandType = CommandType.Text;
+                this.comando.Connection = this.conexion;
+
+                string[] tablas = { "Hamster", "Raton", "Topo" };
+
+                this.conexion.Open();
+
+                foreach (string tabla in tablas)
+                {
+                    this.comando.CommandText = $"DELETE FROM {tabla}";
+                    this.comando.ExecuteNonQuery();
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
                 rta = false;
             }
             finally
