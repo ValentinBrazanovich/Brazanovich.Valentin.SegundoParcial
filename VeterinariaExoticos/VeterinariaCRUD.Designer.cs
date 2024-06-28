@@ -61,6 +61,7 @@
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             toolStripStatusLabel2 = new ToolStripStatusLabel();
             BtnOpciones = new Button();
+            baseDeDatosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
@@ -130,20 +131,20 @@
             // JSONToolStripMenuItem
             // 
             JSONToolStripMenuItem.Name = "JSONToolStripMenuItem";
-            JSONToolStripMenuItem.Size = new Size(102, 22);
+            JSONToolStripMenuItem.Size = new Size(180, 22);
             JSONToolStripMenuItem.Text = "JSON";
             JSONToolStripMenuItem.Click += SerializeJSONMenuItem_Click;
             // 
             // XMLMenuItem
             // 
             XMLMenuItem.Name = "XMLMenuItem";
-            XMLMenuItem.Size = new Size(102, 22);
+            XMLMenuItem.Size = new Size(180, 22);
             XMLMenuItem.Text = "XML";
             XMLMenuItem.Click += SerializeXMLMenuItem_Click;
             // 
             // deserializarToolStripMenuItem
             // 
-            deserializarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { jSONToolStripMenuItem1, xMLToolStripMenuItem1 });
+            deserializarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { jSONToolStripMenuItem1, xMLToolStripMenuItem1, baseDeDatosToolStripMenuItem });
             deserializarToolStripMenuItem.Name = "deserializarToolStripMenuItem";
             deserializarToolStripMenuItem.Size = new Size(78, 20);
             deserializarToolStripMenuItem.Text = "Deserializar";
@@ -151,14 +152,14 @@
             // jSONToolStripMenuItem1
             // 
             jSONToolStripMenuItem1.Name = "jSONToolStripMenuItem1";
-            jSONToolStripMenuItem1.Size = new Size(102, 22);
+            jSONToolStripMenuItem1.Size = new Size(180, 22);
             jSONToolStripMenuItem1.Text = "JSON";
             jSONToolStripMenuItem1.Click += DeserializeJSONMenuItem_Click;
             // 
             // xMLToolStripMenuItem1
             // 
             xMLToolStripMenuItem1.Name = "xMLToolStripMenuItem1";
-            xMLToolStripMenuItem1.Size = new Size(102, 22);
+            xMLToolStripMenuItem1.Size = new Size(180, 22);
             xMLToolStripMenuItem1.Text = "XML";
             xMLToolStripMenuItem1.Click += DeserializeXMLMenuItem_Click;
             // 
@@ -173,20 +174,20 @@
             // 
             ascendenteToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { porNombreToolStripMenuItem, porPesoToolStripMenuItem });
             ascendenteToolStripMenuItem.Name = "ascendenteToolStripMenuItem";
-            ascendenteToolStripMenuItem.Size = new Size(142, 22);
+            ascendenteToolStripMenuItem.Size = new Size(180, 22);
             ascendenteToolStripMenuItem.Text = "Ascendente";
             // 
             // porNombreToolStripMenuItem
             // 
             porNombreToolStripMenuItem.Name = "porNombreToolStripMenuItem";
-            porNombreToolStripMenuItem.Size = new Size(137, 22);
+            porNombreToolStripMenuItem.Size = new Size(180, 22);
             porNombreToolStripMenuItem.Text = "Por nombre";
             porNombreToolStripMenuItem.Click += OrdenarAscendentePorNombreToolStripMenuItem_Click;
             // 
             // porPesoToolStripMenuItem
             // 
             porPesoToolStripMenuItem.Name = "porPesoToolStripMenuItem";
-            porPesoToolStripMenuItem.Size = new Size(137, 22);
+            porPesoToolStripMenuItem.Size = new Size(180, 22);
             porPesoToolStripMenuItem.Text = "Por peso";
             porPesoToolStripMenuItem.Click += OrdenarAscendentePorPesoToolStripMenuItem_Click;
             // 
@@ -194,20 +195,20 @@
             // 
             descendenteToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { porNombreToolStripMenuItem1, porPesoToolStripMenuItem1 });
             descendenteToolStripMenuItem.Name = "descendenteToolStripMenuItem";
-            descendenteToolStripMenuItem.Size = new Size(142, 22);
+            descendenteToolStripMenuItem.Size = new Size(180, 22);
             descendenteToolStripMenuItem.Text = "Descendente";
             // 
             // porNombreToolStripMenuItem1
             // 
             porNombreToolStripMenuItem1.Name = "porNombreToolStripMenuItem1";
-            porNombreToolStripMenuItem1.Size = new Size(137, 22);
+            porNombreToolStripMenuItem1.Size = new Size(180, 22);
             porNombreToolStripMenuItem1.Text = "Por nombre";
             porNombreToolStripMenuItem1.Click += OrdenarDescendentePorNombreToolStripMenuItem_Click;
             // 
             // porPesoToolStripMenuItem1
             // 
             porPesoToolStripMenuItem1.Name = "porPesoToolStripMenuItem1";
-            porPesoToolStripMenuItem1.Size = new Size(137, 22);
+            porPesoToolStripMenuItem1.Size = new Size(180, 22);
             porPesoToolStripMenuItem1.Text = "Por peso";
             porPesoToolStripMenuItem1.Click += OrdenarDescendentePorPesoToolStripMenuItem_Click;
             // 
@@ -345,6 +346,13 @@
             BtnOpciones.UseVisualStyleBackColor = true;
             BtnOpciones.Click += BtnOpciones_Click;
             // 
+            // baseDeDatosToolStripMenuItem
+            // 
+            baseDeDatosToolStripMenuItem.Name = "baseDeDatosToolStripMenuItem";
+            baseDeDatosToolStripMenuItem.Size = new Size(180, 22);
+            baseDeDatosToolStripMenuItem.Text = "Base de Datos";
+            baseDeDatosToolStripMenuItem.Click += BaseDeDatosToolStripMenuItem_Click;
+            // 
             // VeterinariaCRUD
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -411,5 +419,6 @@
         private ToolStripMenuItem hámsterToolStripMenuItem;
         private ToolStripMenuItem ratónToolStripMenuItem;
         private ToolStripMenuItem topoToolStripMenuItem;
+        private ToolStripMenuItem baseDeDatosToolStripMenuItem;
     }
 }

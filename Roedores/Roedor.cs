@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using System.Xml.Serialization;
 
-namespace Roedores
+namespace Entidades
 {
     // Indico que que estas 3 clases son subtipos de la clase serializada o deserializada en XML.
     [XmlInclude(typeof(Hamster))]

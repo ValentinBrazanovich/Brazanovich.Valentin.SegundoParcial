@@ -10,3 +10,6 @@ C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\Roed
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\refint\Roedores.dll
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\Roedores.pdb
 C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\ref\Roedores.dll
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\Roedores.csproj.AssemblyReference.cache
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\Roedores.Properties.Resources.resources
+C:\Users\Joshua\source\repos\Brazanovich.Valentin\Roedores\obj\Debug\net6.0\Roedores.csproj.GenerateResource.cache

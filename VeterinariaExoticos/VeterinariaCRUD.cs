@@ -1,5 +1,5 @@
 using Opciones;
-using Roedores;
+using Entidades;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Windows.Forms;
@@ -19,6 +19,11 @@ namespace VeterinariaExoticos
             InitializeComponent();
             terrario = new Terrario();
             this.nombreOperador = nombreOperador;
+
+            AccesoDatosRoedores ado = new AccesoDatosRoedores();
+            List<Hamster> listaHamster = ado.ObtenerHamsters();
+            List<Raton> listaRatones = ado.ObtenerRatones();
+            List<Topo> ListaTopos = ado.ObtenerTopos();
         }
 
         /// <summary>
@@ -525,6 +530,9 @@ namespace VeterinariaExoticos
             MensajePromedio("Promedio de peso de Topo", promedioTopo);
         }
 
+        private void BaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

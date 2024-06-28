@@ -5,12 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
 using System.Data;
-using Roedores;
 
 
 namespace Entidades
 {
-    internal class AccesoDatosRoedores
+    public class AccesoDatosRoedores
     {
         private static string cadena_conexion;
         private SqlConnection conexion;
