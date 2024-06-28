@@ -29,15 +29,36 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Roedores.Terrario">
-    <Position X="10.25" Y="0.5" Width="3.5" />
+    <Position X="10.5" Y="0.5" Width="3.5" />
     <TypeIdentifier>
       <HashCode>AAAQEAEAAAAAAABAwAEAAAAEAIAAAIAAAAAAAAAAAjA=</HashCode>
       <FileName>Terrario.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Orientation="Left" Position="1.577" />
+    <Lollipop Orientation="Bottom" Position="0.1" />
   </Class>
+  <Class Name="Roedores.Gestion">
+    <Position X="14.25" Y="0.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAIACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Gestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Roedores.IOperaciones">
+    <Position X="7.75" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IOperaciones.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Roedores.IPesoPromedio">
+    <Position X="7.75" Y="4" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPesoPromedio.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Enum Name="ETipoAlimentacion">
-    <Position X="8" Y="0.5" Width="1.75" />
+    <Position X="8" Y="0.5" Width="2" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Enumerados.cs</FileName>
