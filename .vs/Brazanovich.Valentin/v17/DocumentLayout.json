@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\roedores\\terrario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|solutionrelative:roedores\\terrario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,24 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Terrario.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Terrario.cs",
-              "RelativeDocumentMoniker": "Roedores\\Terrario.cs",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Terrario.cs",
-              "RelativeToolTip": "Roedores\\Terrario.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T02:20:50.11Z",
-              "EditorCaption": ""
             }
           ]
         }
