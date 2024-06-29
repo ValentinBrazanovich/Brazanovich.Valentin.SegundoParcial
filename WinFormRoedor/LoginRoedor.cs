@@ -25,7 +25,10 @@ namespace WinFormRoedor
         {
             try
             {
-                string json = File.ReadAllText("./MOCK_DATA.json");
+                string rutaArchivo = FrmVisualizador.ObtenerRutaArchivoUsuarios();
+
+                // Leer el archivo JSON desde la ruta obtenida
+                string json = File.ReadAllText(rutaArchivo + "./MOCK_DATA.json");
                 usuarios = JsonSerializer.Deserialize<List<Usuario>>(json);
             }
             catch (Exception ex)
@@ -40,9 +43,9 @@ namespace WinFormRoedor
         /// Guarda en usuarios.log los datos del usuario que ingresó.
         /// </summary>
         /// <param name="usuario">El usuario que ingresó</param>
-        private static void GuardarLogUsuario(Usuario usuario)
+        private void GuardarLogUsuario(Usuario usuario)
         {
-            string filePath = "./usuarios.log";
+            string filePath = FrmVisualizador.ObtenerRutaArchivoUsuarios() + "./usuarios.log";
 
             try
             {

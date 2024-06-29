@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WinFormRoedor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7319e3c4f98a5b70ea6270341444e75807ad726e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0658baf465f29b13360c993f2d0c53d86eca5f18")]
 [assembly: System.Reflection.AssemblyProductAttribute("WinFormRoedor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WinFormRoedor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
