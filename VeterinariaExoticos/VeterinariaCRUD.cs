@@ -23,6 +23,25 @@ namespace VeterinariaExoticos
             InitializeComponent();
             terrario = new Terrario();
             this.nombreOperador = usuario.nombre;
+            ConfigurarSegunPerfil(usuario.perfil);            
+        }
+
+        private void ConfigurarSegunPerfil(string perfil)
+        {
+            if (perfil == "vendedor")
+            {
+                btnAgregar.Enabled = false;
+                btnModificar.Enabled = false;
+                btnEliminar.Enabled = false;
+                JSONToolStrip.Enabled = false;
+                verToolStripMenuItem.Enabled = false;
+                serializarEnBaseDeDatosToolStripMenuItem.Enabled = false;
+            }
+            else if (perfil == "supervisor")
+            {
+                btnEliminar.Enabled = false;
+                verToolStripMenuItem.Enabled = false;
+            }
         }
 
         /// <summary>
