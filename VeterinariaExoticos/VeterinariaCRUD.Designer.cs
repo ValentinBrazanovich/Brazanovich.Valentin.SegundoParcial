@@ -373,6 +373,7 @@
             // 
             // BDLabel
             // 
+            BDLabel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BDLabel.AutoSize = true;
             BDLabel.ForeColor = Color.IndianRed;
             BDLabel.Location = new Point(588, 24);

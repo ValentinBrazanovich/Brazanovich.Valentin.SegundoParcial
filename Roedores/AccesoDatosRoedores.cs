@@ -417,8 +417,8 @@ namespace Entidades
                 this.comando.Parameters.AddWithValue("@Nombre", raton.Nombre);
                 this.comando.Parameters.AddWithValue("@Peso", raton.Peso);
                 this.comando.Parameters.AddWithValue("@TipoAlimentacion", (int)raton.TipoAlimentacion);
-                this.comando.Parameters.AddWithValue("@Longitud", raton.LargoCola);
-                this.comando.Parameters.AddWithValue("@EsNocturno", raton.EsAlbino);
+                this.comando.Parameters.AddWithValue("@LargoCola", raton.LargoCola);
+                this.comando.Parameters.AddWithValue("@EsAlbino", raton.EsAlbino);
                 this.comando.Parameters.AddWithValue("@NombreOriginal", nombreOriginal);
 
                 this.conexion.Open();
@@ -429,9 +429,8 @@ namespace Entidades
                     rta = false;
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                Console.WriteLine(e.ToString());
                 rta = false;
             }
             finally
@@ -465,8 +464,8 @@ namespace Entidades
                 this.comando.Parameters.AddWithValue("@Nombre", topo.Nombre);
                 this.comando.Parameters.AddWithValue("@Peso", topo.Peso);
                 this.comando.Parameters.AddWithValue("@TipoAlimentacion", (int)topo.TipoAlimentacion);
-                this.comando.Parameters.AddWithValue("@Longitud", topo.ProfundidadExcavada);
-                this.comando.Parameters.AddWithValue("@EsNocturno", topo.GarrasAfiladas);
+                this.comando.Parameters.AddWithValue("@ProfundidadExcavada", topo.ProfundidadExcavada);
+                this.comando.Parameters.AddWithValue("@GarrasAfiladas", topo.GarrasAfiladas);
                 this.comando.Parameters.AddWithValue("@NombreOriginal", nombreOriginal);
 
                 this.conexion.Open();
