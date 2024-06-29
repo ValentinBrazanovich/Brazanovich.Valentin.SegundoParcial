@@ -24,11 +24,41 @@ namespace Entidades
 
         public AccesoDatosRoedores()
         {
-            // CREO UN OBJETO SQLCONECTION
             this.conexion = new SqlConnection(AccesoDatosRoedores.cadena_conexion);
         }
 
+        /// <summary>
+        /// Verifica la conección con la base de datos
+        /// </summary>
+        /// <returns></returns>
+        public bool VerificarConexion()
+        {
+            bool rta = true;
 
+            try
+            {
+                this.conexion.Open();
+            }
+            catch (Exception)
+            {
+                rta = false;
+            }
+            finally
+            {
+                if (this.conexion.State == ConnectionState.Open)
+                {
+                    this.conexion.Close();
+                }
+            }
+
+            return rta;
+        }
+
+
+        /// <summary>
+        /// Obtiene los hámsters de la tabla Hamster
+        /// </summary>
+        /// <returns></returns>
         public List<Hamster> ObtenerHamsters()
         {
             List<Hamster> lista = new List<Hamster>();
@@ -73,6 +103,10 @@ namespace Entidades
             return lista;
         }
 
+        /// <summary>
+        /// Obtiene los ratones de la tabla Raton
+        /// </summary>
+        /// <returns></returns>
         public List<Raton> ObtenerRatones()
         {
             List<Raton> lista = new List<Raton>();
@@ -117,6 +151,10 @@ namespace Entidades
             return lista;
         }
 
+        /// <summary>
+        /// Obtiene los topos de la tabla Topo
+        /// </summary>
+        /// <returns></returns>
         public List<Topo> ObtenerTopos()
         {
             List<Topo> lista = new List<Topo>();
@@ -161,7 +199,11 @@ namespace Entidades
             return lista;
         }
 
-
+        /// <summary>
+        /// Permite agregar una entidad Hamster a la tabla Hamster
+        /// </summary>
+        /// <param name="hamster"></param>
+        /// <returns></returns>
         public bool AgregarHamster(Hamster hamster)
         {
             bool rta = true;
@@ -207,6 +249,11 @@ namespace Entidades
             return rta;
         }
 
+        /// <summary>
+        /// Permite agregar una entidad Raton a la tabla Raton
+        /// </summary>
+        /// <param name="raton"></param>
+        /// <returns></returns>
         public bool AgregarRaton(Raton raton)
         {
             bool rta = true;
@@ -252,6 +299,11 @@ namespace Entidades
             return rta;
         }
 
+        /// <summary>
+        /// Permite agregar una entidad Topo a la tabla Topo
+        /// </summary>
+        /// <param name="topo"></param>
+        /// <returns></returns>
         public bool AgregarTopo(Topo topo)
         {
             bool rta = true;
@@ -297,7 +349,12 @@ namespace Entidades
             return rta;
         }
 
-
+        /// <summary>
+        /// Permite modificar un elemento de la tabla Hamster
+        /// </summary>
+        /// <param name="hamster"></param>
+        /// <param name="nombreOriginal"></param>
+        /// <returns></returns>
         public bool ModificarHamster(Hamster hamster, string nombreOriginal)
         {
             bool rta = true;
@@ -340,6 +397,12 @@ namespace Entidades
             return rta;
         }
 
+        /// <summary>
+        /// Permite modificar un elemento de la tabla Raton
+        /// </summary>
+        /// <param name="raton"></param>
+        /// <param name="nombreOriginal"></param>
+        /// <returns></returns>
         public bool ModificarRaton(Raton raton, string nombreOriginal)
         {
             bool rta = true;
@@ -382,6 +445,12 @@ namespace Entidades
             return rta;
         }
 
+        /// <summary>
+        /// Permite modificar un elemento de la tabla Topo
+        /// </summary>
+        /// <param name="topo"></param>
+        /// <param name="nombreOriginal"></param>
+        /// <returns></returns>
         public bool ModificarTopo(Topo topo, string nombreOriginal)
         {
             bool rta = true;
@@ -424,7 +493,11 @@ namespace Entidades
             return rta;
         }
 
-
+        /// <summary>
+        /// Permite eliminar un elemento de la tabla Hamster
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <returns></returns>
         public bool EliminarHamster(string nombre)
         {
             bool rta = true;
@@ -465,6 +538,11 @@ namespace Entidades
             return rta;
         }
 
+        /// <summary>
+        /// Permite eliminar un elemento de la tabla Raton
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <returns></returns>
         public bool EliminarRaton(string nombre)
         {
             bool rta = true;
@@ -505,6 +583,11 @@ namespace Entidades
             return rta;
         }
 
+        /// <summary>
+        /// Permte eliminar un elemento de la tabla Topo
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <returns></returns>
         public bool EliminarTopo(string nombre)
         {
             bool rta = true;
@@ -545,6 +628,11 @@ namespace Entidades
             return rta;
         }
 
+        /// <summary>
+        /// Elimina todos los elementos de las 3 tablas de la base de datos
+        /// (Hamster, Raton, Topo)
+        /// </summary>
+        /// <returns></returns>
         public bool LimpiarBaseDeDatos()
         {
             bool rta = true;

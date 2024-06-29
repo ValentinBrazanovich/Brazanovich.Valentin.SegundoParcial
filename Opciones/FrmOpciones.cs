@@ -49,8 +49,12 @@ namespace Opciones
                 sonido = "sonido";
             }
 
-            MessageBox.Show(roedorSeleccionado.ObtenerSonido(), $"{sonido}!",
+            if (roedorSeleccionado != null)
+            {
+                MessageBox.Show(roedorSeleccionado.ObtenerSonido(), $"{sonido}!",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
         }
 
         /// <summary>

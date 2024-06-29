@@ -15,7 +15,7 @@ namespace VeterinariaExoticos
     {
         private Terrario terrario;
         private string nombreOperador;
-        private bool esBaseDeDatos;
+        private bool esBaseDeDatos = false;
 
         public VeterinariaCRUD(string nombreOperador)
         {
@@ -173,7 +173,7 @@ namespace VeterinariaExoticos
             {
                 Roedor roedorSeleccionado = (Roedor)lstRoedores.SelectedItem;
 
-                DialogResult result = MessageBox.Show("¿Está seguro de que desea eliminar al roedor?\nSi ha deserializado la" +
+                DialogResult result = MessageBox.Show("¿Está seguro de que desea eliminar al roedor?\nSi está usando" +
                                                       " base de datos, el roedor se eliminará de la misma.",
                                                       "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
@@ -212,6 +212,15 @@ namespace VeterinariaExoticos
             foreach (Roedor roedor in terrario.Roedores)
             {
                 lstRoedores.Items.Add(roedor);
+            }
+
+            if (esBaseDeDatos)
+            {
+                BDLabel.Visible = true;
+            }
+            else
+            {
+                BDLabel.Visible = false;
             }
         }
 
@@ -607,61 +616,107 @@ namespace VeterinariaExoticos
         /// <param name="e"></param>
         private void DeserializarBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AccesoDatosRoedores ado = new AccesoDatosRoedores();
-
-            List<Hamster> listaHamster = ado.ObtenerHamsters();
-            List<Raton> listaRatones = ado.ObtenerRatones();
-            List<Topo> listaTopos = ado.ObtenerTopos();
-
-            terrario.Roedores.Clear();
-
-            terrario.Roedores.AddRange(listaHamster);
-            terrario.Roedores.AddRange(listaRatones);
-            terrario.Roedores.AddRange(listaTopos);
-
-            esBaseDeDatos = true;
-            ActualizarVisor();
-        }
-
-        private void SerializarBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AccesoDatosRoedores ado = new AccesoDatosRoedores();
-
-            if (!ado.LimpiarBaseDeDatos())
+            try
             {
-                MensajeError("Error al limpiar la base de datos.");
-                return;
-            }
+                AccesoDatosRoedores ado = new AccesoDatosRoedores();
+                if (ado.VerificarConexion())
+                {
+                    ConeccionBaseDatosLabel.Visible = true;
 
-            foreach (Roedor roedor in terrario.Roedores)
-            {
-                bool resultado;
+                    List<Hamster> listaHamster = ado.ObtenerHamsters();
+                    List<Raton> listaRatones = ado.ObtenerRatones();
+                    List<Topo> listaTopos = ado.ObtenerTopos();
 
-                if (roedor is Hamster hamster)
-                {
-                    resultado = ado.AgregarHamster(hamster);
-                }
-                else if (roedor is Raton raton)
-                {
-                    resultado = ado.AgregarRaton(raton);
-                }
-                else if (roedor is Topo topo)
-                {
-                    resultado = ado.AgregarTopo(topo);
+                    terrario.Roedores.Clear();
+
+                    terrario.Roedores.AddRange(listaHamster);
+                    terrario.Roedores.AddRange(listaRatones);
+                    terrario.Roedores.AddRange(listaTopos);
+
+                    esBaseDeDatos = true;
+                    ActualizarVisor();
                 }
                 else
                 {
-                    resultado = false;
+                    ConeccionBaseDatosLabel.Visible = false;
+                    MensajeError("Primero debe establecer conección con la base de datos");
                 }
 
-                if (!resultado)
+            }
+            catch(InvalidOperationException ex)
+            {
+                MensajeError("Error al deserializar la base de datos\n" + ex.Message);
+            }
+            catch(Exception ex)
+            {
+                MensajeError("Ocurrió un error: " + ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// Guarda los elementos en lista en la base de datos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SerializarBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                AccesoDatosRoedores ado = new AccesoDatosRoedores();
+                if (ado.VerificarConexion())
                 {
-                    MensajeError($"Error al sincronizar {roedor.Nombre} con la base de datos.");
+                    ConeccionBaseDatosLabel.Visible = true;
+
+                    if (!ado.LimpiarBaseDeDatos())
+                    {
+                        MensajeError("Error al limpiar la base de datos.");
+                        return;
+                    }
+
+                    foreach (Roedor roedor in terrario.Roedores)
+                    {
+                        bool resultado;
+
+                        if (roedor is Hamster hamster)
+                        {
+                            resultado = ado.AgregarHamster(hamster);
+                        }
+                        else if (roedor is Raton raton)
+                        {
+                            resultado = ado.AgregarRaton(raton);
+                        }
+                        else if (roedor is Topo topo)
+                        {
+                            resultado = ado.AgregarTopo(topo);
+                        }
+                        else
+                        {
+                            resultado = false;
+                        }
+
+                        if (!resultado)
+                        {
+                            ConeccionBaseDatosLabel.Visible = false;
+                            MensajeError($"Error al sincronizar {roedor.Nombre} con la base de datos.");
+                        }
+                    }
+
+                    MessageBox.Show("Sincronización completada.", "Base de datos",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MensajeError("Primero debe establecer conección con la base de datos");
                 }
             }
-
-            MessageBox.Show("Sincronización completada.", "Base de datos",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+            catch (InvalidOperationException ex)
+            {
+                MensajeError(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MensajeError("Ocurrió un error: " + ex.Message);
+            }
         }
 
 

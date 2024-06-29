@@ -101,7 +101,7 @@ namespace Entidades
             return r.Nombre == r1.Nombre && r.Peso == r1.Peso && r.TipoAlimentacion == r1.TipoAlimentacion;
         }
 
-        public static bool operator !=(Roedor r, Roedor r1)
+        public static bool operator !=(Roedor? r, Roedor? r1)
         {
             return !(r == r1);
         }

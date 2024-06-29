@@ -64,6 +64,8 @@
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             toolStripStatusLabel2 = new ToolStripStatusLabel();
             BtnOpciones = new Button();
+            BDLabel = new Label();
+            ConeccionBaseDatosLabel = new Label();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
@@ -133,14 +135,14 @@
             // JSONToolStripMenuItem
             // 
             JSONToolStripMenuItem.Name = "JSONToolStripMenuItem";
-            JSONToolStripMenuItem.Size = new Size(180, 22);
+            JSONToolStripMenuItem.Size = new Size(102, 22);
             JSONToolStripMenuItem.Text = "JSON";
             JSONToolStripMenuItem.Click += SerializeJSONMenuItem_Click;
             // 
             // XMLMenuItem
             // 
             XMLMenuItem.Name = "XMLMenuItem";
-            XMLMenuItem.Size = new Size(180, 22);
+            XMLMenuItem.Size = new Size(102, 22);
             XMLMenuItem.Text = "XML";
             XMLMenuItem.Click += SerializeXMLMenuItem_Click;
             // 
@@ -369,11 +371,35 @@
             BtnOpciones.UseVisualStyleBackColor = true;
             BtnOpciones.Click += BtnOpciones_Click;
             // 
+            // BDLabel
+            // 
+            BDLabel.AutoSize = true;
+            BDLabel.ForeColor = Color.IndianRed;
+            BDLabel.Location = new Point(588, 24);
+            BDLabel.Name = "BDLabel";
+            BDLabel.Size = new Size(153, 15);
+            BDLabel.TabIndex = 10;
+            BDLabel.Text = "* Está usando base de datos";
+            BDLabel.Visible = false;
+            // 
+            // ConeccionBaseDatosLabel
+            // 
+            ConeccionBaseDatosLabel.AutoSize = true;
+            ConeccionBaseDatosLabel.ForeColor = SystemColors.Highlight;
+            ConeccionBaseDatosLabel.Location = new Point(12, 25);
+            ConeccionBaseDatosLabel.Name = "ConeccionBaseDatosLabel";
+            ConeccionBaseDatosLabel.Size = new Size(169, 15);
+            ConeccionBaseDatosLabel.TabIndex = 11;
+            ConeccionBaseDatosLabel.Text = "* Conectado a la base de datos";
+            ConeccionBaseDatosLabel.Visible = false;
+            // 
             // VeterinariaCRUD
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(753, 386);
+            Controls.Add(ConeccionBaseDatosLabel);
+            Controls.Add(BDLabel);
             Controls.Add(BtnOpciones);
             Controls.Add(statusStrip1);
             Controls.Add(BtnActualizar);
@@ -438,5 +464,7 @@
         private ToolStripMenuItem aDOToolStripMenuItem;
         private ToolStripMenuItem serializarEnBaseDeDatosToolStripMenuItem;
         private ToolStripMenuItem deserializarEnBaseDeDatosToolStripMenuItem;
+        private Label BDLabel;
+        private Label ConeccionBaseDatosLabel;
     }
 }
