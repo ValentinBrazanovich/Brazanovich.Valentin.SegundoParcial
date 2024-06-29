@@ -8,6 +8,7 @@ using WinFormR;
 using WinFormVisualizador;
 using Microsoft.Data.SqlClient;
 using System.Data;
+using WinFormRoedor;
 
 namespace VeterinariaExoticos
 {
@@ -17,11 +18,11 @@ namespace VeterinariaExoticos
         private string nombreOperador;
         private bool esBaseDeDatos = false;
 
-        public VeterinariaCRUD(string nombreOperador)
+        public VeterinariaCRUD(Usuario usuario)
         {
             InitializeComponent();
             terrario = new Terrario();
-            this.nombreOperador = nombreOperador;
+            this.nombreOperador = usuario.nombre;
         }
 
         /// <summary>

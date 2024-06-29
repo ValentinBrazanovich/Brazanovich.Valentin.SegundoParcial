@@ -19,9 +19,9 @@ namespace VeterinariaExoticos
 
             if (loginForm.ShowDialog() == DialogResult.OK)
             {
-                string? nombreOperador = loginForm.Tag.ToString();
+                Usuario usuario = (Usuario)loginForm.Tag;
 
-                Application.Run(new VeterinariaCRUD(nombreOperador));
+                Application.Run(new VeterinariaCRUD(usuario));
             }
             else
             {

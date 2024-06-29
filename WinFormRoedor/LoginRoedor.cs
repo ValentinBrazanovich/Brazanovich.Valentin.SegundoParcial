@@ -43,7 +43,7 @@ namespace WinFormRoedor
         /// Guarda en usuarios.log los datos del usuario que ingresó.
         /// </summary>
         /// <param name="usuario">El usuario que ingresó</param>
-        private void GuardarLogUsuario(Usuario usuario)
+        private static void GuardarLogUsuario(Usuario usuario)
         {
             string filePath = FrmVisualizador.ObtenerRutaArchivoUsuarios() + "./usuarios.log";
 
@@ -81,7 +81,7 @@ namespace WinFormRoedor
             if (usuarioConectado != null)
             {
                 DialogResult = DialogResult.OK;
-                Tag = usuarioConectado.nombre;
+                Tag = usuarioConectado;
                 GuardarLogUsuario(usuarioConectado);
                 Close();
             }
