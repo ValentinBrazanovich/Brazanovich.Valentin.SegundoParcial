@@ -491,28 +491,53 @@ namespace VeterinariaExoticos
             e.DrawFocusRectangle();
         }
 
+        /// <summary>
+        /// Ordena los elementos de la lista
+        /// </summary>
+        /// <param name="tipo"> El campo en el que se basará el ordenamiento (Nombre o peso) </param>
+        /// <param name="ascendente"> Si se ordenará de forma ascendente o descendente </param>
+        private void OrdenarPor(int tipo, bool ascendente)
+        {
+            try
+            {
+                if (terrario.Roedores.Count == 0)
+                {
+                    throw new ListaRoedoresVaciaException();
+                }
+                if (tipo == 1)
+                { 
+                    terrario.OrdenarPorNombre(ascendente);
+                }
+                else if (tipo == 2)
+                {
+                    terrario.OrdenarPorPeso(ascendente);
+                }
+                ActualizarVisor();
+            }
+            catch (ListaRoedoresVaciaException ex)
+            {
+                MensajeError(ex.Message);
+            }
+        }
+
         private void OrdenarAscendentePorNombreToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            terrario.OrdenarPorNombre(true);
-            ActualizarVisor();
+            OrdenarPor(1, true);
         }
 
         private void OrdenarDescendentePorNombreToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            terrario.OrdenarPorNombre(false);
-            ActualizarVisor();
+            OrdenarPor(1, false);
         }
 
         private void OrdenarAscendentePorPesoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            terrario.OrdenarPorPeso(true);
-            ActualizarVisor();
+            OrdenarPor(2, true);
         }
 
         private void OrdenarDescendentePorPesoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            terrario.OrdenarPorPeso(false);
-            ActualizarVisor();
+            OrdenarPor(2, true);
         }
 
         private void BtnActualizar_Click(object sender, EventArgs e)
@@ -627,6 +652,11 @@ namespace VeterinariaExoticos
                     List<Raton> listaRatones = ado.ObtenerRatones();
                     List<Topo> listaTopos = ado.ObtenerTopos();
 
+                    if (listaHamster.Count == 0 && listaRatones.Count == 0 && listaTopos.Count == 0)
+                    {
+                        throw new ListaRoedoresVaciaException();
+                    }
+
                     terrario.Roedores.Clear();
 
                     terrario.Roedores.AddRange(listaHamster);
@@ -641,7 +671,11 @@ namespace VeterinariaExoticos
                     ConeccionBaseDatosLabel.Visible = false;
                     MensajeError("Primero debe establecer conección con la base de datos");
                 }
-
+            
+            }
+            catch(ListaRoedoresVaciaException ex)
+            {
+                MensajeError(ex.Message);
             }
             catch(InvalidOperationException ex)
             {
