@@ -11,11 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormLogin", "WinFormRoed
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormRoedor", "WinFormR\WinFormRoedor.csproj", "{8D63BA35-AADE-468C-A5CA-770A65EBCFD4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{197730E1-0F5C-44F6-AE4C-AC81D216B38B}"
-	ProjectSection(SolutionItems) = preProject
-		.editorconfig = .editorconfig
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opciones", "Opciones\Opciones.csproj", "{700C0E4D-9756-4FC7-ABEF-45D454A3AD29}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormVisualizador", "WinFormVisualizador\WinFormVisualizador.csproj", "{53722358-F83E-4A48-A746-20F40CA21035}"

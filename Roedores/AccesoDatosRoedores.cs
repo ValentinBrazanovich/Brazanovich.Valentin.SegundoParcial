@@ -67,7 +67,7 @@ namespace Entidades
             {
                 this.comando = new SqlCommand();
                 this.comando.CommandType = CommandType.Text;
-                this.comando.CommandText = "SELECT Nombre, Peso, TipoAlimentacion, Longitud, EsNocturno FROM Hamster";
+                this.comando.CommandText = "SELECT Nombre, Peso, TipoAlimentacion, Longitud, EsNocturno FROM Roedor WHERE TipoRoedor = 0";
                 this.comando.Connection = this.conexion;
 
                 this.conexion.Open();
@@ -115,7 +115,7 @@ namespace Entidades
             {
                 this.comando = new SqlCommand();
                 this.comando.CommandType = CommandType.Text;
-                this.comando.CommandText = "SELECT Nombre, Peso, TipoAlimentacion, LargoCola, EsAlbino FROM Raton";
+                this.comando.CommandText = "SELECT Nombre, Peso, TipoAlimentacion, LargoCola, EsAlbino FROM Roedor WHERE TipoRoedor = 1";
                 this.comando.Connection = this.conexion;
 
                 this.conexion.Open();
@@ -163,7 +163,7 @@ namespace Entidades
             {
                 this.comando = new SqlCommand();
                 this.comando.CommandType = CommandType.Text;
-                this.comando.CommandText = "SELECT Nombre, Peso, TipoAlimentacion, ProfundidadExcavada, GarrasAfiladas FROM Topo";
+                this.comando.CommandText = "SELECT Nombre, Peso, TipoAlimentacion, ProfundidadExcavada, GarrasAfiladas FROM Roedor WHERE TipoRoedor = 2";
                 this.comando.Connection = this.conexion;
 
                 this.conexion.Open();
@@ -210,7 +210,7 @@ namespace Entidades
 
             try
             {
-                string sql = "INSERT INTO Hamster (Nombre, Peso, TipoAlimentacion, Longitud, EsNocturno) VALUES (@Nombre, @Peso, @TipoAlimentacion, @Longitud, @EsNocturno)";
+                string sql = "INSERT INTO Roedor (Nombre, Peso, TipoAlimentacion, Longitud, EsNocturno, TipoRoedor) VALUES (@Nombre, @Peso, @TipoAlimentacion, @Longitud, @EsNocturno, 0)";
 
                 this.comando = new SqlCommand();
                 this.comando.CommandType = CommandType.Text;
@@ -222,6 +222,7 @@ namespace Entidades
                 this.comando.Parameters.AddWithValue("@TipoAlimentacion", (int)hamster.TipoAlimentacion);
                 this.comando.Parameters.AddWithValue("@Longitud", hamster.Longitud);
                 this.comando.Parameters.AddWithValue("@EsNocturno", hamster.EsNocturno);
+                this.comando.Parameters.AddWithValue("@TipoRoedor", 0);
 
                 this.conexion.Open();
 
@@ -260,7 +261,7 @@ namespace Entidades
 
             try
             {
-                string sql = "INSERT INTO Raton (Nombre, Peso, TipoAlimentacion, LargoCola, EsAlbino) VALUES (@Nombre, @Peso, @TipoAlimentacion, @LargoCola, @EsAlbino)";
+                string sql = "INSERT INTO Roedor (Nombre, Peso, TipoAlimentacion, LargoCola, EsAlbino, TipoRoedor) VALUES (@Nombre, @Peso, @TipoAlimentacion, @LargoCola, @EsAlbino, 1)";
 
                 this.comando = new SqlCommand();
                 this.comando.CommandType = CommandType.Text;
@@ -272,6 +273,7 @@ namespace Entidades
                 this.comando.Parameters.AddWithValue("@TipoAlimentacion", (int)raton.TipoAlimentacion);
                 this.comando.Parameters.AddWithValue("@LargoCola", raton.LargoCola);
                 this.comando.Parameters.AddWithValue("@EsAlbino", raton.EsAlbino);
+                this.comando.Parameters.AddWithValue("@TipoRoedor", 1);
 
                 this.conexion.Open();
 
@@ -310,7 +312,7 @@ namespace Entidades
 
             try
             {
-                string sql = "INSERT INTO Topo (Nombre, Peso, TipoAlimentacion, ProfundidadExcavada, GarrasAfiladas) VALUES (@Nombre, @Peso, @TipoAlimentacion, @ProfundidadExcavada, @GarrasAfiladas)";
+                string sql = "INSERT INTO Roedor (Nombre, Peso, TipoAlimentacion, ProfundidadExcavada, GarrasAfiladas, TipoRoedor) VALUES (@Nombre, @Peso, @TipoAlimentacion, @ProfundidadExcavada, @GarrasAfiladas, 2)";
 
                 this.comando = new SqlCommand();
                 this.comando.CommandType = CommandType.Text;
@@ -322,6 +324,7 @@ namespace Entidades
                 this.comando.Parameters.AddWithValue("@TipoAlimentacion", (int)topo.TipoAlimentacion);
                 this.comando.Parameters.AddWithValue("@ProfundidadExcavada", topo.ProfundidadExcavada);
                 this.comando.Parameters.AddWithValue("@GarrasAfiladas", topo.GarrasAfiladas);
+                this.comando.Parameters.AddWithValue("@TipoRoedor", 2);
 
                 this.conexion.Open();
 
@@ -363,7 +366,7 @@ namespace Entidades
             {
                 this.comando = new SqlCommand();
                 this.comando.CommandType = CommandType.Text;
-                this.comando.CommandText = "UPDATE Hamster SET Nombre = @Nombre, Peso = @Peso, TipoAlimentacion = @TipoAlimentacion, Longitud = @Longitud, EsNocturno = @EsNocturno WHERE Nombre = @NombreOriginal";
+                this.comando.CommandText = "UPDATE Roedor SET Nombre = @Nombre, Peso = @Peso, TipoAlimentacion = @TipoAlimentacion, Longitud = @Longitud, EsNocturno = @EsNocturno WHERE Nombre = @NombreOriginal AND TipoRoedor = 0";
                 this.comando.Connection = this.conexion;
 
                 this.comando.Parameters.AddWithValue("@Nombre", hamster.Nombre);
@@ -411,7 +414,7 @@ namespace Entidades
             {
                 this.comando = new SqlCommand();
                 this.comando.CommandType = CommandType.Text;
-                this.comando.CommandText = "UPDATE Raton SET Nombre = @Nombre, Peso = @Peso, TipoAlimentacion = @TipoAlimentacion, LargoCola = @LargoCola, EsAlbino = @EsAlbino WHERE Nombre = @NombreOriginal";
+                this.comando.CommandText = "UPDATE Roedor SET Nombre = @Nombre, Peso = @Peso, TipoAlimentacion = @TipoAlimentacion, LargoCola = @LargoCola, EsAlbino = @EsAlbino WHERE Nombre = @NombreOriginal AND TipoRoedor = 1";
                 this.comando.Connection = this.conexion;
 
                 this.comando.Parameters.AddWithValue("@Nombre", raton.Nombre);
@@ -458,7 +461,7 @@ namespace Entidades
             {
                 this.comando = new SqlCommand();
                 this.comando.CommandType = CommandType.Text;
-                this.comando.CommandText = "UPDATE Topo SET Nombre = @Nombre, Peso = @Peso, TipoAlimentacion = @TipoAlimentacion, ProfundidadExcavada = @ProfundidadExcavada, GarrasAfiladas = @GarrasAfiladas WHERE Nombre = @NombreOriginal";
+                this.comando.CommandText = "UPDATE Topo SET Nombre = @Nombre, Peso = @Peso, TipoAlimentacion = @TipoAlimentacion, ProfundidadExcavada = @ProfundidadExcavada, GarrasAfiladas = @GarrasAfiladas WHERE Nombre = @NombreOriginal AND TipoRoedor = 2";
                 this.comando.Connection = this.conexion;
 
                 this.comando.Parameters.AddWithValue("@Nombre", topo.Nombre);
@@ -493,11 +496,11 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Permite eliminar un elemento de la tabla Hamster
+        /// Permite eliminar un elemento de la tabla Roedor
         /// </summary>
         /// <param name="nombre"></param>
         /// <returns></returns>
-        public bool EliminarHamster(string nombre)
+        public bool EliminarRoedor(string nombre, int tipoRoedor)
         {
             bool rta = true;
 
@@ -505,106 +508,16 @@ namespace Entidades
             {
                 this.comando = new SqlCommand();
 
-                this.comando.Parameters.AddWithValue("@Nombre", nombre);
-
-                string sql = "DELETE FROM Hamster WHERE Nombre = @Nombre";
+                string sql = "DELETE FROM Roedor WHERE Nombre = @Nombre AND TipoRoedor = @TipoRoedor";
 
                 this.comando.CommandType = CommandType.Text;
                 this.comando.CommandText = sql;
                 this.comando.Connection = this.conexion;
 
-                this.conexion.Open();
-
-                int filasAfectadas = this.comando.ExecuteNonQuery();
-
-                if (filasAfectadas == 0)
-                {
-                    rta = false;
-                }
-            }
-            catch (Exception)
-            {
-                rta = false;
-            }
-            finally
-            {
-                if (this.conexion.State == ConnectionState.Open)
-                {
-                    this.conexion.Close();
-                }
-            }
-
-            return rta;
-        }
-
-        /// <summary>
-        /// Permite eliminar un elemento de la tabla Raton
-        /// </summary>
-        /// <param name="nombre"></param>
-        /// <returns></returns>
-        public bool EliminarRaton(string nombre)
-        {
-            bool rta = true;
-
-            try
-            {
-                this.comando = new SqlCommand();
-
                 this.comando.Parameters.AddWithValue("@Nombre", nombre);
-
-                string sql = "DELETE FROM Raton WHERE Nombre = @Nombre";
-
-                this.comando.CommandType = CommandType.Text;
-                this.comando.CommandText = sql;
-                this.comando.Connection = this.conexion;
+                this.comando.Parameters.AddWithValue("@TipoRoedor", tipoRoedor);
 
                 this.conexion.Open();
-
-                int filasAfectadas = this.comando.ExecuteNonQuery();
-
-                if (filasAfectadas == 0)
-                {
-                    rta = false;
-                }
-            }
-            catch (Exception)
-            {
-                rta = false;
-            }
-            finally
-            {
-                if (this.conexion.State == ConnectionState.Open)
-                {
-                    this.conexion.Close();
-                }
-            }
-
-            return rta;
-        }
-
-        /// <summary>
-        /// Permte eliminar un elemento de la tabla Topo
-        /// </summary>
-        /// <param name="nombre"></param>
-        /// <returns></returns>
-        public bool EliminarTopo(string nombre)
-        {
-            bool rta = true;
-
-            try
-            {
-                this.comando = new SqlCommand();
-
-                this.comando.Parameters.AddWithValue("@Nombre", nombre);
-
-                string sql = "DELETE FROM Topo WHERE Nombre = @Nombre";
-
-                this.comando.CommandType = CommandType.Text;
-                this.comando.CommandText = sql;
-                this.comando.Connection = this.conexion;
-
-                this.conexion.Open();
-
                 int filasAfectadas = this.comando.ExecuteNonQuery();
 
                 if (filasAfectadas == 0)
@@ -642,7 +555,7 @@ namespace Entidades
                 this.comando.CommandType = CommandType.Text;
                 this.comando.Connection = this.conexion;
 
-                string[] tablas = { "Hamster", "Raton", "Topo" };
+                string[] tablas = { "Roedor" };
 
                 this.conexion.Open();
 

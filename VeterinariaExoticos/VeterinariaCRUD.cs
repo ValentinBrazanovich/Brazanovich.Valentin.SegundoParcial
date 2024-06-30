@@ -165,15 +165,15 @@ namespace VeterinariaExoticos
 
             if (roedorSeleccionado is Hamster)
             {
-                resultado = ado.EliminarHamster(roedorSeleccionado.Nombre);
+                resultado = ado.EliminarRoedor(roedorSeleccionado.Nombre, 0);
             }
             else if (roedorSeleccionado is Raton)
             {
-                resultado = ado.EliminarRaton(roedorSeleccionado.Nombre);
+                resultado = ado.EliminarRoedor(roedorSeleccionado.Nombre, 1);
             }
             else if (roedorSeleccionado is Topo)
             {
-                resultado = ado.EliminarTopo(roedorSeleccionado.Nombre);
+                resultado = ado.EliminarRoedor(roedorSeleccionado.Nombre, 2);
             }
 
             if (!resultado)
