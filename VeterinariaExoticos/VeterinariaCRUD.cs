@@ -17,13 +17,15 @@ namespace VeterinariaExoticos
         private Terrario terrario;
         private string nombreOperador;
         private bool esBaseDeDatos = false;
+        public event RoedorEventHandler RoedorCambiado;
 
         public VeterinariaCRUD(Usuario usuario)
         {
             InitializeComponent();
             terrario = new Terrario();
             this.nombreOperador = usuario.nombre;
-            ConfigurarSegunPerfil(usuario.perfil);            
+            ConfigurarSegunPerfil(usuario.perfil);
+            this.RoedorCambiado += OnRoedorCambiado;
         }
 
         private void ConfigurarSegunPerfil(string perfil)
@@ -42,6 +44,12 @@ namespace VeterinariaExoticos
                 btnEliminar.Enabled = false;
                 verToolStripMenuItem.Enabled = false;
             }
+        }
+
+        private void OnRoedorCambiado(object sender, RoedorEvent e)
+        {
+            MessageBox.Show($"Se ha {e.accion} el Roedor '{e.roedor.Nombre}' exitosamente", 
+                            "Operación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         /// <summary>
@@ -77,6 +85,7 @@ namespace VeterinariaExoticos
                 else
                 {
                     terrario += nuevoRoedor;
+                    RoedorCambiado?.Invoke(this, new RoedorEvent("AGREGADO", nuevoRoedor));
                 }
 
                 ActualizarVisor();
@@ -116,6 +125,8 @@ namespace VeterinariaExoticos
                         {
                             ModificarBaseDeDatos(roedorMod, roedorSeleccionado);
                         }
+
+                        RoedorCambiado?.Invoke(this, new RoedorEvent("MODIFICADO", roedorMod));
                     }
                 }
             }
@@ -205,6 +216,8 @@ namespace VeterinariaExoticos
                     {
                         EliminarRoedorEnBaseDeDatos(roedorSeleccionado);
                     }
+
+                    RoedorCambiado?.Invoke(this, new RoedorEvent("ELIMINADO", roedorSeleccionado));
                 }
             }
             else
