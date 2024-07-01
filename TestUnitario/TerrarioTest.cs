@@ -14,8 +14,8 @@ namespace TestUnitario
             // Arrange
             Terrario terrario = new Terrario();
             Hamster hamster = new Hamster("Haru", 50, ETipoAlimentacion.Herbivoro, 4, true);
-            Raton raton = new Raton("Haru", 50, ETipoAlimentacion.Herbivoro, 4, true);
-            Topo topo = new Topo("top", 70, ETipoAlimentacion.Carnivoro, 3.27, false);
+            Raton raton = new Raton("Luis", 50, ETipoAlimentacion.Herbivoro, 4, true);
+            Topo topo = new Topo("Top", 70, ETipoAlimentacion.Carnivoro, 3.27, false);
 
             // Act
             terrario += hamster;
