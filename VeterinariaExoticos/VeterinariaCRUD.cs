@@ -114,7 +114,7 @@ namespace VeterinariaExoticos
 
                     if (terrario.Roedores.Contains(roedorMod))
                     {
-                        MensajeError("El nombre del roedor modificado ya está en la lista.");
+                        MensajeError("El roedor modificado ya está en la lista.");
                     }
                     else
                     {
@@ -396,7 +396,7 @@ namespace VeterinariaExoticos
         /// Serializa la lista de Roedores en un archivo .XML ingresando
         /// manualmente la ubicación.
         /// </summary>
-        private void SerializarXML()
+        private async void SerializarXML()
         {
             try
             {
@@ -419,15 +419,40 @@ namespace VeterinariaExoticos
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     string ruta = saveFileDialog.FileName;
-                    using (TextWriter writer = new StreamWriter(ruta))
-                    {
-                        serializer.Serialize(writer, roedores);
-                    }
+                    await Task.Run(() => XML(roedores, ruta));
                 }
             }
             catch (Exception ex)
             {
                 MensajeError($"Error al serializar a XML: {ex.Message}");
+            }
+        }
+
+        /// <summary>
+        /// Guarda el archivo .xml con la lista de roedores
+        /// </summary>
+        /// <param name="roedores"> La lista de roedores </param>
+        /// <param name="ruta"> la ruta donde se guardará el .xml </param>
+        private void XML(List<Roedor> roedores, string ruta)
+        {
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(List<Roedor>));
+                using (TextWriter writer = new StreamWriter(ruta))
+                {
+                    serializer.Serialize(writer, roedores);
+                }
+            }
+            catch (Exception ex)
+            {
+                if (InvokeRequired)
+                {
+                    this.Invoke((Action)(() => MensajeError($"Error al serializar a XML: {ex.Message}")));
+                }
+                else
+                {
+                    MensajeError($"Error al serializar a XML: {ex.Message}");
+                }
             }
         }
 

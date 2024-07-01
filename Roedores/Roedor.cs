@@ -9,7 +9,7 @@ namespace Entidades
     [XmlInclude(typeof(Topo))]
     public abstract class Roedor
     {
-        private string nombre;
+        private string? nombre;
         private double peso;
         private ETipoAlimentacion tipoAlimentacion;
 
@@ -34,7 +34,7 @@ namespace Entidades
             this.tipoAlimentacion = ETipoAlimentacion.Omnivoro;
         }
 
-        public string Nombre
+        public string? Nombre
         {
             get { return nombre; }
             set { nombre = value; }
