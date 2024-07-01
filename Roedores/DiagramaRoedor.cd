@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="Roedores.Hamster">
+  <Class Name="Entidades.Hamster">
     <Position X="0.5" Y="0.5" Width="7" />
     <TypeIdentifier>
       <HashCode>AAAAQAAAAECAAAAFgAAAAQAAAAgAAIABAAAAAAAAAiA=</HashCode>
       <FileName>Hamster.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Roedores.Raton">
+  <Class Name="Entidades.Raton">
     <Position X="0.5" Y="5.5" Width="7" />
     <TypeIdentifier>
       <HashCode>AAIAAAAAAACAAAAEgAAAAAAAABgAAIARAAAABAACAiA=</HashCode>
       <FileName>Raton.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Roedores.Roedor">
+  <Class Name="Entidades.Roedor">
     <Position X="8.25" Y="5.5" Width="4.75" />
     <TypeIdentifier>
       <HashCode>IAAACEAAAADAAACEgAAAgAAAAAgAAIAAAAAABAAAAiA=</HashCode>
       <FileName>Roedor.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Roedores.Topo">
+  <Class Name="Entidades.Topo">
     <Position X="13.75" Y="5.5" Width="7.5" />
     <TypeIdentifier>
       <HashCode>AAACBAAAAgCAAAAEgAAAAAAAAAgAAIABQAAABAAAAiA=</HashCode>
       <FileName>Topo.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Roedores.Terrario">
+  <Class Name="Entidades.Terrario">
     <Position X="10.5" Y="0.5" Width="3.5" />
     <TypeIdentifier>
       <HashCode>AAAQEAEAAAAAAABAwAEAAAAEAIAAAIAAAAAAAAAAAjA=</HashCode>
@@ -36,21 +36,21 @@
     </TypeIdentifier>
     <Lollipop Orientation="Bottom" Position="0.1" />
   </Class>
-  <Class Name="Roedores.Gestion">
+  <Class Name="Entidades.Gestion">
     <Position X="14.25" Y="0.5" Width="4.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAABAIACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Gestion.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="Roedores.IOperaciones">
+  <Interface Name="Entidades.IOperaciones">
     <Position X="7.75" Y="2.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IOperaciones.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Roedores.IPesoPromedio">
+  <Interface Name="Entidades.IPesoPromedio">
     <Position X="7.75" Y="4" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>

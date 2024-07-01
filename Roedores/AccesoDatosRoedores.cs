@@ -460,7 +460,7 @@ namespace Entidades
             {
                 this.comando = new SqlCommand();
                 this.comando.CommandType = CommandType.Text;
-                this.comando.CommandText = "UPDATE Topo SET Nombre = @Nombre, Peso = @Peso, TipoAlimentacion = @TipoAlimentacion, ProfundidadExcavada = @ProfundidadExcavada, GarrasAfiladas = @GarrasAfiladas WHERE Nombre = @NombreOriginal AND TipoRoedor = 2";
+                this.comando.CommandText = "UPDATE Roedor SET Nombre = @Nombre, Peso = @Peso, TipoAlimentacion = @TipoAlimentacion, ProfundidadExcavada = @ProfundidadExcavada, GarrasAfiladas = @GarrasAfiladas WHERE Nombre = @NombreOriginal AND TipoRoedor = 2";
                 this.comando.Connection = this.conexion;
 
                 this.comando.Parameters.AddWithValue("@Nombre", topo.Nombre);
