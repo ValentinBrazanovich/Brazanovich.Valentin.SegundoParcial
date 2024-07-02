@@ -28,6 +28,10 @@ namespace VeterinariaExoticos
             this.RoedorCambiado += OnRoedorCambiado;
         }
 
+        /// <summary>
+        /// Según el perfil que haya ingresado se desactivan algunos botones
+        /// </summary>
+        /// <param name="perfil"> String que contiene le tipo de perfil ingresado </param>
         private void ConfigurarSegunPerfil(string perfil)
         {
             if (perfil == "vendedor")
@@ -46,6 +50,12 @@ namespace VeterinariaExoticos
             }
         }
 
+        /// <summary>
+        /// Al realizar una acción como agregar, modificar u eliminar un roedor, esta se
+        /// notifica mediante un mensaje en pantalla.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnRoedorCambiado(object sender, RoedorEvent e)
         {
             MessageBox.Show($"Se ha {e.accion} el Roedor '{e.roedor.Nombre}' exitosamente", 

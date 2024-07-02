@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\roedores\\accesodatosroedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|solutionrelative:roedores\\accesodatosroedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\roedores\\terrario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|solutionrelative:roedores\\terrario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\roedores\\diagramaroedor.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
-      "RelativeMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|solutionrelative:roedores\\diagramaroedor.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+      "AbsoluteMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\roedores\\roedorevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|solutionrelative:roedores\\roedorevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\roedores\\listaroedoresvaciaexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|solutionrelative:roedores\\listaroedoresvaciaexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\roedores\\ipesopromedio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|solutionrelative:roedores\\ipesopromedio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\roedores\\ioperaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|solutionrelative:roedores\\ioperaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\roedores\\gestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|solutionrelative:roedores\\gestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|c:\\users\\joshua\\source\\repos\\brazanovich.valentin\\roedores\\accesodatosroedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F62556-821C-4193-BDA0-346579D9D7C7}|Roedores\\Entidades.csproj|solutionrelative:roedores\\accesodatosroedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,26 +47,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AccesoDatosRoedores.cs",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\AccesoDatosRoedores.cs",
-              "RelativeDocumentMoniker": "Roedores\\AccesoDatosRoedores.cs",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\AccesoDatosRoedores.cs",
-              "RelativeToolTip": "Roedores\\AccesoDatosRoedores.cs",
-              "ViewState": "AQIAALwBAAAAAAAAAAAAAM4BAAA5AAAA",
+              "Title": "Terrario.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Terrario.cs",
+              "RelativeDocumentMoniker": "Roedores\\Terrario.cs",
+              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Terrario.cs",
+              "RelativeToolTip": "Roedores\\Terrario.cs",
+              "ViewState": "AQIAAJMAAAAAAAAAAAAAAFgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T23:06:58.008Z",
+              "WhenOpened": "2024-07-02T00:06:01.434Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DiagramaRoedor.cd",
-              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\DiagramaRoedor.cd",
-              "RelativeDocumentMoniker": "Roedores\\DiagramaRoedor.cd",
-              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\DiagramaRoedor.cd",
-              "RelativeToolTip": "Roedores\\DiagramaRoedor.cd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2024-07-01T22:56:48.914Z",
+              "Title": "RoedorEvent.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\RoedorEvent.cs",
+              "RelativeDocumentMoniker": "Roedores\\RoedorEvent.cs",
+              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\RoedorEvent.cs",
+              "RelativeToolTip": "Roedores\\RoedorEvent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T00:05:51.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListaRoedoresVaciaException.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\ListaRoedoresVaciaException.cs",
+              "RelativeDocumentMoniker": "Roedores\\ListaRoedoresVaciaException.cs",
+              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\ListaRoedoresVaciaException.cs",
+              "RelativeToolTip": "Roedores\\ListaRoedoresVaciaException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T00:05:37.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IPesoPromedio.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\IPesoPromedio.cs",
+              "RelativeDocumentMoniker": "Roedores\\IPesoPromedio.cs",
+              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\IPesoPromedio.cs",
+              "RelativeToolTip": "Roedores\\IPesoPromedio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T00:05:35.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IOperaciones.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\IOperaciones.cs",
+              "RelativeDocumentMoniker": "Roedores\\IOperaciones.cs",
+              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\IOperaciones.cs",
+              "RelativeToolTip": "Roedores\\IOperaciones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T00:05:33.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Gestion.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Gestion.cs",
+              "RelativeDocumentMoniker": "Roedores\\Gestion.cs",
+              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\Gestion.cs",
+              "RelativeToolTip": "Roedores\\Gestion.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T00:05:25.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccesoDatosRoedores.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\AccesoDatosRoedores.cs",
+              "RelativeDocumentMoniker": "Roedores\\AccesoDatosRoedores.cs",
+              "ToolTip": "C:\\Users\\Joshua\\source\\repos\\Brazanovich.Valentin\\Roedores\\AccesoDatosRoedores.cs",
+              "RelativeToolTip": "Roedores\\AccesoDatosRoedores.cs",
+              "ViewState": "AQIAAEACAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T23:21:42.179Z",
               "EditorCaption": ""
             }
           ]
