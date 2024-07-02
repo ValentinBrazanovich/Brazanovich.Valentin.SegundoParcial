@@ -51,3 +51,4 @@ Puede hacer click en la imágen para verla más clara.
 Dentro de la carpeta VeterinariaExoticos hay un archivo .JSON y otro .XML ya cargados para deserializar y mostrar en el visor. Tambien se incluye un script.sql en
 la carpeta "Script" que contiene el código necesario para crear la base de datos requerida junto con 3 roedores. La *base de datos* tiene como nombre "Terrario_base"
 y contiene una tabla "Roedores" con los campos necesarios para contener cualquier instancia de las clases derivadas de Roedor. La misma se creará en C:\SQLData\DATA.
+Dentro de la carpeta Usuarios se encuentra el archivo MOCK_DATA.json y el archivo .log de usuarios que es en donde está el registro de los mismos usuarios que entraron.
