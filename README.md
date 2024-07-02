@@ -44,7 +44,8 @@ por lo cual, al modificar o eliminar algún roedor este también se modificará/
 
 ## Diagrama de clases
 ![Diagrama de Clases](Capturas/DiagramaCompleto.png)
-Este es el diagrama de clases con el Formulario principal, la clase Padre (Roedor) y sus Derivadas (Hamster, Raton, Topo)
+Este es el diagrama de clases con el Formulario principal, la clase Padre (Roedor) y sus Derivadas (Hamster, Raton, Topo).
+Puede hacer click en la imágen para verla más clara.
 
 
 Dentro de la carpeta VeterinariaExoticos hay un archivo .JSON y otro .XML ya cargados para deserializar y mostrar en el visor. Tambien se incluye un script.sql en
