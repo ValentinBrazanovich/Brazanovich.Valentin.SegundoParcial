@@ -17,11 +17,12 @@ Este proyecto es una demostración de mis capacidades creando código en C# y mi
 ## Resumen: 
 La aplicación permite al usuario gestionar la información de diferentes tipos de roedores (Hámsters, Ratones, Topos). Las funcionalidades incluyen:
 - **Login de usuario**: Permite el acceso a la aplicación.
+
 ![](Capturas/Login.png)
 
 
 - **Registro de accesos**: Guarda la información del usuario que ha ingresado, incluyendo la fecha y hora para luego visualizarla en un log que el *ADMINISTRADOR*
-puede ver haciendo click en el ToolStrip "ver/Registros".
+puede ver haciendo click en el ToolStrip "Ver/Registros".
 ![](Capturas/RegistroCompleto.png)
 
 
