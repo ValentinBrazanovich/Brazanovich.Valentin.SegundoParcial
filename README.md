@@ -23,14 +23,17 @@ La aplicación permite al usuario gestionar la información de diferentes tipos 
 
 - **Registro de accesos**: Guarda la información del usuario que ha ingresado, incluyendo la fecha y hora para luego visualizarla en un log que el *ADMINISTRADOR*
 puede ver haciendo click en el ToolStrip "Ver/Registros".
+
 ![](Capturas/RegistroCompleto.png)
 
 
 - **Serialización y deserialización**: Guarda y recupera la información de los roedores en formatos JSON, XML y en *base de datos*.
 - **Visualizacion de Roedores**: Se pueden agregar, modificar y eliminar Roedores y cada uno tiene características específicas.
 También se los puede ordenar por peso/nombre de mayor a menor o viceversa y se puede calcular el promedio de peso según tipo de roedor.
+
 ![](Capturas/VisualizadorRoedoresCompleto.png)
 ![](Capturas/NuevosBotonesCompleto.png)
+
 
 - **Base de datos**: Cuando se deserializa la *base de datos* aparece un aviso en la esquina superior derecha que advierte que se está utilizando la misma, 
 por lo cual, al modificar o eliminar algún roedor este también se modificará/eliminará de la *base de datos*.
@@ -39,7 +42,7 @@ por lo cual, al modificar o eliminar algún roedor este también se modificará/
 
 
 ## Diagrama de clases
-![Diagrama de Clases](Diagrama_Completo.png)
+![Diagrama de Clases](DiagramaCompleto.png)
 Este es el diagrama de clases con el Formulario principal, la clase Padre (Roedor) y sus Derivadas (Hamster, Raton, Topo)
 
 
