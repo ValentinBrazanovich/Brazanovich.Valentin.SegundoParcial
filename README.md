@@ -37,12 +37,13 @@ También se los puede ordenar por peso/nombre de mayor a menor o viceversa y se 
 
 - **Base de datos**: Cuando se deserializa la *base de datos* aparece un aviso en la esquina superior derecha que advierte que se está utilizando la misma, 
 por lo cual, al modificar o eliminar algún roedor este también se modificará/eliminará de la *base de datos*.
+
 ![](Capturas/VisualizadorRoedoresSQLCompleto.png)
 
 
 
 ## Diagrama de clases
-![Diagrama de Clases](DiagramaCompleto.png)
+![Diagrama de Clases](Capturas/DiagramaCompleto.png)
 Este es el diagrama de clases con el Formulario principal, la clase Padre (Roedor) y sus Derivadas (Hamster, Raton, Topo)
 
 
