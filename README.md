@@ -53,7 +53,7 @@ la carpeta "Script" que contiene el código necesario para crear la base de dato
 y contiene una tabla "Roedores" con los campos necesarios para contener cualquier instancia de las clases derivadas de Roedor. La misma se creará en C:\SQLData\DATA.
 Dentro de la carpeta Usuarios se encuentra el archivo MOCK_DATA.json y el archivo .log de usuarios que es en donde está el registro de los mismos usuarios que entraron.
 
-**Cualquiera sea el caso, el script es el siguiente:**
+**Cualquiera sea el caso, el script es el siguiente:** *Se puede entrar con autenticación de Windows o con usuario: sa contraseña: admin1*
 USE [master]
 GO
 /****** Object:  Database [Terrario_base]    Script Date: 30/6/2024 01:59:34 ******/
