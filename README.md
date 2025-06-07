@@ -1,5 +1,5 @@
 # CRUD - Gestión de Roedores de Veterinaria - SP
-Primer parcial de Laboratorio 2
+Primer y segundo parcial de Laboratorio 2
 
 ```
 Alumno:
